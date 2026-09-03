@@ -1,7 +1,7 @@
 <script setup>
-import Products from './components/Products.vue';
+import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <Products />
+  <HomeView />
 </template>

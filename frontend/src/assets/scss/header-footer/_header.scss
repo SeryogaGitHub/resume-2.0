@@ -1,0 +1,64 @@
+@use '../variables' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background: $color-white;
+  border-bottom: 1px solid $color-border;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 80px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      font-size: 14px;
+      transition: opacity $transition;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .button {
+    padding: 12px 20px;
+
+    border: 1px solid $color-black;
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    transition:
+        color $transition,
+        background $transition;
+
+    &:hover {
+      color: $color-white;
+      background: $color-black;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    .navigation {
+      display: none;
+    }
+  }
+}
