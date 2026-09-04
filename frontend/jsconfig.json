@@ -5,5 +5,5 @@
     }
   },
   "exclude": [
-    "../node_modules", "dist"]
+    "@scss/node_modules", "dist"]
 }

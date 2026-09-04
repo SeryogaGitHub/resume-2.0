@@ -6,7 +6,7 @@ import {
   createProductController,
   updateProductController,
   deleteProductController
-} from '../controllers/products.controller.js';
+} from '@scss/controllers/products.controller.js';
 
 const router = express.Router();
 

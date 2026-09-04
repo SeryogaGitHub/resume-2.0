@@ -1,4 +1,4 @@
-import db from '../db/database.js';
+import db from '@scss/db/database.js';
 
 export const getProducts = async () => {
   const [rows] = await db.query(

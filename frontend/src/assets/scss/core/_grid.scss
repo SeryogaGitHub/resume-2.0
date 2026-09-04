@@ -1,0 +1,25 @@
+@use '@scss/variables' as *;
+
+.flex{
+  display: flex;
+}
+
+.center {
+  width: min(100% - 48px, 1920px);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .container {
+    width: min(100% - 32px, $container-width);
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+}

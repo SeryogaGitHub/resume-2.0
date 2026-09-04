@@ -1,0 +1,38 @@
+@use '@scss/variables' as *;
+
+.footer {
+  padding: 24px 0;
+
+  border-top: 1px solid $color-border;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .copyright {
+    color: $color-gray;
+    font-size: 13px;
+  }
+
+  .back-to-top {
+    font-size: 13px;
+
+    transition: opacity $transition;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .footer {
+    .content {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}

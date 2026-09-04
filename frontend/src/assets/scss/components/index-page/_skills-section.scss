@@ -1,0 +1,97 @@
+@use '@scss/variables' as *;
+
+.skills-section {
+  .heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+  }
+
+  .label {
+    margin-bottom: 16px;
+
+    color: $color-gray;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  h2 {
+    max-width: 700px;
+
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .link {
+    font-size: 14px;
+
+    border-bottom: 1px solid $color-black;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid $color-border;
+    border-left: 1px solid $color-border;
+  }
+
+  .skill {
+    min-height: 180px;
+    padding: 24px;
+
+    border-right: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: background $transition;
+
+    &:hover {
+      background: $color-light;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    color: $color-gray;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .skills-section {
+    .list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .skills-section {
+    .heading {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

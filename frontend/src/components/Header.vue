@@ -25,7 +25,7 @@ const navigation = [
 
 <template>
   <header class="header">
-    <div class="container">
+    <div class="center">
 
       <a
           href="/"

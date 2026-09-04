@@ -5,7 +5,7 @@ const projects = [
     title: 'E-commerce',
     description: 'Сучасний інтернет-магазин з адаптивним інтерфейсом.',
     technologies: ['Vue.js', 'SCSS', 'Node.js'],
-    image: '/images/projects/ecommerce.jpg',
+    image: '🛒',
     url: '#'
   },
   {
@@ -13,7 +13,7 @@ const projects = [
     title: 'Corporate Website',
     description: 'Корпоративний сайт із сучасною структурою та анімаціями.',
     technologies: ['JavaScript', 'SCSS', 'Vite'],
-    image: '/images/projects/corporate.jpg',
+    image: '🏢',
     url: '#'
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     title: 'Web Application',
     description: 'Інтерактивний вебзастосунок з роботою через API.',
     technologies: ['Vue.js', 'REST API', 'MySQL'],
-    image: '/images/projects/application.jpg',
+    image: '⚡',
     url: '#'
   }
 ];
@@ -34,9 +34,9 @@ const projects = [
   >
     <div class="center">
 
-      <div class="projects-heading">
+      <div class="heading">
         <div>
-          <p class="projects-label">
+          <p class="label">
             Portfolio
           </p>
 
@@ -47,13 +47,13 @@ const projects = [
 
         <a
             href="#"
-            class="projects-link"
+            class="link"
         >
           Усі роботи →
         </a>
       </div>
 
-      <div class="projects-list">
+      <div class="list">
 
         <article
             v-for="project in projects"
@@ -64,10 +64,7 @@ const projects = [
               :href="project.url"
               class="project-image"
           >
-            <img
-                :src="project.image"
-                :alt="project.title"
-            >
+            {{project.image}}
           </a>
 
           <div class="project-content">

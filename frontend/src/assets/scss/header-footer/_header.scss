@@ -1,4 +1,4 @@
-@use '../variables' as *;
+@use '@scss/variables' as *;
 
 .header {
   position: sticky;
@@ -8,7 +8,7 @@
   background: $color-white;
   border-bottom: 1px solid $color-border;
 
-  .container {
+  .center {
     display: flex;
     align-items: center;
     justify-content: space-between;

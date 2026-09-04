@@ -4,7 +4,7 @@ import {
   createProduct,
   updateProduct,
   deleteProduct
-} from '../services/products.service.js';
+} from '@scss/services/products.service.js';
 
 export const getProductsController = async (req, res) => {
   try {

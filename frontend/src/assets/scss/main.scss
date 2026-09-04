@@ -1,12 +1,7 @@
-@use 'core/reset';
+@use 'variables' as *;
+@use 'core';
 @use 'global';
 
-@use 'header-footer/header';
-@use 'components/index-page/top-section';
-//@use './projects';
-//@use './skills';
-//@use './experience';
-//@use './contact';
-//@use './footer';
+@use 'header-footer';
 
-//@use './pages/home';
+@use 'components/index-page';

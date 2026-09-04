@@ -12,9 +12,9 @@ const description = `
   <section class="top-section">
     <div class="center">
 
-      <div class="hero-content">
+      <div class="content">
 
-        <p class="hero-label">
+        <p class="label">
           {{ title }}
         </p>
 
@@ -22,11 +22,11 @@ const description = `
           Сергій Липянець
         </h1>
 
-        <p class="hero-description">
+        <p class="description">
           {{ description }}
         </p>
 
-        <div class="hero-actions">
+        <div class="actions">
           <a
               href="#portfolio"
               class="button"

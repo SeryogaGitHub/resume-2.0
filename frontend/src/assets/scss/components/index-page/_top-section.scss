@@ -1,16 +1,16 @@
-@use '../../variables' as *;
+@use '@scss/variables' as *;
 
-.hero {
+.top-section {
   min-height: calc(100vh - 80px);
 
   display: flex;
   align-items: center;
 
-  .hero-content {
+  .content {
     max-width: 850px;
   }
 
-  .hero-label {
+  .label {
     margin-bottom: 24px;
 
     font-size: 14px;
@@ -27,7 +27,7 @@
     letter-spacing: -0.04em;
   }
 
-  .hero-description {
+  .description {
     max-width: 650px;
     margin-bottom: 40px;
 
@@ -36,7 +36,7 @@
     line-height: 1.6;
   }
 
-  .hero-actions {
+  .actions {
     display: flex;
     gap: 16px;
   }
@@ -76,14 +76,14 @@
 }
 
 @media (max-width: $breakpoint-mobile) {
-  .hero {
+  .top-section {
     min-height: calc(100vh - 64px);
 
-    .hero-description {
+    .description {
       font-size: 17px;
     }
 
-    .hero-actions {
+    .actions {
       flex-direction: column;
       align-items: flex-start;
     }
