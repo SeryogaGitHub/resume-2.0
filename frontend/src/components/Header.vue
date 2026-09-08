@@ -2,23 +2,23 @@
 const navigation = [
   {
     title: 'About',
-    href: '#about'
+    to: '/'
   },
   {
     title: 'Skills',
-    href: '#skills'
+    to: '/skills'
   },
   {
     title: 'Portfolio',
-    href: '#portfolio'
+    to: '/portfolio'
   },
   {
     title: 'Experience',
-    href: '#experience'
+    to: '/experience'
   },
   {
     title: 'Contact',
-    href: '#contact'
+    to: '/contact'
   }
 ];
 </script>
@@ -27,29 +27,29 @@ const navigation = [
   <header class="header">
     <div class="center">
 
-      <a
-          href="/"
+      <RouterLink
+          to="/"
           class="logo"
       >
         SL
-      </a>
+      </RouterLink>
 
       <nav class="navigation">
-        <a
+        <RouterLink
             v-for="item in navigation"
-            :key="item.href"
-            :href="item.href"
+            :key="item.to"
+            :to="item.to"
         >
           {{ item.title }}
-        </a>
+        </RouterLink>
       </nav>
 
-      <a
-          href="#contact"
+      <RouterLink
+          to="/contact"
           class="button"
       >
         Contact
-      </a>
+      </RouterLink>
 
     </div>
   </header>
