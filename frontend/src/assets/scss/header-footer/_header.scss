@@ -28,11 +28,16 @@
 
     a {
       font-size: 14px;
-      transition: opacity $transition;
+      transition: .3s;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 1;
       }
+    }
+
+    .router-link-active {
+      opacity: 1;
+      text-shadow: -0.4px 0 0 rgba(0, 0, 0, 1), 0.4px 0 0 rgba(0, 0, 0, 1), 0 -0.4px 0 rgba(0, 0, 0, 1), 0 0.4px 0 rgba(0, 0, 0, 1);
     }
   }
 

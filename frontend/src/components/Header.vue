@@ -1,7 +1,7 @@
 <script setup>
 const navigation = [
   {
-    title: 'About',
+    title: 'Home',
     to: '/'
   },
   {

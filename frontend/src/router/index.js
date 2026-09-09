@@ -5,6 +5,7 @@ import PortfolioView from '@/views/PortfolioView.vue';
 import SkillsView from '@/views/SkillsView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
 import ContactView from '@/views/ContactView.vue';
+import NotFoundView from "@/views/NotFoundView.vue";
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundView
   }
 ];
 
