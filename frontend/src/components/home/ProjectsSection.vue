@@ -1,4 +1,8 @@
 <script setup>
+const emit = defineEmits([
+  'show-all'
+]);
+
 defineProps({
   projects: {
     type: Array,
@@ -25,12 +29,13 @@ defineProps({
           </h2>
         </div>
 
-        <a
-            href="#"
+        <button
+            type="button"
             class="link"
+            @click="emit('show-all')"
         >
           Усі роботи →
-        </a>
+        </button>
       </div>
 
       <div class="list">
@@ -40,12 +45,14 @@ defineProps({
             :key="project.id"
             class="project"
         >
-          <a
-              :href="project.url"
-              class="project-image"
+          <button
+              type="button"
+              class="image"
+              @click="emit('select-project', project)"
           >
+            {{project.title}}
             {{project.image}}
-          </a>
+          </button>
 
           <div class="project-content">
 

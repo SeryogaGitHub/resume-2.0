@@ -32,6 +32,14 @@ const projects = [
     url: '#'
   }
 ];
+
+const showAllProjects = () => {
+  console.log('Показати всі проєкти');
+};
+
+const selectProject = (project) => {
+  console.log('Обраний проєкт:', project);
+};
 </script>
 
 <template>
@@ -41,7 +49,11 @@ const projects = [
 
     <main>
       <TopSection />
-      <ProjectsSection :projects="projects"/>
+      <ProjectsSection
+          :projects="projects"
+          @show-all="showAllProjects"
+          @select-project="selectProject"
+      />
       <SkillsSection />
       <ExperienceSection />
     </main>
