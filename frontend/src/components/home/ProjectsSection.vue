@@ -1,4 +1,6 @@
 <script setup>
+import BaseButton from "@/components/BaseButton.vue";
+
 const emit = defineEmits([
   'show-all'
 ]);
@@ -29,13 +31,12 @@ defineProps({
           </h2>
         </div>
 
-        <button
-            type="button"
-            class="link"
-            @click="emit('show-all')"
+        <BaseButton type="button"
+                    class="link"
+                    @click="emit('show-all')"
         >
           Усі роботи →
-        </button>
+        </BaseButton>
       </div>
 
       <div class="list">
@@ -45,14 +46,14 @@ defineProps({
             :key="project.id"
             class="project"
         >
-          <button
+          <BaseButton
               type="button"
               class="image"
               @click="emit('select-project', project)"
           >
-            {{project.title}}
-            {{project.image}}
-          </button>
+              {{project.title}}
+              {{project.image}}
+          </BaseButton>
 
           <div class="project-content">
 
@@ -75,9 +76,7 @@ defineProps({
 
           </div>
         </article>
-
       </div>
-
     </div>
   </section>
 </template>

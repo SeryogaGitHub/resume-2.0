@@ -1,4 +1,6 @@
 <script setup>
+import SkillItem from "@/components/home/SkillItem.vue";
+
 const skills = [
   {
     id: 1,
@@ -69,28 +71,15 @@ const skills = [
 
       <div class="list">
 
-        <article
+        <SkillItem
             v-for="skill in skills"
             :key="skill.id"
-            class="skill"
-        >
-          <h3>
-            {{ skill.name }}
-          </h3>
-
-          <div class="skill-info">
-            <span>
-              {{ skill.level }}
-            </span>
-
-            <span>
-              {{ skill.experience }}
-            </span>
-          </div>
-        </article>
+            :name="skill.name"
+            :level="skill.level"
+            :experience="skill.experience"
+        />
 
       </div>
-
     </div>
   </section>
 </template>
