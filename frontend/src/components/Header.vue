@@ -24,7 +24,7 @@ const navigation = [
 </script>
 
 <template>
-  <header class="header">
+  <header class="main-header">
     <div class="center">
 
       <RouterLink
