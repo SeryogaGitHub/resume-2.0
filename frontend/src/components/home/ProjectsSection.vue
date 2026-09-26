@@ -1,8 +1,11 @@
 <script setup>
 import BaseButton from "@/components/BaseButton.vue";
+import { ref } from 'vue';
 
+const showAll = ref(false);
 const emit = defineEmits([
-  'show-all'
+  'show-all',
+  'select-project'
 ]);
 
 defineProps({
@@ -22,30 +25,31 @@ defineProps({
 
       <div class="heading">
         <div>
-          <p class="label">
-            Portfolio
-          </p>
-
-          <h2>
-            Selected Projects
+          <h2 class="label">
+            Проекти
           </h2>
+
+          <h3>
+            Selected Projects
+          </h3>
         </div>
 
         <BaseButton type="button"
                     class="link"
-                    @click="emit('show-all')"
+                    @click="showAll = !showAll"
         >
-          Усі роботи →
+          {{ showAll ? 'Сховати' : 'Усі роботи →' }}
         </BaseButton>
       </div>
 
-      <div class="list">
-
+      <div class="list" v-if="showAll">
         <article
-            v-for="project in projects"
+            v-for="(project, index) in projects"
+            v-show="showAll || index < 3"
             :key="project.id"
             class="project"
         >
+          <hr>
           <BaseButton
               type="button"
               class="image"
@@ -56,7 +60,6 @@ defineProps({
           </BaseButton>
 
           <div class="project-content">
-
             <h3>
               {{ project.title }}
             </h3>
@@ -73,7 +76,6 @@ defineProps({
                 {{ technology }}
               </li>
             </ul>
-
           </div>
         </article>
       </div>

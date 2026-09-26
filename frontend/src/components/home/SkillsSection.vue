@@ -1,5 +1,6 @@
 <script setup>
 import SkillItem from "@/components/home/SkillItem.vue";
+import BaseList from "@/components/BaseList.vue";
 
 const skills = [
   {
@@ -69,17 +70,15 @@ const skills = [
 
       </div>
 
-      <div class="list">
-
-        <SkillItem
-            v-for="skill in skills"
-            :key="skill.id"
-            :name="skill.name"
-            :level="skill.level"
-            :experience="skill.experience"
-        />
-
-      </div>
+      <BaseList :items="skills">
+        <template #default="{ item }">
+          <div class="skill">
+            <h3>{{ item.name }}</h3>
+            <p>Рівень: {{ item.level }}</p>
+            <h4>{{ item.experience }}</h4>
+          </div>
+        </template>
+      </BaseList>
     </div>
   </section>
 </template>
