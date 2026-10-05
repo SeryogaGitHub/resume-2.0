@@ -34,7 +34,7 @@ const navigation = [
         SL
       </RouterLink>
 
-      <nav class="navigation">
+      <nav class="main-nav">
         <RouterLink
             v-for="item in navigation"
             :key="item.to"
@@ -43,13 +43,6 @@ const navigation = [
           {{ item.title }}
         </RouterLink>
       </nav>
-
-      <RouterLink
-          to="/contact"
-          class="button"
-      >
-        Contact
-      </RouterLink>
 
     </div>
   </header>

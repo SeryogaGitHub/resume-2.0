@@ -18,6 +18,10 @@ export default defineConfig({
 
       '@scss': fileURLToPath(
           new URL('./src/assets/scss', import.meta.url)
+      ),
+
+      '@img': fileURLToPath(
+          new URL('./src/assets/image', import.meta.url)
       )
     },
   },
