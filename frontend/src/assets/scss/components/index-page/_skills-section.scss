@@ -11,8 +11,6 @@
 
   .label {
     margin-bottom: 16px;
-
-    color: $color-gray;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -30,33 +28,29 @@
   .link {
     font-size: 14px;
 
-    border-bottom: 1px solid $color-black;
+    border-bottom: 1px solid $black;
   }
 
   .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    border-top: 1px solid $color-border;
-    border-left: 1px solid $color-border;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
   }
 
   .skill {
     min-height: 180px;
     padding: 24px;
 
-    border-right: 1px solid $color-border;
-    border-bottom: 1px solid $color-border;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    transition: background $transition;
-
-    &:hover {
-      background: $color-light;
-    }
+    transition: background .3s;
 
     h3 {
       font-size: 24px;
@@ -68,30 +62,6 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-
-    color: $color-gray;
     font-size: 13px;
-  }
-}
-
-@media (max-width: $breakpoint-tablet) {
-  .skills-section {
-    .list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
-@media (max-width: $breakpoint-mobile) {
-  .skills-section {
-    .heading {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .list {
-      grid-template-columns: 1fr;
-    }
   }
 }

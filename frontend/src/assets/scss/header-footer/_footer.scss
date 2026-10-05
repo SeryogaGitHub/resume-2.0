@@ -3,7 +3,7 @@
 .footer {
   padding: 24px 0;
 
-  border-top: 1px solid $color-border;
+  border-top: 1px solid $border-color;
 
   .content {
     display: flex;
@@ -13,26 +13,16 @@
   }
 
   .copyright {
-    color: $color-gray;
     font-size: 13px;
   }
 
   .back-to-top {
     font-size: 13px;
 
-    transition: opacity $transition;
+    transition: opacity .3s;
 
     &:hover {
       opacity: 0.5;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-mobile) {
-  .footer {
-    .content {
-      align-items: flex-start;
-      flex-direction: column;
     }
   }
 }

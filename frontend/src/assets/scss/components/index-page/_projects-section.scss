@@ -1,7 +1,6 @@
 @use '@scss/variables' as *;
 
 .projects-section {
-  background: $color-light;
 
   .projects-section-heading {
     display: flex;
@@ -13,8 +12,6 @@
 
   .projects-section-label {
     margin-bottom: 16px;
-
-    color: $color-gray;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -29,7 +26,7 @@
 
   .projects-section-link {
     font-size: 14px;
-    border-bottom: 1px solid $color-black;
+    border-bottom: 1px solid $black;
   }
 
   .projects-section-list {
@@ -39,7 +36,7 @@
   }
 
   .project {
-    background: $color-white;
+    background: $white;
   }
 
   .project-image {
@@ -47,7 +44,7 @@
     aspect-ratio: 16 / 10;
     overflow: hidden;
 
-    background: $color-border;
+    background: $border-color;
 
     img {
       display: block;
@@ -73,7 +70,6 @@
 
     p {
       margin-bottom: 20px;
-      color: $color-gray;
       line-height: 1.6;
     }
 
@@ -84,31 +80,9 @@
 
       li {
         padding: 6px 10px;
-        border: 1px solid $color-border;
+        border: 1px solid $border-color;
         font-size: 12px;
       }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-tablet) {
-  .projects-section {
-    .projects-section-list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
-@media (max-width: $breakpoint-mobile) {
-  .projects-section {
-    .projects-section-heading {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .projects-section-list {
-      grid-template-columns: 1fr;
     }
   }
 }

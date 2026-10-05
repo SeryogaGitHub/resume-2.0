@@ -1,24 +1,15 @@
 <script setup>
-const contacts = [
-  {
-    id: 1,
-    title: 'Email',
-    value: 'your@email.com',
-    href: 'mailto:your@email.com'
-  },
-  {
-    id: 2,
-    title: 'LinkedIn',
-    value: 'LinkedIn',
-    href: '#'
-  },
-  {
-    id: 3,
-    title: 'GitHub',
-    value: 'GitHub',
-    href: '#'
-  }
-];
+import { reactive } from 'vue';
+
+const form = reactive({
+  name: '',
+  email: '',
+  message: ''
+});
+
+const submitForm = () => {
+  console.log(form);
+};
 </script>
 
 <template>
@@ -34,33 +25,39 @@ const contacts = [
         </p>
 
         <h2>
-          Let's work together.
+          Let's work together
         </h2>
-
-        <p class="description">
-          Якщо у вас є цікавий проєкт або пропозиція
-          щодо співпраці — зв'яжіться зі мною.
-        </p>
       </div>
 
-      <div class="list">
+      <form
+          class="form"
+          @submit.prevent="submitForm"
+      >
 
-        <a
-            v-for="contact in contacts"
-            :key="contact.id"
-            :href="contact.href"
-            class="item"
+        <input
+            v-model="form.name"
+            type="text"
+            placeholder="Ваше ім'я"
         >
-          <span class="title">
-            {{ contact.title }}
-          </span>
 
-          <span class="value">
-            {{ contact.value }}
-          </span>
-        </a>
+        <input
+            v-model="form.email"
+            type="email"
+            placeholder="Ваш email"
+        >
 
-      </div>
+        <textarea
+            v-model="form.message"
+            placeholder="Ваше повідомлення"
+        ></textarea>
+
+        <button
+            type="submit"
+        >
+          Надіслати
+        </button>
+
+      </form>
 
     </div>
   </section>

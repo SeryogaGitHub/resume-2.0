@@ -5,8 +5,8 @@
   top: 0;
   z-index: 10;
 
-  background: $color-white;
-  border-bottom: 1px solid $color-border;
+  background: $white;
+  border-bottom: 1px solid $border-color;
 
   .center {
     display: flex;
@@ -44,26 +44,18 @@
   .button {
     padding: 12px 20px;
 
-    border: 1px solid $color-black;
+    border: 1px solid $black;
     border-radius: 4px;
 
     font-size: 14px;
 
     transition:
-        color $transition,
-        background $transition;
+        color .3s,
+        background .3s;
 
     &:hover {
-      color: $color-white;
-      background: $color-black;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-mobile) {
-  .header {
-    .navigation {
-      display: none;
+      color: $white;
+      background: $black;
     }
   }
 }
