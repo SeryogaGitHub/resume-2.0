@@ -1,8 +1,257 @@
 @use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
 
-body{
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: rgba(brown, .50);
+}
+
+::selection {
+  background-color: #243b6e;
+  color: gold;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
   font-family: $f;
   font-size: 16px;
-  color: $black;
+  color: $brown;
   background: url(@img/bg.jpg) repeat;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-weight: normal;
+}
+
+ul:not(.ul),
+ol:not(.ol) {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+button,
+label,
+textarea,
+select {
+  appearance: none;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  // hide basic styles for input in iOS
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 64px;
+  font-size: 25px;
+  border-radius: 32px;
+  font-family: $f;
+  padding: 0 26px;
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+
+  @include m(768px){
+    font-size: 13px;
+    padding: 0 20px;
+    height: 36px;
+  }
+
+  // hide cross icon in Edge
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+
+  // Hide Arrows From Input Number: Chrome, Safari, Edge, Opera
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  // Hide Arrows From Input Number: Firefox
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  // hide box-shadow of empty required input in FF
+  &:required:invalid {
+    box-shadow: none;
+  }
+
+  &::selection {
+    background-color: brown;
+    color: $white;
+  }
+}
+
+textarea {
+  display: block;
+  max-width: 100%;
+  resize: none;
+  width: 100%;
+}
+
+input, textarea{
+  color: brown;
+}
+
+a {
+  color: brown;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  transition: .3s;
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p{
+  line-height: 1.4;
+
+  @include m(768px){
+    line-height: 1.5;
+  }
+
+  & + p,
+  & + h4{
+    margin-top: 30px;
+
+    @include m(768px){
+      margin-top: 12px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

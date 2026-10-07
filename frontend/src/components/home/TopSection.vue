@@ -1,50 +1,59 @@
 <script setup>
-const title = 'Frontend Developer';
+const title = 'Front-end, Senior HTML-верстальник, Junior(NodeJS, ReactJS, VueJS)';
 
 const description = `
-Створюю сучасні, швидкі та зручні вебінтерфейси
-з використанням JavaScript, Vue.js, React
-та сучасних web-технологій.
+Роглядаю роботу віддалено на постійній основі. Створюю сучасні, швидкі та зручні вебінтерфейси
+з використанням. Готовий до переїзду в країну, при потребі вчити мову.
 `;
 </script>
 
 <template>
-  <section class="top-section">
-    <div class="center">
+  <section class="top-section flex align-center flex-column">
+    <div class="center m-auto">
+      <div class="flex align-center">
+        <div class="text">
+          <p class="position">
+            {{ title }}
+          </p>
 
-      <div class="content">
+          <h1 class="mt-24">
+            Сергій Липянець
+          </h1>
 
-        <p class="label">
-          {{ title }}
-        </p>
+          <p class="description">
+            {{ description }}
+          </p>
 
-        <h1>
-          Сергій Липянець
-        </h1>
+          <div class="flex flex-start mt-24">
+            <a
+                href="#portfolio"
+                class="btn"
+            >
+              Переглянути роботи
+            </a>
 
-        <p class="description">
-          {{ description }}
-        </p>
-
-        <div class="actions">
-          <a
-              href="#portfolio"
-              class="button"
-          >
-            Переглянути роботи
-          </a>
-
-          <a
-              href="/cv.pdf"
-              class="button button-outline"
-              download
-          >
-            Завантажити CV
-          </a>
+            <a
+                href="/cv.pdf"
+                class="btn"
+                download
+            >
+              Завантажити CV
+            </a>
+          </div>
         </div>
 
+        <div class="image">
+          <img src="@img/photo.jpg" alt="Фото">
+        </div>
       </div>
+    </div>
 
+    <div class="center">
+      <div class="network">
+        <a href="#">Telegram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">linkedin</a>
+      </div>
     </div>
   </section>
 </template>

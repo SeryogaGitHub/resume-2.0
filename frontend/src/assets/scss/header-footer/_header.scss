@@ -5,12 +5,12 @@
   top: 0;
   z-index: 10;
   border-bottom: 1px solid $border-color;
+  background: $white;
 
   .center {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     min-height: 42px;
   }
 
@@ -25,9 +25,7 @@
     gap: 32px;
 
     a {
-      font-size: 14px;
       transition: .3s;
-      color: $text-color;
       display: flex;
       align-items: center;
       position: relative;
@@ -50,7 +48,7 @@
 
     .router-link-active, a:hover {
       opacity: 1;
-      text-shadow: -1px 0 0 rgba($text-color, .24), 1px 0 0 rgba($text-color, .24), 0 -1px 0 rgba($text-color, .24), 0 1px 0 rgba($text-color, .24);
+      text-shadow: -1px 0 0 rgba($brown, .24), 1px 0 0 rgba($brown, .24), 0 -1px 0 rgba($brown, .24), 0 1px 0 rgba($brown, .24);
 
       &:before {
         width: 16px;

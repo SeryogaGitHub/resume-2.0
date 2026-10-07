@@ -1,0 +1,18 @@
+@use '@scss/variables' as *;
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $f;
+  font-weight: 700;
+  color: $black;
+}
+
+strong {
+  font-family: $f;
+}
+
+h1, .h1{
+  margin-bottom: 32px;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}

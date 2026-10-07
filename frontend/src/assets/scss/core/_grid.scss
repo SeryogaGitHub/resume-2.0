@@ -1,9 +1,5 @@
 @use '@scss/variables' as *;
 
-.flex{
-  display: flex;
-}
-
 .center {
   width: min(100% - 48px, 1920px);
   max-width: 1920px;
@@ -12,4 +8,43 @@
 
 .section {
   padding: 40px 0;
+}
+
+.flex {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+  & > * {
+    margin: 0 15px;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-1{
+  flex: 1;
 }

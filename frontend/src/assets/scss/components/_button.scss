@@ -1,5 +1,14 @@
 @use '../variables' as *;
 
 .btn{
-  //border: 1px solid $black;
+  min-height: 46px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: $red;
+  color: $white;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2%;
 }
