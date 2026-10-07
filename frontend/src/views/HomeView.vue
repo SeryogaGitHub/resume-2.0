@@ -5,8 +5,7 @@ import ProjectsSection from "@/components/home/ProjectsSection.vue";
 import SkillsSection from "@/components/home/SkillsSection.vue";
 import ExperienceSection from "@/components/home/ExperienceSection.vue";
 import Footer from "@/components/Footer.vue";
-import WatchExample from "@/components/WatchExample.vue";
-import UserName from "@/components/UserName.vue";
+import LifecycleExample from "@/components/LifecycleExample.vue";
 
 const projects = [
   {
@@ -50,7 +49,7 @@ const selectProject = (project) => {
     <Header />
 
     <main>
-      <UserName />
+      <LifecycleExample />
       <TopSection />
       <ProjectsSection
           :projects="projects"
