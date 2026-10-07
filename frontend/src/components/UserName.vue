@@ -1,28 +1,26 @@
 <script setup>
-import { ref, computed } from 'vue';
+import {
+  onMounted,
+  onUnmounted
+} from 'vue';
 
-const firstName = ref('Сергій');
-const lastName = ref('Липянець');
+let timer;
 
-const fullName = computed(() => {
-  return `${firstName.value} ${lastName.value}`;
+onMounted(() => {
+  timer = setInterval(() => {
+    console.log('Таймер працює');
+  }, 1000);
+});
+
+onUnmounted(() => {
+  clearInterval(timer);
+
+  console.log('Таймер зупинено');
 });
 </script>
 
 <template>
   <div>
-
-    <p>
-      Ім'я: {{ firstName }}
-    </p>
-
-    <p>
-      Прізвище: {{ lastName }}
-    </p>
-
-    <p>
-      Повне ім'я: {{ fullName }}
-    </p>
-
+    Таймер
   </div>
 </template>

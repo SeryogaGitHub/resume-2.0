@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
 
-    min-height: 80px;
+    min-height: 42px;
   }
 
   .logo {
@@ -30,44 +30,39 @@
       color: $text-color;
       display: flex;
       align-items: center;
+      position: relative;
+      padding-left: 28px;
 
       &:before{
         content: '';
-        width: 6px;
         height: 6px;
-        border-radius: 50%;
+        width: 6px;
+        border-radius: 16px;
         background: $red;
-        display: block;
-        margin-right: 32px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
         transition: .3s;
-      }
-
-      &:hover {
-        opacity: 1;
-
-        &:before {
-          box-shadow: 0 0 4px 3px $red;
-        }
       }
     }
 
     .router-link-active, a:hover {
       opacity: 1;
-      text-shadow: -1px 0 0 rgba($text-color, .2), 1px 0 0 rgba($text-color, .2), 0 -1px 0 rgba($text-color, .2), 0 1px 0 rgba($text-color, .2);
+      text-shadow: -1px 0 0 rgba($text-color, .24), 1px 0 0 rgba($text-color, .24), 0 -1px 0 rgba($text-color, .24), 0 1px 0 rgba($text-color, .24);
+
+      &:before {
+        width: 16px;
+      }
     }
   }
 
   .button {
     padding: 12px 20px;
-
     border: 1px solid $black;
     border-radius: 4px;
-
     font-size: 14px;
-
-    transition:
-        color .3s,
-        background .3s;
 
     &:hover {
       color: $white;
