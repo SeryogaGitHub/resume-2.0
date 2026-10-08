@@ -11,7 +11,7 @@ const description = `
   <section class="top-section">
     <div class="center m-auto">
       <div class="flex align-center">
-        <div class="text">
+        <div class="text max-w-600">
           <p class="position">
             {{ title }}
           </p>

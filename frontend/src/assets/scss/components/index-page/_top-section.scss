@@ -8,10 +8,11 @@
   padding-top: 60px;
 
   .image{
-    padding-left: 80px;
+    max-width: 760px;
+    margin-left: $ml-60;
 
     img{
-      max-width: 460px;
+      border-radius: $r-12;
     }
   }
 
