@@ -8,6 +8,14 @@
   margin: auto;
 }
 
+.mt-60{
+  margin-top: 60px;
+}
+
+.mw-600{
+
+}
+
 .network{
   display: flex;
   width: 100%;
@@ -21,10 +29,22 @@
 
     &:first-child{
       border-left: none;
+      text-align: left;
     }
 
     &:last-child{
       border-right: none;
+      text-align: right;
     }
+  }
+}
+
+.btns{
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  & > *{
+    margin: 15px;
   }
 }

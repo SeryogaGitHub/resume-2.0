@@ -1,6 +1,7 @@
 <script setup>
 import BaseButton from "@/components/BaseButton.vue";
 import { ref } from 'vue';
+import ProjectCard from "@/components/home/ProjectCard.vue";
 
 const showAll = ref(false);
 const emit = defineEmits([
@@ -43,41 +44,13 @@ defineProps({
       </div>
 
       <div class="list" v-if="showAll">
-        <article
+        <ProjectCard
             v-for="(project, index) in projects"
             v-show="showAll || index < 3"
             :key="project.id"
-            class="project"
-        >
-          <hr>
-          <BaseButton
-              type="button"
-              class="image"
-              @click="emit('select-project', project)"
-          >
-              {{project.title}}
-              {{project.image}}
-          </BaseButton>
-
-          <div class="project-content">
-            <h3>
-              {{ project.title }}
-            </h3>
-
-            <p>
-              {{ project.description }}
-            </p>
-
-            <ul>
-              <li
-                  v-for="technology in project.technologies"
-                  :key="technology"
-              >
-                {{ technology }}
-              </li>
-            </ul>
-          </div>
-        </article>
+            :project="project"
+            @select="emit('select-project', $event)"
+        />
       </div>
     </div>
   </section>

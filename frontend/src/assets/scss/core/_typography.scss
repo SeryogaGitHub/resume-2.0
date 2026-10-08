@@ -14,5 +14,9 @@ h1, .h1{
   margin-bottom: 32px;
   font-size: clamp(48px, 8vw, 96px);
   line-height: 0.95;
-  letter-spacing: -0.04em;
+}
+
+h2, .h2{
+  margin-bottom: 24px;
+  font-size: 64px;
 }

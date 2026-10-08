@@ -1,13 +1,12 @@
 @use '@scss/variables' as *;
 
 .center {
-  width: min(100% - 48px, 1920px);
-  max-width: 1920px;
+  width: min(100% - 20px, 1920px);
   margin-inline: auto;
 }
 
 .section {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .flex {

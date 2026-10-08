@@ -8,7 +8,7 @@ const description = `
 </script>
 
 <template>
-  <section class="top-section flex align-center flex-column">
+  <section class="top-section">
     <div class="center m-auto">
       <div class="flex align-center">
         <div class="text">
@@ -24,7 +24,7 @@ const description = `
             {{ description }}
           </p>
 
-          <div class="flex flex-start mt-24">
+          <div class="btns mt-24">
             <a
                 href="#portfolio"
                 class="btn"
@@ -48,7 +48,7 @@ const description = `
       </div>
     </div>
 
-    <div class="center">
+    <div class="center mt-60">
       <div class="network">
         <a href="#">Telegram</a>
         <a href="#">WhatsApp</a>

@@ -11,4 +11,17 @@
   align-items: center;
   justify-content: center;
   letter-spacing: -2%;
+  margin-top: 60px;
+
+  & > *{
+    &:first-child{
+      margin-right: 12px;
+    }
+  }
+
+  &.transparent{
+    border: 1px solid rgba($black, 0.16);
+    background: $white;
+    color: $brown;
+  }
 }
