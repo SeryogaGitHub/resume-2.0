@@ -1,20 +1,40 @@
 <script setup>
 import BaseButton from "@/components/BaseButton.vue";
-import { ref } from 'vue';
-import ProjectCard from "@/components/home/ProjectCard.vue";
+import { ref, computed } from 'vue';
+import ProjectCard from './ProjectCard.vue';
 
-const showAll = ref(false);
-const emit = defineEmits([
-  'show-all',
-  'select-project'
-]);
-
-defineProps({
+const props = defineProps({
   projects: {
     type: Array,
     required: true
   }
 });
+
+const emit = defineEmits([
+  'show-all',
+  'select-project'
+]);
+
+const showAll = ref(false);
+const activeCategory = ref('Усі');
+
+const categories = [
+  'Усі',
+  'E-commerce',
+  'Corporate',
+  'Web Application'
+];
+
+const filteredProjects = computed(() => {
+  if (activeCategory.value === 'Усі') {
+    return props.projects;
+  }
+
+  return props.projects.filter(project => {
+    return project.category === activeCategory.value;
+  });
+});
+
 </script>
 
 <template>
@@ -55,7 +75,7 @@ defineProps({
 
       <div class="items align-center">
         <div class="item">
-          <img src="@img/section/projects-section/projects-section-1.jpg" alt="Фото">
+          <img src="@img/section/projects-section/projects-section-1.jpg" loading="lazy" alt="Фото">
 
           <div class="flex mt-20">
             <p>Web app UI</p>
@@ -64,7 +84,7 @@ defineProps({
         </div>
 
         <div class="item big">
-          <img src="@img/section/projects-section/projects-section-2.jpg" alt="Фото">
+          <img src="@img/section/projects-section/projects-section-2.jpg" loading="lazy" alt="Фото">
 
           <div class="flex mt-20">
             <p>Web app UI</p>
@@ -75,7 +95,7 @@ defineProps({
 
       <div class="items align-center mt-60">
         <div class="item big">
-          <img src="@img/section/projects-section/projects-section-3.jpg" alt="Фото">
+          <img src="@img/section/projects-section/projects-section-3.jpg" loading="lazy" alt="Фото">
 
           <div class="flex mt-20">
             <p>Web app UI</p>
@@ -84,7 +104,7 @@ defineProps({
         </div>
 
         <div class="item">
-          <img src="@img/section/projects-section/projects-section-4.jpg" alt="Фото">
+          <img src="@img/section/projects-section/projects-section-4.jpg" loading="lazy" alt="Фото">
 
           <div class="flex mt-20">
             <p>Web app UI</p>
@@ -108,9 +128,21 @@ defineProps({
         </BaseButton>
       </div>
 
-      <div class="list" v-if="showAll" hidden="hidden">
+      <div class="filters">
+        <button
+            v-for="(category, index) in categories"
+            :key="category + index"
+            type="button"
+            :class="{ active: activeCategory === category }"
+            @click="activeCategory = category"
+        >
+          {{ category }}
+        </button>
+      </div>
+
+      <div class="list">
         <ProjectCard
-            v-for="(project, index) in projects"
+            v-for="(project, index) in filteredProjects"
             v-show="showAll || index < 3"
             :key="project.id"
             :project="project"
