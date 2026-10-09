@@ -10,6 +10,9 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+
+  base: '/resume-2.0/',
+
   resolve: {
     alias: {
       '@': fileURLToPath(

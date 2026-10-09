@@ -1,6 +1,54 @@
 @use '@scss/variables' as *;
 
 .projects-section {
+  .items {
+    display: flex;
+    align-items: flex-start;
+
+    & > *{
+      flex: 1 1 40%;
+    }
+
+    .big{
+      flex-basis: 50%;
+
+      &:first-child{
+        margin-right: 10%;
+      }
+
+      &:last-child{
+        margin-left: 10%;
+      }
+    }
+  }
+
+  .header{
+    border-bottom: 1px solid rgba($black,0.2);
+    margin-bottom: 20px;
+
+    .items{
+      margin: -10px -15px;
+      align-items: center;
+
+      & > *{
+        margin: 10px 15px;
+      }
+    }
+  }
+
+  .text-btn{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    .btn{
+      margin-top: 0;
+    }
+
+    .text{
+      max-width: 346px;
+    }
+  }
 
   .projects-section-heading {
     display: flex;

@@ -21,7 +21,7 @@
             We don’t do trends. We build with purpose.
           </p>
 
-          <a href="#" class="btn transparent">
+          <a href="#" class="btn white">
             <span>More about us</span>
 
             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">

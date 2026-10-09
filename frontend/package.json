@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "postbuild": "node -e \"require('node:fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.20.0",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.8",
+    "gh-pages": "^6.3.0",
     "sass-embedded": "^1.103.1",
     "vite": "^8.1.5",
     "vite-plugin-vue-devtools": "^8.1.5"
