@@ -1,0 +1,22 @@
+@use '@scss/variables' as *;
+
+.faq-section{
+  .wrap-accordion-list{
+    display: flex;
+    border-top: $border;
+    border-bottom: $border;
+    align-items: center;
+  }
+
+  .accordion-list{
+    flex: 1;
+  }
+
+  .left{
+    padding: 2vw 8vw;
+  }
+
+  .image{
+    max-width: 340px;
+  }
+}

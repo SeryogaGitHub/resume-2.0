@@ -7,6 +7,7 @@ import ExperienceSection from "@/components/home/ExperienceSection.vue";
 import Footer from "@/components/Footer.vue";
 import WhoIAm from "@/components/home/WhoIAm.vue";
 import { projects } from '@/data/projects';
+import FAQSection from "@/components/home/FAQSection.vue";
 
 const showAllProjects = () => {
   console.log('Показати всі проєкти');
@@ -25,13 +26,14 @@ const selectProject = (project) => {
     <main>
       <TopSection />
       <WhoIAm />
+      <ExperienceSection />
       <ProjectsSection
           :projects="projects"
           @show-all="showAllProjects"
           @select-project="selectProject"
       />
+      <FAQSection />
       <SkillsSection />
-      <ExperienceSection />
     </main>
 
     <Footer />
