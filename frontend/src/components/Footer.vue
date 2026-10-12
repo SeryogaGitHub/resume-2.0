@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
   <footer class="footer">
     <div class="center">
 
-      <div class="content">
+      <div class="flex">
 
         <p class="copyright">
           © {{ currentYear }} Сергій Липянець
@@ -16,11 +16,9 @@ const currentYear = new Date().getFullYear();
             href="#"
             class="back-to-top"
         >
-          Back to top ↑
+          Вверх ↑
         </a>
-
       </div>
-
     </div>
   </footer>
 </template>

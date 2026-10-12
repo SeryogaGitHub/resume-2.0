@@ -10,11 +10,25 @@
     }
   }
 
+  .logo-text{
+    display: flex;
+
+    .logo{
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+    }
+  }
+
   .text{
     padding: 20px 20px 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1 1 36%;
   }
 
   .text-list{

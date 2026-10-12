@@ -1,23 +1,23 @@
 <script setup>
 const navigation = [
   {
-    title: 'Home',
+    title: 'Головна',
     to: '/'
   },
   {
-    title: 'Skills',
+    title: 'Технології',
     to: '/skills'
   },
   {
-    title: 'Portfolio',
+    title: 'Портфоліо',
     to: '/portfolio'
   },
   {
-    title: 'Experience',
+    title: 'Досвід',
     to: '/experience'
   },
   {
-    title: 'Contact',
+    title: 'Контакти',
     to: '/contact'
   }
 ];

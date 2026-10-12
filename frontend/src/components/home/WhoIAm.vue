@@ -14,15 +14,17 @@
 
         <div class="text">
           <p>
-            We work with startups, small teams, and founders who care about how things look — and how they work.
+            Професію яка приносить задоволення, коли починаю працювати, повністю
+            поглинаюся в процес!
           </p>
 
           <p>
-            We don’t do trends. We build with purpose.
+            Шукаю роботу на постійній основі в ОФІСІ з офіційним працевлаштуванням і
+            Кар'єрним ростом. Також цікаво робота віддалено.
           </p>
 
           <a href="#" class="btn white">
-            <span>More about us</span>
+            <span>Детальнінше</span>
 
             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.700237 0.700073C0.700237 0.700073 5.7002 4.38249 5.7002 5.70007C5.7002 7.01774 0.700195 10.7001 0.700195 10.7001" stroke="#847979" style="stroke:#847979;stroke:color(display-p3 0.5176 0.4745 0.4745);stroke-opacity:1;" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>

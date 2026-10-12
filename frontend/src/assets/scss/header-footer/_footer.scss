@@ -2,27 +2,6 @@
 
 .footer {
   padding: 24px 0;
-
-  border-top: 1px solid $border-color;
-
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-  }
-
-  .copyright {
-    font-size: 13px;
-  }
-
-  .back-to-top {
-    font-size: 13px;
-
-    transition: opacity .3s;
-
-    &:hover {
-      opacity: 0.5;
-    }
-  }
+  background: $black;
+  color: $white;
 }

@@ -50,9 +50,9 @@ const description = `
 
     <div class="center mt-60">
       <div class="network">
-        <a href="#">Telegram</a>
-        <a href="#">WhatsApp</a>
-        <a href="#">linkedin</a>
+        <a href="https://t.me/serg_ua_zt">Telegram</a>
+        <a href="https://wa.me/+380961225761">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/serhii-lypianets-69844a195/">linkedin</a>
       </div>
     </div>
   </section>

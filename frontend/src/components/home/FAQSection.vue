@@ -4,7 +4,7 @@ import Accordion from "@/components/Accordion.vue";
 </script>
 
 <template>
-  <section class="faq-section">
+  <section class="faq-section section">
     <div class="center">
       <h2>FAQ’s</h2>
 
