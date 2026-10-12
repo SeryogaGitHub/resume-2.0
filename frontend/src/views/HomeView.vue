@@ -8,6 +8,10 @@ import Footer from "@/components/Footer.vue";
 import WhoIAm from "@/components/home/WhoIAm.vue";
 import { projects } from '@/data/projects';
 import FAQSection from "@/components/home/FAQSection.vue";
+import ProjectView from "@/views/ProjectView.vue";
+import {ref} from "vue";
+
+const selectedProject = ref(null);
 
 const showAllProjects = () => {
   console.log('Показати всі проєкти');
@@ -27,10 +31,16 @@ const selectProject = (project) => {
       <TopSection />
       <WhoIAm />
       <ExperienceSection />
+      <ProjectView
+          v-if="selectedProject"
+          :project="selectedProject"
+          @back="selectedProject = null"
+      />
+
       <ProjectsSection
+          v-else
           :projects="projects"
-          @show-all="showAllProjects"
-          @select-project="selectProject"
+          @select-project="selectedProject = $event"
       />
       <FAQSection />
       <SkillsSection />
