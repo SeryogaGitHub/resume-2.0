@@ -2,6 +2,7 @@
 import BaseButton from "@/components/BaseButton.vue";
 import { ref, computed } from 'vue';
 import ProjectCard from './ProjectCard.vue';
+import { RouterLink } from 'vue-router';
 
 const props = defineProps({
   projects: {
@@ -9,6 +10,8 @@ const props = defineProps({
     required: true
   }
 });
+
+console.log(props.projects);
 
 const emit = defineEmits([
   'show-all',
@@ -45,69 +48,34 @@ const filteredProjects = computed(() => {
   >
     <div class="center">
       <header class="header">
-        <div class="items align-center">
-          <div>
-            <h2>
-              Проекти
-            </h2>
-          </div>
+        <div class="items">
+          <h2 class="item">
+            Проекти
+          </h2>
 
-          <div class="big">
-            <div class="text-btn">
-              <div class="text">
-                <p>
-                  Це тільки Декліька проектів. Детельно можна переглянути, які ще мають актуальні посилання ~7%:
-                </p>
-              </div>
+          <div class="text-btn item">
+            <div class="text">
+              <p>
+                Це тільки Декілька проектів ~7%:
+              </p>
+            </div>
 
-              <div>
-                <RouterLink to="/portfolio" class="btn white">
-                  Усі проєкти →
-                </RouterLink>
-              </div>
+            <div>
+              <RouterLink to="/portfolio" class="btn white">
+                Усі проєкти →
+              </RouterLink>
             </div>
           </div>
         </div>
       </header>
 
       <div class="items align-center">
-        <div class="item">
-          <img src="@img/section/projects-section/projects-section-1.jpg" loading="lazy" alt="Фото">
-
-          <div class="flex mt-20">
-            <p>Web app UI</p>
-            <p>2024</p>
-          </div>
-        </div>
-
-        <div class="item big">
-          <img src="@img/section/projects-section/projects-section-2.jpg" loading="lazy" alt="Фото">
-
-          <div class="flex mt-20">
-            <p>Web app UI</p>
-            <p>2024</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="items align-center mt-60">
-        <div class="item big">
-          <img src="@img/section/projects-section/projects-section-3.jpg" loading="lazy" alt="Фото">
-
-          <div class="flex mt-20">
-            <p>Web app UI</p>
-            <p>2024</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="@img/section/projects-section/projects-section-4.jpg" loading="lazy" alt="Фото">
-
-          <div class="flex mt-20">
-            <p>Web app UI</p>
-            <p>2024</p>
-          </div>
-        </div>
+        <ProjectCard
+            v-for="(project, index) in props.projects"
+            v-show="showAll || index < 4"
+            :key="project.id"
+            :project="project"
+        />
       </div>
 
       <div hidden="hidden">
@@ -144,7 +112,6 @@ const filteredProjects = computed(() => {
               v-show="showAll || index < 3"
               :key="project.id"
               :project="project"
-              @select="emit('select-project', $event)"
           />
         </div>
       </div>

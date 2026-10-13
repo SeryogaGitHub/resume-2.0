@@ -6,6 +6,7 @@ import SkillsView from '@/views/SkillsView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
 import ContactView from '@/views/ContactView.vue';
 import NotFoundView from "@/views/NotFoundView.vue";
+import ProjectDetailView from "@/components/home/ProjectDetailView.vue";
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: '/portfolio',
     name: 'portfolio',
     component: PortfolioView
+  },
+  {
+    path: '/portfolio/:id',
+    name: 'project-detail',
+    component: ProjectDetailView
   },
   {
     path: '/skills',

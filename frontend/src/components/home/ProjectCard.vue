@@ -1,51 +1,31 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 defineProps({
   project: {
     type: Object,
     required: true
   }
 });
-
-const emit = defineEmits([
-  'select'
-]);
 </script>
 
 <template>
-  <article class="project">
-
-    <button
-        type="button"
-        class="image"
-        @click="emit('select', project)"
+  <RouterLink
+      :to="{
+          name: 'project-detail',
+          params: { id: project.id }
+        }"
+      class="item mt-60"
+  >
+    <img
+        :src="project.image"
+        :alt="project.title"
+        loading="lazy"
     >
-      {{ project.image }}
-    </button>
 
-    <div class="content">
-
-      <p class="category">
-        {{ project.category }}
-      </p>
-
-      <h3>
-        {{ project.title }}
-      </h3>
-
-      <p>
-        {{ project.description }}
-      </p>
-
-      <ul>
-        <li
-            v-for="technology in project.technologies"
-            :key="technology"
-        >
-          {{ technology }}
-        </li>
-      </ul>
-
+    <div class="flex mt-20">
+      <p>{{ project.title }}</p>
+      <p>{{ project.year }}</p>
     </div>
-
-  </article>
+  </RouterLink>
 </template>

@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: 'E-commerce',
-    description: 'Сучасний інтернет-магазин з адаптивним інтерфейсом.',
+    description: '2222Сучасний інтернет-магазин з адаптивним інтерфейсом.',
     technologies: ['Vue.js', 'SCSS', 'Node.js'],
     image: '🛒',
     url: '#'

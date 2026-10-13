@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     title: 'E-commerce',
+    year: 2026,
     category: 'E-commerce',
     description: 'Сучасний інтернет-магазин з адаптивним інтерфейсом.',
     technologies: [
@@ -9,13 +10,14 @@ export const projects = [
       'SCSS',
       'Node.js'
     ],
-    image: '🛒',
+    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-1.jpg',
     url: '#'
   },
 
   {
     id: 2,
     title: 'Corporate Website',
+    year: 2026,
     category: 'Corporate',
     description: 'Корпоративний сайт із сучасною структурою та анімаціями.',
     technologies: [
@@ -23,13 +25,14 @@ export const projects = [
       'SCSS',
       'Vite'
     ],
-    image: '🏢',
+    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-2.jpg',
     url: '#'
   },
 
   {
     id: 3,
     title: 'Web Application',
+    year: 2026,
     category: 'Web Application',
     description: 'Інтерактивний вебзастосунок з роботою через API.',
     technologies: [
@@ -37,13 +40,14 @@ export const projects = [
       'REST API',
       'MySQL'
     ],
-    image: '⚡',
+    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-3.jpg',
     url: '#'
   },
 
   {
     id: 1,
     title: 'E-commerce',
+    year: 2026,
     category: 'E-commerce',
     description: 'Сучасний інтернет-магазин з адаптивним інтерфейсом.',
     technologies: [
@@ -51,13 +55,14 @@ export const projects = [
       'SCSS',
       'Node.js'
     ],
-    image: '🛒',
+    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-4.jpg',
     url: '#'
   },
 
   {
     id: 2,
     title: 'Corporate Website',
+    year: 2026,
     category: 'Corporate',
     description: 'Корпоративний сайт із сучасною структурою та анімаціями.',
     technologies: [
@@ -65,13 +70,14 @@ export const projects = [
       'SCSS',
       'Vite'
     ],
-    image: '🏢',
+    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-1.jpg',
     url: '#'
   },
 
   {
     id: 3,
     title: 'Web Application',
+    year: 2026,
     category: 'Web Application',
     description: 'Інтерактивний вебзастосунок з роботою через API.',
     technologies: [
@@ -79,7 +85,7 @@ export const projects = [
       'REST API',
       'MySQL'
     ],
-    image: '⚡',
+    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-2.jpg',
     url: '#'
   }
 ];
