@@ -5,15 +5,13 @@ import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-  <div class="skills">
-
+  <div class="skills page">
     <Header />
 
-    <main>
+    <main class="main-content">
       <SkillsSection />
     </main>
 
     <Footer />
-
   </div>
 </template>

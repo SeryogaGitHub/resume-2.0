@@ -33,9 +33,9 @@ const description = `
             </a>
 
             <a
-                href="/cv.pdf"
+                href="@/assets/CV/EU-Resume-Front-end.pdf"
                 class="btn"
-                download
+                download="EU-Resume-Front-end-SERHII-LYPIANETS.pdf"
             >
               Завантажити CV
             </a>

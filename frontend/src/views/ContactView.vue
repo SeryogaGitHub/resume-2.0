@@ -1,16 +1,18 @@
 <script setup>
 import Header from '@/components/Header.vue';
-import ContactSection from '@/components/home/ContactSection.vue';
+import FormSection from '@/components/contact/FormSection.vue';
 import Footer from '@/components/Footer.vue';
+import TopContact from "@/components/contact/TopContact.vue";
 </script>
 
 <template>
-  <div class="contact">
+  <div class="contact page">
 
     <Header />
 
-    <main>
-      <ContactSection />
+    <main class="main-content">
+      <TopContact />
+      <FormSection />
     </main>
 
     <Footer />

@@ -6,23 +6,23 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
-    .item{
-      &:nth-child(1),
-      &:nth-child(4) {
+    .item {
+      &:nth-child(4n + 1),
+      &:nth-child(4n + 4) {
         flex: 1 1 40%;
         max-width: 40%;
       }
 
-      &:nth-child(2),
-      &:nth-child(3) {
+      &:nth-child(4n + 2),
+      &:nth-child(4n + 3) {
         flex: 1 1 50%;
       }
 
-      &:nth-child(2) {
+      &:nth-child(4n + 2) {
         margin-left: 10%;
       }
 
-      &:nth-child(3) {
+      &:nth-child(4n + 3) {
         margin-right: 10%;
       }
     }

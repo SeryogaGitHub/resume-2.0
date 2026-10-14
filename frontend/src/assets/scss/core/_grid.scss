@@ -9,6 +9,16 @@
   padding: 60px 0;
 }
 
+.main-content{
+  flex: 1;
+}
+
+#app, .page{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .flex {
   align-items: start;
   display: flex;

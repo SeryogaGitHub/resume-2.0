@@ -5,11 +5,11 @@ import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-  <div class="experience">
+  <div class="experience page">
 
     <Header />
 
-    <main>
+    <main class="main-content">
       <ExperienceSection />
     </main>
 

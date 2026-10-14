@@ -8,7 +8,7 @@
 }
 
 ::placeholder {
-  color: rgba(brown, .50);
+  color: $brown;
 }
 
 ::selection {
@@ -155,20 +155,11 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 64px;
-  font-size: 25px;
-  border-radius: 32px;
+  height: 52px;
+  font-size: 16px;
   font-family: $f;
-  padding: 0 26px;
   width: 100%;
-  border: none;
-  text-transform: uppercase;
-
-  @include m(768px){
-    font-size: 13px;
-    padding: 0 20px;
-    height: 36px;
-  }
+  background: transparent;
 
   // hide cross icon in Edge
   &::-ms-clear,
@@ -208,10 +199,15 @@ textarea {
   max-width: 100%;
   resize: none;
   width: 100%;
+  padding: 20px 0;
 }
 
 input, textarea{
-  color: brown;
+  color: $brown;
+  background: transparent;
+  border: none;
+  border-bottom: $border;
+  margin-top: 24px;
 }
 
 a {

@@ -23,11 +23,10 @@ const selectProject = (project) => {
 </script>
 
 <template>
-  <div class="home">
-
+  <div class="home page">
     <Header />
 
-    <main>
+    <main class="main-content">
       <TopSection />
       <WhoIAm />
       <ExperienceSection />

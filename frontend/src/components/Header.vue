@@ -13,6 +13,10 @@ const navigation = [
     to: '/portfolio'
   },
   {
+    title: 'Про мене',
+    to: '/about'
+  },
+  {
     title: 'Досвід',
     to: '/experience'
   },

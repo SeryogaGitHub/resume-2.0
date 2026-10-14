@@ -7,6 +7,7 @@ import ExperienceView from '@/views/ExperienceView.vue';
 import ContactView from '@/views/ContactView.vue';
 import NotFoundView from "@/views/NotFoundView.vue";
 import ProjectDetailView from "@/components/home/ProjectDetailView.vue";
+import AboutView from "@/views/AboutView.vue";
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
     path: '/skills',
     name: 'skills',
     component: SkillsView
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: AboutView
   },
   {
     path: '/experience',

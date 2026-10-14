@@ -15,19 +15,14 @@ const submitForm = () => {
 <template>
   <section
       id="contact"
-      class="contact-section section"
+      class="form-section section"
   >
     <div class="center">
+      <h3>Enter a few lines — we’ll take it from there</h3>
 
-      <div class="heading">
-        <p class="label">
-          Contact
-        </p>
-
-        <h2>
-          Let's work together
-        </h2>
-      </div>
+      <p>
+        Share a few details about your project so we can understand your needs and goals better.
+      </p>
 
       <form
           class="form"
@@ -53,12 +48,12 @@ const submitForm = () => {
 
         <button
             type="submit"
+            class="btn"
         >
           Надіслати
         </button>
 
       </form>
-
     </div>
   </section>
 </template>

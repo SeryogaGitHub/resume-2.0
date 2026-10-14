@@ -1,0 +1,13 @@
+.top-contact{
+  .items{
+    display: flex;
+
+    & > *{
+      flex: 1;
+    }
+  }
+
+  .image{
+    margin-left: 10vw;
+  }
+}
