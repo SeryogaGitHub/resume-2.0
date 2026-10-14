@@ -11,7 +11,7 @@ import Accordion from "@/components/Accordion.vue";
       <div class="wrap-accordion-list">
         <div class="left">
           <div class="image">
-            <img src="@img/section/faq-section/faq-section.jpg" alt="">
+            <img src="@img/index-page/faq-section/faq-section.jpg" alt="">
             <h3 class="mt-24">Still have questions?</h3>
           </div>
         </div>

@@ -1,0 +1,47 @@
+@use '@scss/variables' as *;
+
+.not-found {
+  .items{
+    display: flex;
+    flex-direction: column;
+
+    & > *{
+      max-width: 576px;
+    }
+  }
+
+  .top-image,
+  .bottom-image{
+    width: 30vw;
+    height: 16.146vw;
+    object-fit: cover;
+  }
+
+  .bottom-image{
+    align-self: flex-end;
+  }
+
+  .text{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    &:after,
+    &:before{
+      content: "";
+      width: 120vw;
+      left: 0;
+      position: absolute;
+      height: 1px;
+      background-color: rgba($black, 0.06);
+    }
+
+    &:after {
+      top: 40px;
+    }
+
+    &:before{
+      bottom: 40px;
+    }
+  }
+}

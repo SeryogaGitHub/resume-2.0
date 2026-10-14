@@ -5,7 +5,7 @@ const experience = [
   {
     id: 1,
     period: '08.2013 — 11.2013',
-    logo: 'section/experience-section/wua.png',
+    logo: 'index-page/experience-section/wua.png',
     position: 'Контент менеджер',
     company: 'wedding.ua',
     description: 'Роміщення контенту на порталі'
@@ -13,7 +13,7 @@ const experience = [
   {
     id: 2,
     period: '12.2013 — 2026',
-    logo: 'section/experience-section/freelancer.png',
+    logo: 'index-page/experience-section/freelancer.png',
     position: 'Frontend Developer',
     company: 'Freelance',
     description: 'Десятки проектів між основною заянятістю, верстка та розробка інтерактивних вебінтерфейсів.'
@@ -21,7 +21,7 @@ const experience = [
   {
     id: 3,
     period: '2015 — 2016',
-    logo: 'section/experience-section/meets.png',
+    logo: 'index-page/experience-section/meets.png',
     position: 'Frontend Developer',
     company: 'meets.com',
     description: 'Адаптивна верстка та JavaScript-розробка, портал знайомств'
@@ -29,7 +29,7 @@ const experience = [
   {
     id: 4,
     period: '02.2016 — 12.2016',
-    logo: 'section/experience-section/zcode.svg',
+    logo: 'index-page/experience-section/zcode.svg',
     position: 'Frontend Developer',
     company: 'ZR code',
     description: 'Робота над сайтом компанії, декілька супутніх проетів.'
@@ -37,7 +37,7 @@ const experience = [
   {
     id: 5,
     period: '2017 — 09.2017',
-    logo: 'section/experience-section/ss.svg',
+    logo: 'index-page/experience-section/ss.svg',
     position: 'Frontend Developer',
     company: 'Syntech software',
     description: 'Робота над сайтом компанії, декілька супутніх проетів.'
@@ -45,7 +45,7 @@ const experience = [
   {
     id: 6,
     period: '11.2018 — 09.2026',
-    logo: 'section/experience-section/web-t.jpeg',
+    logo: 'index-page/experience-section/web-t.jpeg',
     position: 'Frontend Developer',
     company: 'Web-t',
     description: 'Проекти топ компаній України, Світу, різного маштабу'

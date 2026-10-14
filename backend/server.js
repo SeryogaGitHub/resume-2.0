@@ -20,7 +20,7 @@ const projects = [
       'SCSS',
       'Node.js'
     ],
-    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-1.jpg',
+    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-1.jpg',
     url: '#'
   },
 
@@ -35,7 +35,7 @@ const projects = [
       'SCSS',
       'Vite'
     ],
-    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-2.jpg',
+    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-2.jpg',
     url: '#'
   },
 
@@ -50,7 +50,7 @@ const projects = [
       'REST API',
       'MySQL'
     ],
-    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-3.jpg',
+    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-3.jpg',
     url: '#'
   },
 
@@ -65,7 +65,7 @@ const projects = [
       'SCSS',
       'Node.js'
     ],
-    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-4.jpg',
+    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-4.jpg',
     url: '#'
   },
 
@@ -80,7 +80,7 @@ const projects = [
       'SCSS',
       'Vite'
     ],
-    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-1.jpg',
+    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-1.jpg',
     url: '#'
   },
 
@@ -95,7 +95,7 @@ const projects = [
       'REST API',
       'MySQL'
     ],
-    image: '/resume-2.0/src/assets/image/section/projects-section/projects-section-2.jpg',
+    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-2.jpg',
     url: '#'
   }
 ];

@@ -1,26 +1,49 @@
+<script setup>
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import topImage from '@/assets/image/not-found-page/top-image.jpg';
+import bottomImage from '@/assets/image/not-found-page/bottom-image.jpg';
+</script>
 <template>
-  <section class="not-found section">
-    <div class="center">
+  <div class="page not-found">
+    <Header />
+    <main class="main-content">
+      <section class="section">
+        <div class="center">
+          <div class="items">
+            <div class="top-image">
+              <img src="@img/not-found-page/top-image.jpg" alt="">
+            </div>
 
-      <p class="label">
-        404
-      </p>
+            <div class="text section">
+              <h1 class="h3">
+                404. Сторінку не знайдено!
+              </h1>
 
-      <h1>
-        Page not found
-      </h1>
+              <p>
+                Цієї сторінки більше не існує, але ваш час — цінний.
+              </p>
 
-      <p class="description">
-        Сторінку, яку ви шукаєте, не знайдено.
-      </p>
+              <p>
+                Дозвольте допомогти вам знайти те, що ви насправді шукали: можливо, створити проєкт, мої послуги або спосіб зв’язатися з зімною.
+              </p>
 
-      <RouterLink
-          to="/"
-          class="button"
-      >
-        На головну
-      </RouterLink>
+              <RouterLink
+                  to="/"
+                  class="btn"
+              >
+                На головну
+              </RouterLink>
+            </div>
 
-    </div>
-  </section>
+            <div class="bottom-image">
+              <img src="@img/not-found-page/bottom-image.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </div>
+
 </template>
