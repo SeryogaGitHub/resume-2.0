@@ -41,13 +41,6 @@ const selectedProject = ref(null);
     <Header />
 
     <main class="main-content">
-      <p v-if="loading">Завантаження проєктів...</p>
-
-      <p v-else-if="error">
-        {{ error }}
-      </p>
-
-
       <TopSection />
       <WhoIAm />
       <ExperienceSection />
@@ -60,6 +53,8 @@ const selectedProject = ref(null);
       <ProjectsSection
           v-else
           :projects="projects"
+          :loading
+          :error
           @select-project="selectedProject = $event"
       />
       <FAQSection />
