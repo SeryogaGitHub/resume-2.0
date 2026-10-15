@@ -1,23 +1,21 @@
-import axios from 'axios';
+const API_URL = 'http://localhost:3000/api/projects';
 
-const API_URL = 'http://localhost:3000/api/products';
+export async function getProjects() {
+  const response = await fetch(API_URL);
 
-export const getProducts = () => {
-  return axios.get(API_URL);
-};
+  if (!response.ok) {
+    throw new Error('Не вдалося завантажити проєкти');
+  }
 
-export const getProduct = (id) => {
-  return axios.get(`${API_URL}/${id}`);
-};
+  return await response.json();
+}
 
-export const createProduct = (data) => {
-  return axios.post(API_URL, data);
-};
+export async function getProjectById(id) {
+  const response = await fetch(`${API_URL}/${id}`);
 
-export const updateProduct = (id, data) => {
-  return axios.put(`${API_URL}/${id}`, data);
-};
+  if (!response.ok) {
+    throw new Error('Не вдалося завантажити проєкт');
+  }
 
-export const deleteProduct = (id) => {
-  return axios.delete(`${API_URL}/${id}`);
-};
+  return await response.json();
+}

@@ -6,20 +6,34 @@ import SkillsSection from "@/components/home/SkillsSection.vue";
 import ExperienceSection from "@/components/home/ExperienceSection.vue";
 import Footer from "@/components/Footer.vue";
 import WhoIAm from "@/components/home/WhoIAm.vue";
-import { projects } from '@/data/projects';
 import FAQSection from "@/components/home/FAQSection.vue";
 import ProjectView from "@/views/ProjectView.vue";
-import {ref} from "vue";
+import {ref, onMounted} from "vue";
+import { getProjects } from '@/api/products.js';
+
+const projects = ref([]);
+const loading = ref(false);
+const error = ref('');
+
+async function loadProjects() {
+  loading.value = true;
+  error.value = '';
+
+  try {
+    projects.value = await getProjects();
+  } catch (err) {
+    error.value = 'Не вдалося завантажити проєкти.';
+    console.error(err);
+  } finally {
+    loading.value = false;
+  }
+}
+
+onMounted(() => {
+  loadProjects();
+});
 
 const selectedProject = ref(null);
-
-const showAllProjects = () => {
-  console.log('Показати всі проєкти');
-};
-
-const selectProject = (project) => {
-  console.log('Обраний проєкт:', project);
-};
 </script>
 
 <template>
@@ -27,6 +41,13 @@ const selectProject = (project) => {
     <Header />
 
     <main class="main-content">
+      <p v-if="loading">Завантаження проєктів...</p>
+
+      <p v-else-if="error">
+        {{ error }}
+      </p>
+
+
       <TopSection />
       <WhoIAm />
       <ExperienceSection />

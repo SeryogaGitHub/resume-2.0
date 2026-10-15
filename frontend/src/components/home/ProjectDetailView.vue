@@ -1,15 +1,36 @@
 <script setup>
-import {computed} from 'vue';
 import {useRoute, RouterLink} from 'vue-router';
-import {projects} from '@/data/projects.js';
+import { ref, watch } from 'vue';
+import { getProjectById } from '@/api/products.js';
 
 const route = useRoute();
 
-const project = computed(() => {
-  return projects.find(item => {
-    return String(item.id) === String(route.params.id);
-  });
-});
+const project = ref(null);
+const loading = ref(false);
+const error = ref('');
+
+async function loadProject(id) {
+  loading.value = true;
+  error.value = '';
+  project.value = null;
+
+  try {
+    project.value = await getProjectById(id);
+  } catch (err) {
+    error.value = 'Проєкт не знайдено або не вдалося завантажити.';
+    console.error(err);
+  } finally {
+    loading.value = false;
+  }
+}
+
+watch(
+    () => route.params.id,
+    (id) => {
+      loadProject(id);
+    },
+    { immediate: true }
+);
 </script>
 
 <template>
@@ -22,6 +43,15 @@ const project = computed(() => {
         >
           ← Усі проєкти
         </RouterLink>
+
+        <p v-if="loading">
+          Завантаження проєкту...
+        </p>
+
+        <section v-else-if="error">
+          <h1>Не вдалося завантажити проєкт</h1>
+          <p>{{ error }}</p>
+        </section>
 
         <template v-if="project">
           <header class="project-detail-header">
@@ -76,11 +106,6 @@ const project = computed(() => {
             Детальніше про проєкт →
           </RouterLink>
         </template>
-
-        <section v-else>
-          <h1>Проєкт не знайдено</h1>
-          <p>Перевір адресу або повернися до портфоліо.</p>
-        </section>
       </div>
     </section>
   </main>
