@@ -11,6 +11,7 @@ export const projects = [
             'Node.js'
         ],
         image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-1.jpg',
+        imageBig: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-big-1.jpg',
         url: '#'
     },
 
@@ -26,6 +27,7 @@ export const projects = [
             'Vite'
         ],
         image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-2.jpg',
+        imageBig: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-big-1.jpg',
         url: '#'
     },
 
@@ -41,6 +43,7 @@ export const projects = [
             'MySQL'
         ],
         image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-3.jpg',
+        imageBig: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-big-1.jpg',
         url: '#'
     },
 
@@ -56,6 +59,7 @@ export const projects = [
             'Node.js'
         ],
         image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-4.jpg',
+        imageBig: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-big-1.jpg',
         url: '#'
     },
 
@@ -71,6 +75,7 @@ export const projects = [
             'Vite'
         ],
         image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-1.jpg',
+        imageBig: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-big-1.jpg',
         url: '#'
     },
 
@@ -86,6 +91,7 @@ export const projects = [
             'MySQL'
         ],
         image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-2.jpg',
+        imageBig: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-big-1.jpg',
         url: '#'
     }
 ];

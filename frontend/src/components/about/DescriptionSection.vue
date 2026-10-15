@@ -6,6 +6,7 @@
   <section class="section description-section">
     <div class="center">
       <table>
+        <tbody>
         <tr>
           <td>Вид зайнятості:</td>
           <td>повна</td>
@@ -31,16 +32,11 @@
           <td>Богунський район,вулиця Перемоги</td>
         </tr>
 
-
         <tr>
           <td>Готовий працювати:</td>
           <td>Інші країни, Дистанційно</td>
         </tr>
-
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
+        </tbody>
       </table>
 
       <p>
