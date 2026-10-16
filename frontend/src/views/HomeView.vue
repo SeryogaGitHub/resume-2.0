@@ -37,7 +37,7 @@ const selectedProject = ref(null);
 </script>
 
 <template>
-  <div class="home page">
+  <div class="page home">
     <Header />
 
     <main class="main-content">

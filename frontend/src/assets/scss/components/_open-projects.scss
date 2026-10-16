@@ -1,0 +1,28 @@
+@use '@scss/variables' as *;
+
+.open-projects{
+  .items{
+    border-top: $border;
+    border-bottom: $border;
+    padding: 20px 0;
+    display: flex;
+    grid-gap: 10px;
+  }
+
+  .btn{
+    margin-top: 48px;
+  }
+
+  .description{
+    padding: 20px 10vw 20px 0;
+    max-width: 640px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+  }
+
+  .small{
+    height: 400px;
+    object-fit: cover;
+  }
+}

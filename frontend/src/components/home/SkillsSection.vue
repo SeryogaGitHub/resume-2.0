@@ -6,7 +6,8 @@ const skills = [
   {
     id: 1,
     name: 'HTML / CSS',
-    experience: '13+ років'
+    experience: '13+ років',
+    description: "Почав вивчати в 2009 році, коли ще популярні були лінії по яким рухається текст, і ве була в атрибутах 'font'"
   },
   {
     id: 2,
@@ -43,7 +44,7 @@ const skills = [
   >
     <div class="center">
       <h2>
-        Technologies I Work With
+        Технології, з якими я працюю
       </h2>
 
       <BaseList :items="skills">

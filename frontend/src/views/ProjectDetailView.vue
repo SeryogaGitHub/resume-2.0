@@ -4,6 +4,7 @@ import {ref, watch} from 'vue';
 import {getProjectById} from '@/api/products.js';
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import OpenProjects from "@/components/OpenProjects.vue";
 
 const route = useRoute();
 
@@ -42,23 +43,9 @@ watch(
     <main class="page project-detail">
       <section class="section">
         <div class="center">
-          <RouterLink
-              :to="{ name: 'portfolio' }"
-              class="back-link"
-          >
-            ← Усі проєкти
-          </RouterLink>
-
           <p v-if="loading">
             Завантаження проєкту...
           </p>
-
-          <img
-              v-if="project.imageBig"
-              :src="project.imageBig"
-              :alt="project.title"
-              class="project-detail-image"
-          >
 
           <section v-else-if="error">
             <h1>Не вдалося завантажити проєкт</h1>
@@ -66,50 +53,56 @@ watch(
           </section>
 
           <template v-if="project">
-            <header class="project-detail-header">
+            <h1>{{ project.title }}</h1>
 
-
-              <p>{{ project.year }}</p>
-
-              <h1>{{ project.title }}</h1>
-
-              <p>
-                {{ project.description }}
-              </p>
+            <header class="top-image" :style="{ backgroundImage: `url(${project.imageBig})` }">
+              <RouterLink
+                  :to="{ name: 'portfolio' }"
+                  class="back-link"
+              >
+                ← Усі проєкти
+              </RouterLink>
             </header>
 
+            <div class="description-detail section">
+              <div class="description">
+                <h3>Огляд проєкту</h3>
 
+                <p>
+                  {{ project.description }}
+                </p>
+              </div>
 
-            <section class="project-detail-description">
-              <h2>Про проєкт</h2>
-              <p>{{ project.description }}</p>
-            </section>
+              <div class="detail">
+                <div>
+                  <h3>Рік:</h3>
+                  <p>{{ project.year }}</p>
+                </div>
 
-            <section class="project-detail-technologies">
-              <h2>Технології</h2>
+                <div>
+                  <h3>Роль:</h3>
+                  <p>UX/UI Design, Web Strategy</p>
+                </div>
 
-              <ul>
-                <li
-                    v-for="technology in project.technologies"
-                    :key="technology"
-                >
-                  {{ technology }}
-                </li>
-              </ul>
-            </section>
+                <div>
+                  <h3>Технології:</h3>
 
-            <RouterLink
-                :to="{
-              name: 'project-detail',
-              params: { id: project.id }
-            }"
-                class="portfolio-link"
-            >
-              Детальніше про проєкт →
-            </RouterLink>
+                  <ul class="list">
+                    <li
+                        v-for="technology in project.technologies"
+                        :key="technology"
+                    >
+                      {{ technology }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </template>
         </div>
       </section>
+
+      <OpenProjects />
     </main>
 
     <Footer/>

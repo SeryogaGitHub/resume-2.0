@@ -1,9 +1,11 @@
 <script setup>
+import Network from "@/components/Network.vue";
+
 const title = 'Front-end, Senior HTML-верстальник, Junior(NodeJS, ReactJS, VueJS)';
 
 const description = `
 Роглядаю роботу віддалено на постійній основі. Створюю сучасні, швидкі та зручні вебінтерфейси
-з використанням. Готовий до переїзду в країну, при потребі вчити мову.
+з використанням. Готовий до переїзду в країну, при потребі вчити мову. Технологія вже не має значення, з якою потрібно, з тією працюю.
 `;
 </script>
 
@@ -49,11 +51,7 @@ const description = `
     </div>
 
     <div class="center mt-60">
-      <div class="network">
-        <a href="https://t.me/serg_ua_zt">Telegram</a>
-        <a href="https://wa.me/+380961225761">WhatsApp</a>
-        <a href="https://www.linkedin.com/in/serhii-lypianets-69844a195/">linkedin</a>
-      </div>
+      <Network />
     </div>
   </section>
 </template>

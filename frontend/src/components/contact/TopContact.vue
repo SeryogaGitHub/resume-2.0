@@ -1,5 +1,6 @@
 <script setup>
 
+import Network from "@/components/Network.vue";
 </script>
 
 <template>
@@ -9,29 +10,15 @@
       <div class="text">
         <h1>Контакти</h1>
         
-        <h3>development agency - Based in London, Uk</h3>
+        <h3>Місцезнаходежнння - Житомир, Україна</h3>
         
         <p>
-          How we move quickly, stay sharp, and still deliver thoughtful design every time.
+          Працюємо оперативно, зберігаю гостроту мислення і щоразу створюємо продуманий продукт.
         </p>
 
-        <div><a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a></div>
-
-        <h4 class="mt-24">Як зв'язатися</h4>
-
-        <ul class="network mt-24">
-          <li>
-            <a href="#">LinkedIn</a>
-          </li>
-
-          <li>
-            <a href="#">Telegram</a>
-          </li>
-
-          <li>
-            <a href="#">WatsApp</a>
-          </li>
-        </ul>
+        <div class="mt-24"><a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a></div>
+        <div class="mt-24"><a href="tel:+380961225761">(+380) 96 122 57 61</a></div>
+        <Network class="mt-24" />
       </div>
       
       <div class="image">

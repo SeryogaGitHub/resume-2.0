@@ -18,11 +18,12 @@ const submitForm = () => {
       class="form-section section"
   >
     <div class="center">
-      <h3>Enter a few lines — we’ll take it from there</h3>
+      <h3>Напишіть кілька рядків — а далі я зв'яжус з вама.</h3>
 
       <p>
-        Share a few details about your project so we can understand your needs and goals better.
+        Поділіться деталями про ваші проєкти, щоб ми я міг краще зрозуміти ваші потреби та цілі.
       </p>
+
 
       <form
           class="form"

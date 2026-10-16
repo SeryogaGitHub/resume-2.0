@@ -1,4 +1,11 @@
+@use '@scss/variables' as *;
+
 .top-contact{
+  a{
+    color: $red;
+    font-weight: 500;
+  }
+
   .items{
     display: flex;
 

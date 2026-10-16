@@ -23,11 +23,7 @@
   align-items: start;
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
-
-  & > * {
-    margin: 0 15px;
-  }
+  grid-gap: 32px;
 }
 
 .align-center {

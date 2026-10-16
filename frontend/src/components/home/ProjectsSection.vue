@@ -32,7 +32,7 @@ const props = defineProps({
           <div class="text-btn item">
             <div class="text">
               <p>
-                Це тільки Декілька проектів ~7%:
+                Усі проекти - Це тільки Декілька проектів ~7%:
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const props = defineProps({
           <div class="text-btn item">
             <div class="text">
               <p>
-                Це тільки Декілька проектів ~7%:
+                Усі проекти - Це тільки Декілька проектів ~7%:
               </p>
             </div>
 
