@@ -1,4 +1,5 @@
 @use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
 
 .main-header {
   position: sticky;
@@ -16,16 +17,32 @@
 
   .logo {
     font-size: 24px;
-    font-weight: 700;
+    color: $brown;
+    margin-bottom: 0;
   }
 
   .main-nav {
     display: flex;
     align-items: center;
     gap: 32px;
+    transition: .3s;
+
+    @include m(1024px){
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: $white;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 4.4vw;
+      font-weight: 700;
+      opacity: 0;
+      visibility: hidden;
+    }
 
     a {
-      transition: .3s;
       display: flex;
       align-items: center;
       position: relative;
@@ -55,16 +72,15 @@
       }
     }
   }
+}
 
-  .button {
-    padding: 12px 20px;
-    border: 1px solid $black;
-    border-radius: 4px;
-    font-size: 14px;
-
-    &:hover {
-      color: $white;
-      background: $black;
+body.open-menu{
+  .main-header{
+    .main-nav{
+      @include m(1024px){
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }

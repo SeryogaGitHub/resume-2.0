@@ -10,14 +10,14 @@ import Network from "@/components/Network.vue";
       <div class="text">
         <h1>Контакти</h1>
         
-        <h3>Місцезнаходежнння - Житомир, Україна</h3>
+        <h4 class="title">Місцезнаходежнння - Житомир, Україна</h4>
         
         <p>
           Працюємо оперативно, зберігаю гостроту мислення і щоразу створюємо продуманий продукт.
         </p>
 
-        <div class="mt-24"><a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a></div>
-        <div class="mt-24"><a href="tel:+380961225761">(+380) 96 122 57 61</a></div>
+        <div class="mt-24">Email: <a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a></div>
+        <div class="mt-24">Phone: <a href="tel:+380961225761">+380 96 122 57 61</a></div>
         <Network class="mt-24" />
       </div>
       

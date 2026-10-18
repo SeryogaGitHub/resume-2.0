@@ -1,29 +1,44 @@
 @use '@scss/variables' as *;
 
 .skills-section {
+  h4{
+    color: $red;
+  }
+
+  h5{
+    margin-bottom: 0;
+  }
+
   .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     border-top: 1px solid $border-color;
     border-left: 1px solid $border-color;
+
+    .detail{
+      display: none;
+    }
+  }
+
+  .skill-detail{
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 24px;
   }
 
   .skill {
-    min-height: 120px;
-    padding: 24px;
-
-    border-right: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-
+    min-height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    transition: background .3s;
   }
 
-  h4{
-    color: $red;
+  &.full-detail{
+    .detail{
+      display: block;
+      border-top: 1px solid $border-color;
+      padding-top: 24px;
+    }
   }
 }

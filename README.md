@@ -1,5 +1,12 @@
 # resume-2.0
 
+# node version 
+v24.21.0
+
+# breakpoint
+
+1024, 768, 560, 460, 359
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup

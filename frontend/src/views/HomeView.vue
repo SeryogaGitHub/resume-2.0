@@ -10,6 +10,7 @@ import FAQSection from "@/components/home/FAQSection.vue";
 import ProjectView from "@/views/ProjectView.vue";
 import {ref, onMounted} from "vue";
 import { getProjects } from '@/api/products.js';
+import { skills } from '@/data/skills.js';
 
 const projects = ref([]);
 const loading = ref(false);
@@ -58,7 +59,7 @@ const selectedProject = ref(null);
           @select-project="selectedProject = $event"
       />
       <FAQSection />
-      <SkillsSection />
+      <SkillsSection :skills />
     </main>
 
     <Footer />

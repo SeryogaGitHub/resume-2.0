@@ -3,6 +3,7 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import ProjectCard from "@/components/home/ProjectCard.vue";
 import { projects } from '@/data/projects';
+import OpenProjects from "@/components/OpenProjects.vue";
 </script>
 
 <template>
@@ -23,6 +24,8 @@ import { projects } from '@/data/projects';
           </div>
         </div>
       </section>
+
+      <OpenProjects />
     </main>
 
     <Footer />

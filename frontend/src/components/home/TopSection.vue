@@ -1,7 +1,7 @@
 <script setup>
 import Network from "@/components/Network.vue";
 
-const title = 'Front-end, Senior HTML-верстальник, Junior(NodeJS, ReactJS, VueJS)';
+const title = 'Front-end, Web Developer, Junior(NodeJS, ReactJS, VueJS)';
 
 const description = `
 Роглядаю роботу віддалено на постійній основі. Створюю сучасні, швидкі та зручні вебінтерфейси
@@ -10,11 +10,11 @@ const description = `
 </script>
 
 <template>
-  <section class="top-section">
+  <section class="top-section section pb-0">
     <div class="center m-auto">
       <div class="flex align-center">
-        <div class="text max-w-600">
-          <p class="position">
+        <div class="text max-w-700">
+          <p class="h3 position">
             {{ title }}
           </p>
 
@@ -26,7 +26,7 @@ const description = `
             {{ description }}
           </p>
 
-          <div class="btns mt-24">
+          <div class="btns mt-60">
             <a
                 href="#portfolio"
                 class="btn"

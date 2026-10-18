@@ -1,4 +1,10 @@
+@use '@scss/variables' as *;
+
 .form-section{
   max-width: 600px;
   margin: auto;
+
+  .btn{
+    margin-top: 24px;
+  }
 }

@@ -1,0 +1,78 @@
+@use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
+
+body.open-menu, .btn-menu.open{
+  &, .btn-menu{
+    &:hover{
+      span{
+        &:nth-child(2) {
+          transform: rotate(50deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-50deg);
+        }
+      }
+    }
+
+    span{
+      &:nth-child(1) {
+        top: 16px;
+        width: 0;
+        left: 50%;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        top: 16px;
+        width: 0;
+        left: 50%;
+      }
+    }
+  }
+}
+
+.btn-menu{
+  width: 28px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: none;
+
+  @include m(1024px){
+    display: block;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $red;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2), &:nth-child(3) {
+      top: 8px;
+    }
+
+    &:nth-child(4) {
+      top: 16px;
+    }
+  }
+}

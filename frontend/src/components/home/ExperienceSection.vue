@@ -154,9 +154,9 @@ const experience = [
                 <div>
                   {{ item.period }}
 
-                  <h3>
+                  <h4>
                     {{ item.position }}
-                  </h3>
+                  </h4>
 
                   <p class="company">
                     {{ item.company }}

@@ -1,5 +1,6 @@
 <script setup>
 import { reactive } from 'vue';
+import BaseButton from "@/components/BaseButton.vue";
 
 const form = reactive({
   name: '',
@@ -33,27 +34,23 @@ const submitForm = () => {
         <input
             v-model="form.name"
             type="text"
-            placeholder="Ваше ім'я"
+            placeholder="Ваше ім'я:"
         >
 
         <input
             v-model="form.email"
             type="email"
-            placeholder="Ваш email"
+            placeholder="Ваш email:"
         >
 
         <textarea
             v-model="form.message"
-            placeholder="Ваше повідомлення"
+            placeholder="Ваше повідомлення:"
         ></textarea>
 
-        <button
-            type="submit"
-            class="btn"
-        >
-          Надіслати
-        </button>
-
+        <div class="wrap-button">
+          <BaseButton type="button" class="btn">Надіслати</BaseButton>
+        </div>
       </form>
     </div>
   </section>

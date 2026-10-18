@@ -1,4 +1,17 @@
 <script setup>
+
+import { ref, watch, onUnmounted } from 'vue';
+
+const btnMenu = ref(false);
+
+watch(btnMenu, (value) => {
+  document.body.classList.toggle('open-menu', value);
+});
+
+onUnmounted(() => {
+  document.body.classList.remove('open-menu');
+});
+
 const navigation = [
   {
     title: 'Головна',
@@ -33,7 +46,7 @@ const navigation = [
 
       <RouterLink
           to="/"
-          class="logo"
+          class="logo h3"
       >
         SL
       </RouterLink>
@@ -48,6 +61,16 @@ const navigation = [
         </RouterLink>
       </nav>
 
+      <button
+          class="btn-menu"
+          :class="{ open: btnMenu }"
+          @click="btnMenu = !btnMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 </template>
