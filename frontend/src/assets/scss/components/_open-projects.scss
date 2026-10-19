@@ -1,4 +1,5 @@
 @use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
 
 .open-projects{
   .items{
@@ -19,10 +20,20 @@
     min-height: 400px;
     display: flex;
     align-items: center;
+
+    @include m(1024px){
+      padding: 20px 20px 20px 0;
+      aspect-ratio: 9 / 10;
+    }
   }
 
   .small{
     height: 400px;
     object-fit: cover;
+
+    @include m(1024px){
+      height: initial;
+      aspect-ratio: 9 / 10;
+    }
   }
 }
