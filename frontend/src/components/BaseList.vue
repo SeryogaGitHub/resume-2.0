@@ -12,6 +12,7 @@ defineProps({
     <li
         v-for="item in items"
         :key="item.id"
+        class="item"
     >
       <slot :item="item" />
     </li>

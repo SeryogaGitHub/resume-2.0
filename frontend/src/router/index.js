@@ -8,6 +8,8 @@ import ContactView from '@/views/ContactView.vue';
 import NotFoundView from "@/views/NotFoundView.vue";
 import ProjectDetailView from "@/views/ProjectDetailView.vue";
 import AboutView from "@/views/AboutView.vue";
+import ProjectsAdminView from "@/views/ProjectsAdminView.vue";
+import BlogView from "@/views/BlogView.vue";
 
 const routes = [
   {
@@ -36,6 +38,11 @@ const routes = [
     component: AboutView
   },
   {
+    path: '/blog',
+    name: 'blog',
+    component: BlogView
+  },
+  {
     path: '/experience',
     name: 'experience',
     component: ExperienceView
@@ -49,6 +56,11 @@ const routes = [
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: NotFoundView
+  },
+  {
+    path: '/admin/projects',
+    name: 'projects-admin',
+    component: ProjectsAdminView
   }
 ];
 

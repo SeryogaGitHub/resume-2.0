@@ -1,4 +1,5 @@
 @use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
 
 .faq-section{
   .wrap-accordion-list{
@@ -6,17 +7,47 @@
     border-top: $border;
     border-bottom: $border;
     align-items: center;
+
+    @include m(560px){
+      flex-direction: column;
+    }
   }
 
   .accordion-list{
     flex: 1;
+
+    .accordion{
+      &:last-child{
+        border-bottom: none;
+      }
+    }
   }
 
   .left{
     padding: 2vw 8vw;
+
+    @include m(1024px){
+      padding: 2vw 2vw 2vw 0;
+    }
+
+    @include m(560px){
+      padding: 20px;
+    }
   }
 
   .image{
     max-width: 340px;
+
+    @include m(1024px){
+      max-width: 260px;
+    }
+
+    @include m(768px){
+      max-width: 140px;
+    }
+
+    @include m(560px){
+      max-width: 260px;
+    }
   }
 }

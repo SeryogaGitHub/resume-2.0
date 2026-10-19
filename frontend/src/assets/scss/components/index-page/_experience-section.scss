@@ -1,6 +1,11 @@
 @use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
 
 .experience-section{
+  .title{
+    margin-bottom: 0;
+  }
+
   .text-list, .list, .list .item{
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +13,16 @@
     & > *{
       flex: 1 1 50%;
     }
+  }
+
+  .list{
+    @include m(1024px){
+      border-bottom: $border;
+    }
+  }
+
+  .description{
+    margin-top: 12px;
   }
 
   .logo-text{
@@ -29,11 +44,24 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 1 1 36%;
+
+    @include m(1024px){
+      padding: 30px 20px;
+    }
   }
 
   .text-list{
     border-top: $border;
     border-bottom: $border;
+
+    @include m(1024px){
+      flex-direction: column-reverse;
+      margin: 0 -20px;
+    }
+  }
+
+  .company{
+    color: $red;
   }
 
   .item{
@@ -55,6 +83,12 @@
       border-left: $border;
       border-bottom: $border;
       padding: 12px;
+    }
+
+    .detail + *{
+      @include m(560px){
+        display: none;
+      }
     }
   }
 }

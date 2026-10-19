@@ -16,6 +16,11 @@
     border-top: 1px solid $border-color;
     border-left: 1px solid $border-color;
 
+    .item{
+      display: flex;
+      flex-direction: column;
+    }
+
     .detail{
       display: none;
     }
@@ -25,6 +30,7 @@
     border-right: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
     padding: 24px;
+    height: 100%;
   }
 
   .skill {

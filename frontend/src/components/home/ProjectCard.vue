@@ -24,7 +24,7 @@ defineProps({
     >
 
     <div class="flex mt-20">
-      <p>{{ project.title }}</p>
+      <h5>{{ project.title }}</h5>
       <p>{{ project.year }}</p>
     </div>
   </RouterLink>

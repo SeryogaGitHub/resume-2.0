@@ -56,6 +56,10 @@ const isOpen = ref(false);
     text-align: left;
     font: inherit;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+      padding: 10px 0;
+    }
   }
 
   &__icon {

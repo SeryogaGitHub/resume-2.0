@@ -12,7 +12,7 @@ import Accordion from "@/components/Accordion.vue";
         <div class="left">
           <div class="image">
             <img src="@img/index-page/faq-section/faq-section.jpg" alt="">
-            <h4 class="mt-24">Залишилися запитання?</h4>
+            <h4 class="mt-24 mb-0">Залишилися запитання?</h4>
           </div>
         </div>
 

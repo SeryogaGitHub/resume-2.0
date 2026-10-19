@@ -154,7 +154,7 @@ const experience = [
                 <div>
                   {{ item.period }}
 
-                  <h4>
+                  <h4 class="title">
                     {{ item.position }}
                   </h4>
 

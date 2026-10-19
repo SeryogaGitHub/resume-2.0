@@ -19,3 +19,46 @@ export async function getProjectById(id) {
 
   return await response.json();
 }
+
+export async function createProject(project) {
+  const response = await fetch(API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(project)
+  });
+
+  if (!response.ok) {
+    throw new Error('Не вдалося створити проєкт');
+  }
+
+  return response.json();
+}
+
+export async function deleteProject(id) {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: 'DELETE'
+  });
+
+  if (!response.ok) {
+    throw new Error('Не вдалося видалити проєкт');
+  }
+}
+
+
+export async function updateProject(id, project) {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(project)
+  });
+
+  if (!response.ok) {
+    throw new Error('Не вдалося оновити проєкт');
+  }
+
+  return response.json();
+}

@@ -1,14 +1,48 @@
+@use '@scss/mixins/media-queries' as *;
+
 .who-i-am{
+  .flex{
+    @include m(768px){
+      flex-direction: column;
+    }
+  }
+
   .text{
     max-width: 520px;
     padding: 60px;
+
+    @include m(1920px){
+      padding: 3.125vw;
+    }
+
+    @include m(768px){
+      padding: 20px 0 0 0;
+    }
   }
 
   .image-left{
     max-width: 480px;
+
+    @include m(768px){
+      max-width: initial;
+      width: 100%;
+    }
+
+    img{
+      @include m(768px){
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+        object-position: center 40%;
+      }
+    }
   }
 
   .image-right{
     max-width: 280px;
+
+    @include m(1024px){
+      display: none;
+    }
   }
 }
