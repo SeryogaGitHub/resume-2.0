@@ -1,5 +1,11 @@
 <script setup>
-import BaseButton from "@/components/BaseButton.vue";
+import defaultImage from '@img/default.svg';
+
+const setDefaultImage = (event) => {
+  event.target.onerror = null;
+  event.target.src = defaultImage;
+  event.target.classList.add('rotate');
+};
 
 const experience = [
   {
@@ -148,7 +154,11 @@ const experience = [
             <div class="detail">
               <div class="logo-text">
                 <div class="logo">
-                  <img :src="`src/assets/image/${item.logo}`" :alt="item.company">
+                  <img
+                      :src="`src/assests/image/${item.logo}`"
+                      :alt="item.company"
+                      @error="setDefaultImage"
+                  >
                 </div>
 
                 <div>
