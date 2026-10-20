@@ -24,14 +24,69 @@ try {
   console.error(error.message);
 }
 
+app.get('/api/db-check', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT NOW() AS current_time');
+
+    res.json({
+      connected: true,
+      time: result.rows[0].current_time
+    });
+  } catch (error) {
+    console.error('Помилка PostgreSQL:', error.message);
+
+    res.status(500).json({
+      connected: false,
+      message: 'Не вдалося підключитися до бази даних'
+    });
+  }
+});
+
 app.get('/', (req, res) => {
   res.json({ message: 'Backend працює!' });
 });
 
 // READ: усі проєкти
-app.get('/api/projects', (req, res) => {
-  res.json(projects);
+
+app.get('/api/projects', async (req, res) => {
+  try {
+    const result = await pool.query(`
+      SELECT
+        p.id,
+        p.title,
+        c.name AS category,
+        p.year,
+        p.description,
+        p.short_description AS "shortDescription",
+        p.image,
+        p.logo,
+        p.url,
+        COALESCE(
+          ARRAY_AGG(t.name ORDER BY t.name)
+            FILTER (WHERE t.name IS NOT NULL),
+          ARRAY[]::VARCHAR[]
+        ) AS technologies
+      FROM projects p
+      LEFT JOIN categories c
+        ON p.category_id = c.id
+      LEFT JOIN project_technologies pt
+        ON p.id = pt.project_id
+      LEFT JOIN technologies t
+        ON pt.technology_id = t.id
+      GROUP BY p.id, c.name
+      ORDER BY p.id;
+    `);
+
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Помилка отримання проєктів:', error.message);
+
+    res.status(500).json({
+      message: 'Не вдалося отримати проєкти'
+    });
+  }
 });
+
 
 // READ: один проєкт
 app.get('/api/projects/:id', (req, res) => {
