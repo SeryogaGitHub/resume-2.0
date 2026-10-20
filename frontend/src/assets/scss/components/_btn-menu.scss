@@ -2,7 +2,7 @@
 @use '@scss/mixins/media-queries' as *;
 
 body.open-menu, .btn-menu.open{
-  &, .btn-menu{
+  .btn-menu{
     &:hover{
       span{
         &:nth-child(2) {

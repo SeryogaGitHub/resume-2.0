@@ -16,6 +16,19 @@
   white-space: nowrap;
   min-width: 190px;
 
+  svg, img{
+    position: relative;
+    transition: .3s;
+  }
+
+  &:hover{
+    background: rgba($black, 0.8);
+
+    svg, img{
+      right: -4px;
+    }
+  }
+
   @include m(1024px){
     margin-top: 30px;
   }
@@ -26,9 +39,22 @@
     }
   }
 
+  &, path{
+    transition: .3s;
+  }
+
   &.white{
     border: 1px solid rgba($black, 0.16);
     background: $white;
     color: $brown;
+
+    &:hover{
+      background: rgba($black, 0.8);
+      color: $white;
+
+      path{
+        stroke: $white;
+      }
+    }
   }
 }

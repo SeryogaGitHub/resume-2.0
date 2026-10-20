@@ -34,6 +34,10 @@ const navigation = [
     to: '/experience'
   },
   {
+    title: 'Блог',
+    to: '/blog'
+  },
+  {
     title: 'Контакти',
     to: '/contact'
   }

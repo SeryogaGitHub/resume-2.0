@@ -12,10 +12,10 @@ import BaseButton from "@/components/BaseButton.vue";
         <div class="item">
           <div class="description"></div>
 
-          <img src="@img/open-projects/open-projects-1.jpg" class="small" alt="">
+          <img src="@img/open-projects/open-projects-1.jpg" alt="">
         </div>
 
-        <div class="item">
+        <div class="item big">
           <div class="description">
             <div>
               <p>Жодного візуального шуму чи типових шаблонів. Лише продуманий, індивідуальний дизайн, створений на основі вашої історії.</p>
@@ -27,7 +27,7 @@ import BaseButton from "@/components/BaseButton.vue";
                 <span>Розпочати співпрацю</span>
 
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.700237 0.700073C0.700237 0.700073 5.7002 4.38249 5.7002 5.70007C5.7002 7.01774 0.700195 10.7001 0.700195 10.7001" stroke="#847979" style="stroke:#847979;stroke:color(display-p3 0.5176 0.4745 0.4745);stroke-opacity:1;" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.700237 0.700073C0.700237 0.700073 5.7002 4.38249 5.7002 5.70007C5.7002 7.01774 0.700195 10.7001 0.700195 10.7001" stroke="#847979" style="stroke-opacity:1;" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </RouterLink>
             </div>
@@ -37,7 +37,9 @@ import BaseButton from "@/components/BaseButton.vue";
         </div>
 
         <div class="item">
-          <img src="@img/open-projects/open-projects-3.jpg" class="small" alt="">
+          <img src="@img/open-projects/open-projects-3.jpg" alt="">
+
+          <div class="description"></div>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ async function loadProjects() {
   try {
     projects.value = await getProjects();
   } catch (err) {
-    error.value = 'Не вдалося завантажити проєкти.';
+    error.value = 'Не вдалося завантажити проєкти. Технічні роботи.';
     console.error(err);
   } finally {
     loading.value = false;

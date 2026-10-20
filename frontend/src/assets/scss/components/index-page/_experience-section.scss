@@ -68,6 +68,10 @@
     flex: 1 1 100%;
 
     &:nth-child(even){
+      @include m(560px){
+        background: $white;
+      }
+
       .detail{
         order: 2;
       }

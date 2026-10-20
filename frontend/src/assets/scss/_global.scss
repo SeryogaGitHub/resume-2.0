@@ -45,6 +45,10 @@
   display: flex;
   width: 100%;
 
+  @include m(560px){
+    font-size: 12px;
+  }
+
   a{
     border: 1px solid $border-color;
     border-left: none;
@@ -56,6 +60,11 @@
 
     @include m(768px){
       padding: 10px 4px;
+    }
+
+    &:hover{
+      color: $red;
+      background: $white;
     }
 
     &:first-child{

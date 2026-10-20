@@ -8,10 +8,38 @@
     padding: 20px 0;
     display: flex;
     grid-gap: 10px;
+
+    @include m(768px){
+      justify-content: center;
+    }
   }
 
   .btn{
     margin-top: 48px;
+  }
+
+  .item{
+    width: 25%;
+
+    &:not(.big){
+      @include m(768px){
+        display: none;
+      }
+    }
+
+    img{
+      min-height: 400px;
+      object-fit: cover;
+    }
+
+    &.big{
+      width: 50%;
+
+      @include m(768px){
+        max-width: 600px;
+        width: initial;
+      }
+    }
   }
 
   .description{
@@ -23,17 +51,18 @@
 
     @include m(1024px){
       padding: 20px 20px 20px 0;
-      aspect-ratio: 9 / 10;
+    }
+
+    @include m(768px){
+      padding: 20px 0;
+      min-height: initial;
+      margin-bottom: 40px;
     }
   }
 
   .small{
-    height: 400px;
+    aspect-ratio: 9 / 10;
     object-fit: cover;
-
-    @include m(1024px){
-      height: initial;
-      aspect-ratio: 9 / 10;
-    }
+    object-position: center;
   }
 }
