@@ -12,7 +12,7 @@ import BaseButton from "@/components/BaseButton.vue";
         <div class="item">
           <div class="description"></div>
 
-          <img src="@img/open-projects/open-projects-1.jpg" alt="">
+          <img src="@img/open-projects/open-projects-1.jpg" loading="lazy" alt="">
         </div>
 
         <div class="item big">
@@ -33,11 +33,11 @@ import BaseButton from "@/components/BaseButton.vue";
             </div>
           </div>
 
-          <img src="@img/open-projects/open-projects-2.jpg" alt=""></img>
+          <img src="@img/open-projects/open-projects-2.jpg" loading="lazy" alt=""></img>
         </div>
 
         <div class="item">
-          <img src="@img/open-projects/open-projects-3.jpg" alt="">
+          <img src="@img/open-projects/open-projects-3.jpg" loading="lazy" alt="">
 
           <div class="description"></div>
         </div>

@@ -45,7 +45,7 @@ const description = `
         </div>
 
         <div class="image">
-          <img src="@img/photo.jpg" alt="Фото">
+          <img src="@img/photo.jpg" loading="lazy" alt="Фото">
         </div>
       </div>
     </div>

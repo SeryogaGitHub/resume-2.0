@@ -29,6 +29,7 @@ const props = defineProps({
       <img
           :src="project.image"
           :alt="project.title"
+          loading="lazy"
       >
 
       <h2>Технології</h2>

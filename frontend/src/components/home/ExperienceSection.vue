@@ -157,6 +157,7 @@ const experience = [
                   <img
                       :src="`src/assests/image/${item.logo}`"
                       :alt="item.company"
+                      loading="lazy"
                       @error="setDefaultImage"
                   >
                 </div>

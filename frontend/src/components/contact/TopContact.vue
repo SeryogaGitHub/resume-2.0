@@ -22,7 +22,7 @@ import Network from "@/components/Network.vue";
       </div>
       
       <div class="image">
-        <img src="@img/contact-page/contact-image.jpg" alt="">
+        <img src="@img/contact-page/contact-image.jpg" loading="lazy" alt="">
       </div>
     </div>
   </div>

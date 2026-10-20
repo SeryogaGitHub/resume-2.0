@@ -12,7 +12,7 @@ import bottomImage from '@/assets/image/not-found-page/bottom-image.jpg';
         <div class="center">
           <div class="items">
             <div class="top-image">
-              <img src="@img/not-found-page/top-image.jpg" alt="">
+              <img src="@img/not-found-page/top-image.jpg" loading="lazy" alt="">
             </div>
 
             <div class="text section">
@@ -37,7 +37,7 @@ import bottomImage from '@/assets/image/not-found-page/bottom-image.jpg';
             </div>
 
             <div class="bottom-image">
-              <img src="@img/not-found-page/bottom-image.jpg" alt="">
+              <img src="@img/not-found-page/bottom-image.jpg" loading="lazy" alt="">
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@
 
       <div class="flex">
         <div class="image-left">
-          <img src="@img/index-page/who-i-am/who-i-am-left.jpg" alt="">
+          <img src="@img/index-page/who-i-am/who-i-am-left.jpg" loading="lazy" alt="">
         </div>
 
         <div class="text">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="image-right">
-          <img src="@img/index-page/who-i-am/who-i-am-right.jpg" alt="">
+          <img src="@img/index-page/who-i-am/who-i-am-right.jpg" loading="lazy" alt="">
         </div>
       </div>
     </div>
