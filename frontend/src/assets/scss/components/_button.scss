@@ -15,17 +15,34 @@
   margin-top: 60px;
   white-space: nowrap;
   min-width: 190px;
+  position: relative;
+  transition: .7s;
+  overflow: hidden;
 
   svg, img{
     position: relative;
     transition: .3s;
+    left: 0;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: .3s;
+    border-radius: $r-4;
+    background: rgba($black, 0.8);
+    z-index: -1;
   }
 
   &:hover{
-    background: rgba($black, 0.8);
+    transform: scale(1.03);
 
-    svg, img{
-      right: -4px;
+    &:after{
+      height: 100%;
     }
   }
 
@@ -39,17 +56,12 @@
     }
   }
 
-  &, path{
-    transition: .3s;
-  }
-
   &.white{
     border: 1px solid rgba($black, 0.16);
     background: $white;
     color: $brown;
 
     &:hover{
-      background: rgba($black, 0.8);
       color: $white;
 
       path{

@@ -1,6 +1,7 @@
 
 import express from 'express';
 import cors from 'cors';
+import { pool } from './config/database.js';
 import { projects as initialProjects } from './data/projects.js';
 
 const app = express();
@@ -12,6 +13,16 @@ let nextId = Math.max(0, ...projects.map(project => project.id)) + 1;
 
 app.use(cors());
 app.use(express.json());
+
+try {
+  const client = await pool.connect();
+
+  console.log('PostgreSQL підключено');
+
+  client.release();
+} catch (error) {
+  console.error(error.message);
+}
 
 app.get('/', (req, res) => {
   res.json({ message: 'Backend працює!' });
