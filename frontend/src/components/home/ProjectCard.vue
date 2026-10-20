@@ -1,5 +1,12 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import defaultImage from '@img/default.svg';
+
+const setDefaultImage = (event) => {
+  event.target.onerror = null;
+  event.target.src = defaultImage;
+  event.target.classList.add('rotate');
+};
 
 defineProps({
   project: {
@@ -21,6 +28,7 @@ defineProps({
         :src="project.image"
         :alt="project.title"
         loading="lazy"
+        @error="setDefaultImage"
     >
 
     <div class="flex mt-20">
