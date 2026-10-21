@@ -45,7 +45,7 @@ body {
   font-family: $f;
   font-size: 16px;
   color: $brown;
-  background: url(@img/bg.jpg) repeat;
+  background: $white url(@img/bg.jpg) repeat;
 }
 
 body,

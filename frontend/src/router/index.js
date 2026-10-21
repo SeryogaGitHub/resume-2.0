@@ -6,9 +6,9 @@ import SkillsView from '@/views/SkillsView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
 import ContactView from '@/views/ContactView.vue';
 import NotFoundView from "@/views/NotFoundView.vue";
-import ProjectDetailView from "@/views/ProjectDetailView.vue";
+import PortfolioDetailView from "@/views/PortfolioDetailView.vue";
 import AboutView from "@/views/AboutView.vue";
-import ProjectsAdminView from "@/views/ProjectsAdminView.vue";
+import PortfolioAdminView from "@/views/PortfolioAdminView.vue";
 import BlogView from "@/views/BlogView.vue";
 
 const routes = [
@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/portfolio/:id',
     name: 'project-detail',
-    component: ProjectDetailView
+    component: PortfolioDetailView
   },
   {
     path: '/skills',
@@ -60,7 +60,7 @@ const routes = [
   {
     path: '/admin/projects',
     name: 'projects-admin',
-    component: ProjectsAdminView
+    component: PortfolioAdminView
   }
 ];
 

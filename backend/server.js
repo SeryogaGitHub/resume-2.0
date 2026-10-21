@@ -89,19 +89,65 @@ app.get('/api/projects', async (req, res) => {
 
 
 // READ: один проєкт
-app.get('/api/projects/:id', (req, res) => {
-  const project = projects.find(item => {
-    return item.id === Number(req.params.id);
-  });
+app.get('/api/projects/:id', async (req, res) => {
+  const id = Number(req.params.id);
 
-  if (!project) {
-    return res.status(404).json({
-      message: 'Проєкт не знайдено'
+  if (!Number.isInteger(id) || id < 1) {
+    return res.status(400).json({
+      message: 'Некоректний ID проєкту'
     });
   }
 
-  res.json(project);
+  try {
+    const result = await pool.query(
+        `
+        SELECT
+          p.id,
+          p.title,
+          c.name AS category,
+          p.year,
+          p.description,
+          p.short_description AS "shortDescription",
+          p.image,
+          p.logo,
+          p.url,
+          COALESCE(
+            ARRAY_AGG(t.name ORDER BY t.name)
+              FILTER (WHERE t.name IS NOT NULL),
+            ARRAY[]::VARCHAR[]
+          ) AS technologies
+        FROM projects p
+        LEFT JOIN categories c
+          ON p.category_id = c.id
+        LEFT JOIN project_technologies pt
+          ON p.id = pt.project_id
+        LEFT JOIN technologies t
+          ON pt.technology_id = t.id
+        WHERE p.id = $1
+        GROUP BY p.id, c.name;
+      `,
+        [id]
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({
+        message: 'Проєкт не знайдено'
+      });
+    }
+
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error(
+        'Помилка отримання проєкту:',
+        error.message
+    );
+
+    res.status(500).json({
+      message: 'Не вдалося отримати проєкт'
+    });
+  }
 });
+
 
 // CREATE: створити проєкт
 app.post('/api/projects', (req, res) => {

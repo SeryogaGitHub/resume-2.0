@@ -1,13 +1,12 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import TopSection from '@/components/home/TopSection.vue';
-import ProjectsSection from "@/components/home/ProjectsSection.vue";
+import PortfolioSection from "@/components/home/PortfolioSection.vue";
 import SkillsSection from "@/components/home/SkillsSection.vue";
 import ExperienceSection from "@/components/home/ExperienceSection.vue";
 import Footer from "@/components/Footer.vue";
 import WhoIAm from "@/components/home/WhoIAm.vue";
 import FAQSection from "@/components/home/FAQSection.vue";
-import ProjectView from "@/views/ProjectView.vue";
 import {ref, onMounted} from "vue";
 import { getProjects } from '@/api/products.js';
 import { skills } from '@/data/skills.js';
@@ -45,14 +44,7 @@ const selectedProject = ref(null);
       <TopSection />
       <WhoIAm />
       <ExperienceSection />
-      <ProjectView
-          v-if="selectedProject"
-          :project="selectedProject"
-          @back="selectedProject = null"
-      />
-
-      <ProjectsSection
-          v-else
+      <PortfolioSection
           :projects="projects"
           :loading
           :error
