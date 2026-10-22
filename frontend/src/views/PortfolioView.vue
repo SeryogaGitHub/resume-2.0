@@ -7,7 +7,7 @@ import OpenProjects from '@/components/OpenProjects.vue';
 
 import { getProjects } from '@/api/products.js';
 import { onMounted, ref } from 'vue';
-import PortfolioMessage from "@/components/PortfolioMessage.vue";
+import PortfolioAlert from "@/components/PortfolioAlert.vue";
 
 const projects = ref([]);
 const loading = ref(false);
@@ -41,7 +41,7 @@ onMounted(() => {
         <div class="center">
           <h1>Портфоліо</h1>
 
-          <PortfolioMessage v-if="!projects.length" :loading :error />
+          <PortfolioAlert v-if="!projects.length" :loading :error />
 
           <div v-else class="items align-center">
             <PortfolioCard
