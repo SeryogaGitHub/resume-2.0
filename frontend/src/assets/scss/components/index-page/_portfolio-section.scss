@@ -8,6 +8,8 @@
     flex-wrap: wrap;
 
     .item {
+      max-width: 800px;
+
       @include m(560px){
         img{
           aspect-ratio: 16 / 9;

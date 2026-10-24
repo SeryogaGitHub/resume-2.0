@@ -17,14 +17,36 @@ Content-Type: application/json
   "technologies": ["Vue 3", "Node.js", "Express"]
 }
 
-### Оновити проєкт з ID 3
-PUT http://localhost:3000/api/projects/3
+
+### Оновити проєкт
+PUT http://localhost:3000/api/projects/1
 Content-Type: application/json
 
 {
-  "title": "My Updated Portfolio",
-  "year": 2026
+  "title": "Updated Portfolio 2",
+  "category": "Web Application",
+  "year": 2026,
+  "description": "Оновлений опис проєкту.",
+  "technologies": ["Vue 3", "PostgreSQL", "SCSS"]
 }
+
 
 ### Видалити проєкт з ID 3
 DELETE http://localhost:3000/api/projects/3
+
+
+### Створити проєкт
+POST http://localhost:3000/api/projects
+Content-Type: application/json
+
+{
+  "title": "Test PostgreSQL Project",
+  "category": "Web Application",
+  "year": 2026,
+  "description": "Перевірка створення проєкту.",
+  "shortDescription": "Тест PostgreSQL.",
+  "image": "",
+  "logo": "",
+  "url": "#",
+  "technologies": ["Vue 3", "Node.js", "PostgreSQL"]
+}

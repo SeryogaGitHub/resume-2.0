@@ -2,6 +2,7 @@
 <script setup>
 import { useRoute, RouterLink } from 'vue-router';
 import { ref, watch } from 'vue';
+import defaultImage from "@/assets/image/default.svg";
 
 const props = defineProps({
   getProjectById: {
@@ -61,7 +62,7 @@ watch(
       <template v-if="project">
         <h1>{{ project.title }}</h1>
 
-        <header class="top-image" :style="{ backgroundImage: `url(${project.imageBig})` }">
+        <header class="top-image" v-if="project.imageBig" :style="{ backgroundImage: `url(${project.imageBig})` }">
           <RouterLink
               :to="{ name: 'portfolio' }"
               class="back-link"
@@ -69,6 +70,13 @@ watch(
             ← Усі проєкти
           </RouterLink>
         </header>
+
+        <img v-else
+            :src="defaultImage"
+            :alt="project.title"
+             class="rotate"
+            loading="lazy"
+        >
 
         <section class="description-detail section">
           <div class="description">

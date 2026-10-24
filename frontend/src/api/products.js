@@ -47,6 +47,7 @@ export async function deleteProject(id) {
 }
 
 
+
 export async function updateProject(id, project) {
   const response = await fetch(`${API_URL}/${id}`, {
     method: 'PUT',
@@ -57,7 +58,11 @@ export async function updateProject(id, project) {
   });
 
   if (!response.ok) {
-    throw new Error('Не вдалося оновити проєкт');
+    const error = await response.json().catch(() => ({}));
+
+    throw new Error(
+        error.message ?? 'Не вдалося оновити проєкт'
+    );
   }
 
   return response.json();
