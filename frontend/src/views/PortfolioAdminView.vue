@@ -1,6 +1,5 @@
-
 <script setup>
-import { ref, onMounted } from 'vue';
+import {ref, onMounted} from 'vue';
 import {
   getProjects,
   createProject,
@@ -8,6 +7,7 @@ import {
   updateProject
 } from '@/api/products.js';
 import BaseButton from "@/components/BaseButton.vue";
+import Header from "@/components/Header.vue";
 
 const projects = ref([]);
 const loading = ref(false);
@@ -135,103 +135,109 @@ onMounted(loadProjects);
 </script>
 
 <template>
-  <main class="projects-admin">
-    <div class="center">
-      <h1>Керування проєктами</h1>
+  <div class="page">
+    <Header/>
 
-      <p v-if="error">
-        {{ error }}
-      </p>
+    <main class="main-content">
+      <section class="portfolio-section section">
+        <div class="center">
+          <h1>Керування проєктами</h1>
 
-      <form @submit.prevent="saveProject">
-        <input
-            id="title"
-            v-model="form.title"
-            placeholder="Назва проєкту"
-            required
-        >
+          <p v-if="error">
+            {{ error }}
+          </p>
 
-        <select
-            id="category"
-            v-model="form.category"
-        >
-          <option>Категорія</option>
-          <option value="E-commerce">E-commerce</option>
-          <option value="Corporate">Corporate</option>
-          <option value="Web Application">
-            Web Application
-          </option>
-        </select>
+          <form @submit.prevent="saveProject">
+            <input
+                id="title"
+                v-model="form.title"
+                placeholder="Назва проєкту"
+                required
+            >
 
-        <input
-            id="year"
-            v-model.number="form.year"
-            type="number"
-            min="2000"
-            placeholder="Рік"
-            required
-        >
+            <select
+                id="category"
+                v-model="form.category"
+            >
+              <option>Категорія</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Web Application">
+                Web Application
+              </option>
+            </select>
 
-        <textarea
-            id="description"
-            v-model="form.description"
-            placeholder="Опис"
-        />
+            <input
+                id="year"
+                v-model.number="form.year"
+                type="number"
+                min="2000"
+                placeholder="Рік"
+                required
+            >
 
-        <div>
-          <input
-              id="technologies"
-              v-model="form.technologies"
-              placeholder="Технології через кому Vue 3, Node.js, SCSS"
-          >
+            <textarea
+                id="description"
+                v-model="form.description"
+                placeholder="Опис"
+            />
+
+            <div>
+              <input
+                  id="technologies"
+                  v-model="form.technologies"
+                  placeholder="Технології через кому Vue 3, Node.js, SCSS"
+              >
+            </div>
+
+            <BaseButton type="submit" :disabled="saving">
+              {{
+                saving
+                    ? 'Збереження...'
+                    : editingId !== null
+                        ? 'Зберегти зміни'
+                        : 'Додати проєкт'
+              }}
+            </BaseButton>
+
+            <BaseButton
+                v-if="editingId !== null"
+                type="button"
+                @click="resetForm"
+            >
+              Скасувати
+            </BaseButton>
+          </form>
+
+          <h2>Список проєктів</h2>
+
+          <p v-if="loading">
+            Завантаження...
+          </p>
+
+          <ul v-else>
+            <li v-for="project in projects" :key="project.id">
+              <span>{{ project.title }} ({{ project.year }})</span>
+
+              <BaseButton
+                  type="button"
+                  @click="editProject(project)"
+                  class="btn white"
+              >
+                Редагувати
+              </BaseButton>
+
+              <BaseButton
+                  type="button"
+                  @click="removeProject(project.id)"
+                  class="btn"
+              >
+                Видалити
+              </BaseButton>
+            </li>
+          </ul>
         </div>
-
-        <BaseButton type="submit" :disabled="saving">
-          {{
-            saving
-                ? 'Збереження...'
-                : editingId !== null
-                    ? 'Зберегти зміни'
-                    : 'Додати проєкт'
-          }}
-        </BaseButton>
-
-        <BaseButton
-            v-if="editingId !== null"
-            type="button"
-            @click="resetForm"
-        >
-          Скасувати
-        </BaseButton>
-      </form>
-
-      <h2>Список проєктів</h2>
-
-      <p v-if="loading">
-        Завантаження...
-      </p>
-
-      <ul v-else>
-        <li v-for="project in projects" :key="project.id">
-          <span>{{ project.title }} ({{ project.year }})</span>
-
-          <BaseButton
-              type="button"
-              @click="editProject(project)"
-              class="btn white"
-          >
-            Редагувати
-          </BaseButton>
-
-          <BaseButton
-              type="button"
-              @click="removeProject(project.id)"
-              class="btn"
-          >
-            Видалити
-          </BaseButton>
-        </li>
-      </ul>
-    </div>
-  </main>
+      </section>
+    </main>
+  </div>
 </template>
