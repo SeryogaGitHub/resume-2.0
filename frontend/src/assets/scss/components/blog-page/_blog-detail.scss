@@ -1,0 +1,43 @@
+@use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
+
+.blog-detail {
+  .image{
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tags{
+    display: flex;
+    flex-wrap: wrap;
+
+    * + *{
+      display: flex;
+      align-items: center;
+      padding-left: 8px;
+      margin-right: 8px;
+      margin-top: 0;
+      grid-gap: 8px;
+
+      &:before{
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: $brown;
+        display: inline-block;
+      }
+    }
+  }
+
+  .link{
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: $border;
+    border-radius: 50%;
+  }
+}

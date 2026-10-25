@@ -30,7 +30,7 @@ defineProps({
   <section v-else-if="error" class="section">
     <div class="center">
       <RouterLink
-          :to="{ name: 'portfolio' }"
+          :to="{ name: 'projects' }"
           class="back-link"
       >
         ← Усі проєкти

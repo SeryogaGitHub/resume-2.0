@@ -64,7 +64,7 @@ watch(
 
         <header class="top-image" v-if="project.imageBig" :style="{ backgroundImage: `url(${project.imageBig})` }">
           <RouterLink
-              :to="{ name: 'portfolio' }"
+              :to="{ name: 'projects' }"
               class="back-link"
           >
             ← Усі проєкти

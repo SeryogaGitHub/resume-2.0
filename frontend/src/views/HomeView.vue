@@ -1,7 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import TopSection from '@/components/home/TopSection.vue';
-import PortfolioSection from "@/components/home/PortfolioSection.vue";
+import ProjectsSection from "@/components/home/ProjectsSection.vue";
 import SkillsSection from "@/components/home/SkillsSection.vue";
 import ExperienceSection from "@/components/home/ExperienceSection.vue";
 import Footer from "@/components/Footer.vue";
@@ -44,7 +44,7 @@ const selectedProject = ref(null);
       <TopSection />
       <WhoIAm />
       <ExperienceSection />
-      <PortfolioSection
+      <ProjectsSection
           :projects="projects"
           :loading
           :error

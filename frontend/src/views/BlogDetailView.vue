@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import OpenProjects from '@/components/OpenProjects.vue';
-import PortfolioDetail from '@/components/projects/PortfolioDetail.vue';
+import ProjectsDetail from '@/components/projects/ProjectsDetail.vue';
 
 import { getProjectById } from '@/api/products.js';
 import PortfolioAlert from "@/components/PortfolioAlert.vue";
@@ -28,7 +28,7 @@ function handleError(value) {
     <main class="main-content">
       <PortfolioAlert v-show="loading || error" :loading :error />
 
-      <PortfolioDetail
+      <ProjectsDetail
           v-show="!loading && !error"
           :getProjectById
           @loading="handleLoading"

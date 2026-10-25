@@ -1,15 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from '@/views/HomeView.vue';
-import PortfolioView from '@/views/PortfolioView.vue';
+import ProjectsView from '@/views/ProjectsView.vue';
 import SkillsView from '@/views/SkillsView.vue';
 import ExperienceView from '@/views/ExperienceView.vue';
 import ContactView from '@/views/ContactView.vue';
 import NotFoundView from "@/views/NotFoundView.vue";
-import PortfolioDetailView from "@/views/PortfolioDetailView.vue";
+import ProjectsDetailView from "@/views/ProjectsDetailView.vue";
 import AboutView from "@/views/AboutView.vue";
-import PortfolioAdminView from "@/views/PortfolioAdminView.vue";
+import ProjectsAdminView from "@/views/ProjectsAdminView.vue";
 import BlogView from "@/views/BlogView.vue";
+import BlogDetailView from "@/views/BlogDetailView.vue";
 
 const routes = [
   {
@@ -18,14 +19,14 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/portfolio',
-    name: 'portfolio',
-    component: PortfolioView
+    path: '/projects',
+    name: 'projects',
+    component: ProjectsView
   },
   {
-    path: '/portfolio/:id',
+    path: '/projects/:id',
     name: 'project-detail',
-    component: PortfolioDetailView
+    component: ProjectsDetailView
   },
   {
     path: '/skills',
@@ -41,6 +42,11 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: BlogView
+  },
+  {
+    path: '/blog/:id',
+    name: 'blog-detail',
+    component: BlogDetailView
   },
   {
     path: '/experience',
@@ -60,7 +66,7 @@ const routes = [
   {
     path: '/admin/projects',
     name: 'projects-admin',
-    component: PortfolioAdminView
+    component: ProjectsAdminView
   }
 ];
 

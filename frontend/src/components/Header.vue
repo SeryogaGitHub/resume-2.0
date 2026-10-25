@@ -23,7 +23,7 @@ const navigation = [
   },
   {
     title: 'Портфоліо',
-    to: '/portfolio'
+    to: '/projects'
   },
   {
     title: 'Про мене',

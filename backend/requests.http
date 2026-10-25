@@ -1,4 +1,20 @@
 
+### Перевірка з'єднання з PostgreSQL
+GET http://localhost:3000/api/db-check
+
+### Отримати всі проєкти
+GET http://localhost:3000/api/projects
+
+### Отримати проєкт за ID
+GET http://localhost:3000/api/projects/3
+
+### Перевірка неіснуючого проєкту
+GET http://localhost:3000/api/projects/999999
+
+### Перевірка некоректного ID
+GET http://localhost:3000/api/projects/abc
+
+
 ### Отримати всі проєкти
 GET http://localhost:3000/api/projects
 

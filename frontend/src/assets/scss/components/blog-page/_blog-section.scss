@@ -1,0 +1,14 @@
+@use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
+
+.blog-section{
+  .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 60px 20px;
+    align-items: flex-start;
+    border-top: $border;
+    border-bottom: $border;
+    padding: 20px 0;
+  }
+}

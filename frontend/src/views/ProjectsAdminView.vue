@@ -139,7 +139,7 @@ onMounted(loadProjects);
     <Header/>
 
     <main class="main-content">
-      <section class="portfolio-section section">
+      <section class="projects-section section">
         <div class="center">
           <h1>Керування проєктами</h1>
 

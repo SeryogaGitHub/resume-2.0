@@ -28,7 +28,7 @@ const description = `
 
           <div class="btns mt-60">
             <a
-                href="#portfolio"
+                href="#projects"
                 class="btn"
             >
               Переглянути роботи

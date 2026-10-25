@@ -1,5 +1,5 @@
 <script setup>
-import PortfolioCard from './PortfolioCard.vue';
+import ProjectsCard from './ProjectsCard.vue';
 import { RouterLink } from 'vue-router';
 
 const props = defineProps({
@@ -19,8 +19,8 @@ const props = defineProps({
 
 <template>
   <section
-      id="portfolio"
-      class="portfolio-section section"
+      id="projects"
+      class="projects-section section"
   >
     <div class="center" v-if="loading">
       <header class="header">
@@ -37,7 +37,7 @@ const props = defineProps({
             </div>
 
             <div>
-              <RouterLink to="/portfolio" class="btn white">
+              <RouterLink to="/projects" class="btn white">
                 Усі проєкти →
               </RouterLink>
             </div>
@@ -69,7 +69,7 @@ const props = defineProps({
             </div>
 
             <div>
-              <RouterLink to="/portfolio" class="btn white">
+              <RouterLink to="/projects" class="btn white">
                 Усі проєкти →
               </RouterLink>
             </div>
@@ -78,7 +78,7 @@ const props = defineProps({
       </header>
 
       <div class="items align-center">
-        <PortfolioCard
+        <ProjectsCard
             v-for="(project, index) in props.projects"
             v-show="index < 4"
             :key="project.id"

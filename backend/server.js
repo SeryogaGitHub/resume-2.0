@@ -581,6 +581,23 @@ app.delete('/api/projects/:id', async (req, res) => {
   }
 });
 
+app.use((req, res) => {
+  res.status(404).json({
+    message: 'Маршрут не знайдено'
+  });
+});
+
+app.use((err, req, res, next) => {
+  console.error('Помилка сервера:', err);
+
+  if (res.headersSent) {
+    return next(err);
+  }
+
+  res.status(500).json({
+    message: 'Внутрішня помилка сервера'
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Backend запущено: http://localhost:${PORT}`);
