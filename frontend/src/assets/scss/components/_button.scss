@@ -19,6 +19,10 @@
   transition: .7s;
   overflow: hidden;
 
+  @include m(460px){
+    width: 100%;
+  }
+
   svg, img{
     position: relative;
     transition: .3s;
