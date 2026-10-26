@@ -6,6 +6,12 @@
     height: 340px;
     width: 100%;
     object-fit: cover;
+
+    &.rotate{
+      height: initial;
+      width: 60%;
+      object-fit: contain;
+    }
   }
 
   .tags{
