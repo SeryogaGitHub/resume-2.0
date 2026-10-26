@@ -10,5 +10,9 @@
     border-top: $border;
     border-bottom: $border;
     padding: 20px 0;
+
+    @include m(768px){
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
   }
 }
