@@ -161,6 +161,7 @@ app.post('/api/projects', async (req, res) => {
     description,
     shortDescription,
     image,
+    image_big,
     logo,
     url,
     technologies
@@ -235,9 +236,10 @@ app.post('/api/projects', async (req, res) => {
           short_description,
           image,
           logo,
-          url
+          url,
+          image_big
         )
-        VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
         RETURNING id
       `,
         [
@@ -248,7 +250,8 @@ app.post('/api/projects', async (req, res) => {
           shortDescription ?? '',
           image ?? '',
           logo ?? '',
-          url ?? '#'
+          url ?? '#',
+          image_big ?? ''
         ]
     );
 
@@ -354,7 +357,8 @@ app.put('/api/projects/:id', async (req, res) => {
     image,
     logo,
     url,
-    technologies
+    technologies,
+    imageBig
   } = req.body;
 
   if (
@@ -440,8 +444,9 @@ app.put('/api/projects/:id', async (req, res) => {
           short_description = $5,
           image = $6,
           logo = $7,
-          url = $8
-        WHERE id = $9
+          url = $8,
+        WHERE id = $9,
+          imageBig=$10
       `,
         [
           title.trim(),
@@ -452,7 +457,8 @@ app.put('/api/projects/:id', async (req, res) => {
           image ?? existingProject.image,
           logo ?? existingProject.logo,
           url ?? existingProject.url,
-          id
+          id,
+          imageBig ?? existingProject.imageBig
         ]
     );
 

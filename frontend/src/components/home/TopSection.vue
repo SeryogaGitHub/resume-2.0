@@ -26,21 +26,23 @@ const description = `
             {{ description }}
           </p>
 
-          <div class="btns mt-60">
-            <a
-                href="#projects"
-                class="btn"
-            >
-              Переглянути роботи
-            </a>
+          <div hidden="hidden">
+            <div class="btns mt-60">
+              <a
+                  href="#projects"
+                  class="btn"
+              >
+                Переглянути роботи
+              </a>
 
-            <a
-                href="@/assets/CV/EU-Resume-Front-end.pdf"
-                class="btn"
-                download="EU-Resume-Front-end-SERHII-LYPIANETS.pdf"
-            >
-              Завантажити CV
-            </a>
+              <a
+                  href="@/assets/CV/EU-Resume-Front-end.pdf"
+                  class="btn"
+                  download="EU-Resume-Front-end-SERHII-LYPIANETS.pdf"
+              >
+                Завантажити CV
+              </a>
+            </div>
           </div>
         </div>
 

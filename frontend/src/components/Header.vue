@@ -29,14 +29,10 @@ const navigation = [
     title: 'Про мене',
     to: '/about'
   },
-  {
-    title: 'Досвід',
-    to: '/experience'
-  },
-  {
-    title: 'Блог',
-    to: '/blog'
-  },
+  // {
+  //   title: 'Блог',
+  //   to: '/blog'
+  // },
   {
     title: 'Контакти',
     to: '/contact'

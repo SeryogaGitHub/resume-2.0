@@ -18,7 +18,7 @@ import Network from "@/components/Network.vue";
 
         <div class="mt-24">Email: <a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a></div>
         <div class="mt-24">Phone: <a href="tel:+380961225761">+380 96 122 57 61</a></div>
-        <Network class="mt-24" />
+        <Network class="mt-24" id="network-contact" />
       </div>
       
       <div class="image">

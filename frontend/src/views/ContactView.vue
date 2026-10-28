@@ -12,7 +12,7 @@ import TopContact from "@/components/contact/TopContact.vue";
 
     <main class="main-content">
       <TopContact />
-      <FormSection />
+<!--      <FormSection />-->
     </main>
 
     <Footer />

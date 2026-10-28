@@ -25,7 +25,6 @@ const submitForm = () => {
         Поділіться деталями про ваші проєкти, щоб ми я міг краще зрозуміти ваші потреби та цілі.
       </p>
 
-
       <form
           class="form"
           @submit.prevent="submitForm"

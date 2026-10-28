@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 import SkillsView from '@/views/SkillsView.vue';
-import ExperienceView from '@/views/ExperienceView.vue';
 import ContactView from '@/views/ContactView.vue';
 import NotFoundView from "@/views/NotFoundView.vue";
 import ProjectsDetailView from "@/views/ProjectsDetailView.vue";
@@ -47,11 +46,6 @@ const routes = [
     path: '/blog/:id',
     name: 'blog-detail',
     component: BlogDetailView
-  },
-  {
-    path: '/experience',
-    name: 'experience',
-    component: ExperienceView
   },
   {
     path: '/contact',
