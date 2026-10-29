@@ -1,6 +1,7 @@
 <script setup>
 
 import Network from "@/components/Network.vue";
+import CopyButton from "@/components/CopyButton.vue";
 </script>
 
 <template>
@@ -16,8 +17,18 @@ import Network from "@/components/Network.vue";
           Працюємо оперативно, зберігаю гостроту мислення і щоразу створюємо продуманий продукт.
         </p>
 
-        <div class="mt-24">Email: <a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a></div>
-        <div class="mt-24">Phone: <a href="tel:+380961225761">+380 96 122 57 61</a></div>
+        <div class="mt-24">
+          Email:
+          <a href="mailto:main.email.seryoga@gmail.com">main.email.seryoga@gmail.com</a>
+          <CopyButton copy="main.email.seryoga@gmail.com" />
+        </div>
+
+        <div class="mt-24">
+          Phone:
+          <a href="tel:+380961225761">+380 96 122 57 61</a>
+          <CopyButton copy="+380961225761" />
+        </div>
+
         <Network class="mt-24" id="network-contact" />
       </div>
       

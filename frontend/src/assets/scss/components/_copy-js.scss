@@ -1,0 +1,40 @@
+@use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
+
+.copy-js{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: $white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  top: 10px;
+  margin-left: 10px;
+}
+
+.copy-js{
+  &.active{
+    .not-ok{
+      opacity: 0;
+    }
+
+    .ok{
+      opacity: 1;
+    }
+  }
+}
+
+.not-ok, .ok{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: .3s
+}
+
+.ok{
+  opacity: 0;
+}
