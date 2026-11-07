@@ -8,30 +8,31 @@ import Footer from "@/components/Footer.vue";
 import WhoIAm from "@/components/home/WhoIAm.vue";
 import FAQSection from "@/components/home/FAQSection.vue";
 import {ref, onMounted} from "vue";
-import { getProjects } from '@/api/products.js';
+// import { getProjects } from '@/api/projects.js';
+import { projects } from '@/data/projects';
 import { skills } from '@/data/skills.js';
 
-const projects = ref([]);
-const loading = ref(false);
-const error = ref('');
+// const projects = ref([]);
+// const loading = ref(false);
+// const error = ref('');
 
-async function loadProjects() {
-  loading.value = true;
-  error.value = '';
-
-  try {
-    projects.value = await getProjects();
-  } catch (err) {
-    error.value = 'Не вдалося завантажити проєкти. Технічні роботи.';
-    console.error(err);
-  } finally {
-    loading.value = false;
-  }
-}
-
-onMounted(() => {
-  loadProjects();
-});
+// async function loadProjects() {
+//   loading.value = true;
+//   error.value = '';
+//
+//   try {
+//     projects.value = await getProjects();
+//   } catch (err) {
+//     error.value = 'Не вдалося завантажити проєкти. Технічні роботи.';
+//     console.error(err);
+//   } finally {
+//     loading.value = false;
+//   }
+// }
+//
+// onMounted(() => {
+//   loadProjects();
+// });
 
 const selectedProject = ref(null);
 </script>

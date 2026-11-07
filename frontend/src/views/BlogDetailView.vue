@@ -6,7 +6,7 @@ import Footer from '@/components/Footer.vue';
 import OpenProjects from '@/components/OpenProjects.vue';
 import ProjectsDetail from '@/components/projects/ProjectsDetail.vue';
 
-import { getProjectById } from '@/api/products.js';
+import { getProjectById } from '@/api/projects.js';
 import PortfolioAlert from "@/components/PortfolioAlert.vue";
 
 const loading = ref(true);

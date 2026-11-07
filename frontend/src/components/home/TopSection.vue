@@ -1,12 +1,9 @@
 <script setup>
 import Network from "@/components/Network.vue";
 
-const title = 'Front-end, Web Developer, Junior(NodeJS, ReactJS, VueJS)';
+const title = 'Front-end / Web Developer | Full-stack Developer (Junior: Node.js, React.js, Vue.js)';
 
-const description = `
-Роглядаю роботу віддалено на постійній основі. Створюю сучасні, швидкі та зручні вебінтерфейси
-з використанням. Готовий до переїзду в країну, при потребі вчити мову. Технологія вже не має значення, з якою потрібно, з тією працюю.
-`;
+const description = `Розглядаю пропозиції віддаленої роботи на постійній основі. Маю багаторічний досвід веброзробки, створюю сучасні, швидкі та адаптивні вебінтерфейси. Відкритий до роботи з різними технологіями, швидко освоюю нові інструменти та розвиваюся в напрямі Full-stack (Node.js, React, Vue). Приорітет до переїзду за кордон та вивчення мови.`;
 </script>
 
 <template>
@@ -14,7 +11,7 @@ const description = `
     <div class="center m-auto">
       <div class="flex align-center">
         <div class="text max-w-700">
-          <p class="h3 position">
+          <p class="h3 text-red">
             {{ title }}
           </p>
 

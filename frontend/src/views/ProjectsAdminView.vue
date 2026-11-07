@@ -5,7 +5,7 @@ import {
   createProject,
   deleteProject,
   updateProject
-} from '@/api/products.js';
+} from '@/api/projects.js';
 import BaseButton from "@/components/BaseButton.vue";
 import Header from "@/components/Header.vue";
 
