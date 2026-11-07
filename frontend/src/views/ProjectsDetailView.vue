@@ -1,24 +1,20 @@
 <script setup>
-import { ref } from 'vue';
+import {computed, ref} from 'vue';
 
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import OpenProjects from '@/components/OpenProjects.vue';
 import ProjectsDetail from '@/components/projects/ProjectsDetail.vue';
+import { projects } from '@/data/projects';
 
-import { getProjectById } from '@/api/projects.js';
-import PortfolioAlert from "@/components/PortfolioAlert.vue";
+import {useRoute} from "vue-router";
+const route = useRoute();
 
-const loading = ref(true);
-const error = ref('');
-
-function handleLoading(value) {
-  loading.value = value;
-}
-
-function handleError(value) {
-  error.value = value;
-}
+const project = computed(() => {
+  return projects.find(item => {
+    return String(item.id) === String(route.params.id);
+  });
+});
 </script>
 
 <template>
@@ -26,14 +22,7 @@ function handleError(value) {
     <Header />
 
     <main class="main-content">
-      <PortfolioAlert v-show="loading || error" :loading :error />
-
-      <ProjectsDetail
-          v-show="!loading && !error"
-          :getProjectById
-          @loading="handleLoading"
-          @error="handleError"
-      />
+      <ProjectsDetail :project/>
 
       <OpenProjects />
     </main>

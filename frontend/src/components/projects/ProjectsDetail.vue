@@ -1,90 +1,49 @@
 
 <script setup>
-import { useRoute, RouterLink } from 'vue-router';
-import { ref, watch } from 'vue';
+import { RouterLink } from 'vue-router';
 import defaultImage from "@/assets/image/default.svg";
 
-const props = defineProps({
-  getProjectById: {
-    type: Function,
+defineProps({
+  project: {
+    type: Object,
     required: true
   }
 });
 
-const emit = defineEmits(['loading', 'error']);
-
-const route = useRoute();
-
-const project = ref(null);
-const loading = ref(false);
-const error = ref('');
-
-async function loadProject(id) {
-  loading.value = true;
-  error.value = '';
-  project.value = null;
-
-  emit('loading', true);
-  emit('error', '');
-
-  try {
-    project.value = await props.getProjectById(id);
-
-    if (!project.value) {
-      error.value = 'Проєкт не знайдено.';
-      emit('error', error.value);
-    }
-  } catch (err) {
-    error.value = 'Проєкт не знайдено або не вдалося завантажити.';
-
-    emit('error', error.value);
-
-    console.error(err);
-  } finally {
-    loading.value = false;
-
-    emit('loading', false);
-  }
-}
-
-watch(
-    () => route.params.id,
-    (id) => {
-      loadProject(id);
-    },
-    { immediate: true }
-);
 </script>
 
 <template>
   <section class="section project-detail">
     <div class="center">
       <template v-if="project">
-        <h1>{{ project.title }}</h1>
+        <RouterLink
+            :to="{ name: 'projects' }"
+            class="h4"
+        >
+          ← Усі проєкти
+        </RouterLink>
 
-        <header class="top-image" v-if="project.imageBig" :style="{ backgroundImage: `url(${project.imageBig})` }">
-          <RouterLink
-              :to="{ name: 'projects' }"
-              class="back-link"
-          >
-            ← Усі проєкти
-          </RouterLink>
+        <h1 class="mt-24">{{ project.title }}</h1>
+
+        <header
+            v-if="project.image"
+            class="top-image"
+            :style="{ backgroundImage: `url(${project.image})` }"
+        >
         </header>
 
-        <img v-else
+        <img
+            v-else
             :src="defaultImage"
             :alt="project.title"
-             class="rotate"
+            class="rotate"
             loading="lazy"
         >
 
         <section class="description-detail section">
           <div class="description">
             <h3>Огляд проєкту</h3>
-
-            <p>
-              {{ project.description }}
-            </p>
+            <p>{{ project.description }}</p>
           </div>
 
           <div class="detail">
@@ -100,7 +59,6 @@ watch(
 
             <div>
               <h3>Технології:</h3>
-
               <ul class="list">
                 <li
                     v-for="technology in project.technologies"
@@ -118,5 +76,4 @@ watch(
 </template>
 
 <style scoped>
-
 </style>

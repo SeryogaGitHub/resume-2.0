@@ -41,6 +41,14 @@
   margin-bottom: 0;
 }
 
+.mb-24{
+  margin-bottom: 24px;
+
+  @include m(768px){
+    margin-top: 16px;
+  }
+}
+
 .text-red{
   color: $red;
 }

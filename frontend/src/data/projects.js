@@ -1,91 +1,183 @@
 export const projects = [
   {
     id: 1,
-    title: 'E-commerce',
+    title: 'culinary-school.mhp.com.ua',
     year: 2026,
-    category: 'E-commerce',
-    description: 'Сучасний інтернет-магазин з адаптивним інтерфейсом.',
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
     technologies: [
-      'Vue.js',
       'SCSS',
-      'Node.js'
     ],
-    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-1.jpg',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/culinary-school.mhp.com.ua.png',
     url: '#'
   },
 
   {
     id: 2,
-    title: 'Corporate Website',
+    title: 'foodservice.mhp.ua',
     year: 2026,
-    category: 'Corporate',
-    description: 'Корпоративний сайт із сучасною структурою та анімаціями.',
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
     technologies: [
-      'JavaScript',
       'SCSS',
-      'Vite'
     ],
-    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-2.jpg',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/foodservice.mhp.ua.png',
     url: '#'
   },
 
   {
     id: 3,
-    title: 'Web Application',
+    title: 'life.mhp4u.com.ua-robota-v-mhp',
     year: 2026,
-    category: 'Web Application',
-    description: 'Інтерактивний вебзастосунок з роботою через API.',
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
     technologies: [
-      'Vue.js',
-      'REST API',
-      'MySQL'
-    ],
-    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-3.jpg',
-    url: '#'
-  },
-
-  {
-    id: 1,
-    title: 'E-commerce',
-    year: 2026,
-    category: 'E-commerce',
-    description: 'Сучасний інтернет-магазин з адаптивним інтерфейсом.',
-    technologies: [
-      'Vue.js',
       'SCSS',
-      'Node.js'
     ],
-    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-4.jpg',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-robota-v-mhp.png',
     url: '#'
   },
 
   {
-    id: 2,
-    title: 'Corporate Website',
+    id: 4,
+    title: 'life.mhp4u.com.ua-young-gen',
     year: 2026,
-    category: 'Corporate',
-    description: 'Корпоративний сайт із сучасною структурою та анімаціями.',
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
     technologies: [
-      'JavaScript',
       'SCSS',
-      'Vite'
     ],
-    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-1.jpg',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-young-gen.png',
     url: '#'
   },
 
   {
-    id: 3,
-    title: 'Web Application',
+    id: 5,
+    title: 'mhpgromadi.org.ua',
     year: 2026,
-    category: 'Web Application',
-    description: 'Інтерактивний вебзастосунок з роботою через API.',
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
     technologies: [
-      'Vue.js',
-      'REST API',
-      'MySQL'
+      'SCSS',
     ],
-    image: '/resume-2.0/src/assets/image/index-page/projects-section/projects-section-2.jpg',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/mhpgromadi.org.ua.png',
+    url: '#'
+  },
+
+  {
+    id: 6,
+    title: 'Resume',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume.png',
+    url: '#'
+  },
+
+  {
+    id: 7,
+    title: 'resume-2.0',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume-2.0.png',
+    url: '#'
+  },
+
+  {
+    id: 8,
+    title: 'ryaba.ua',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/ryaba.ua.png',
+    url: '#'
+  },
+
+  {
+    id: 9,
+    title: 'superfileo.com.ua',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/superfileo.com.ua.png',
+    url: '#'
+  },
+
+  {
+    id: 10,
+    title: 'syntech.software',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/syntech.software.png',
+    url: '#'
+  },
+
+  {
+    id: 11,
+    title: 'toplead.com.ua',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/toplead.com.ua.png',
+    url: '#'
+  },
+
+  {
+    id: 12,
+    title: 'treran.com',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/treran.com.png',
+    url: '#'
+  },
+
+  {
+    id: 13,
+    title: 'zakononline.ua',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zakononline.ua.png',
+    url: '#'
+  },
+
+  {
+    id: 14,
+    title: 'zr-code.com',
+    year: 2026,
+    category: 'Web',
+    description: 'Сайт із сучасною структурою та анімаціями.',
+    technologies: [
+      'SCSS',
+    ],
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zr-code.com.png',
     url: '#'
   }
 ];
