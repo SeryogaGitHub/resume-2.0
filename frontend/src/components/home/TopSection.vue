@@ -23,23 +23,20 @@ const description = `Розглядаю пропозиції віддалено�
             {{ description }}
           </p>
 
-          <div hidden="hidden">
-            <div class="btns mt-60">
-              <a
-                  href="#projects"
-                  class="btn"
-              >
-                Переглянути роботи
-              </a>
+          <div class="btns mt-60">
+            <a
+                href="#projects"
+                class="btn"
+            >
+              Переглянути роботи
+            </a>
 
-              <a
-                  href="@/assets/CV/EU-Resume-Front-end.pdf"
-                  class="btn"
-                  download="EU-Resume-Front-end-SERHII-LYPIANETS.pdf"
-              >
-                Завантажити CV
-              </a>
-            </div>
+            <a
+                href="https://github.com/SeryogaGitHub/resume-2.0/blob/main/frontend/src/assets/CV/EN-Resume-Front-end.pdf"
+                class="btn"
+            >
+              Завантажити CV
+            </a>
           </div>
         </div>
 
