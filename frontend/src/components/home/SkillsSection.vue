@@ -51,7 +51,7 @@ const localizedSkills = computed(() =>
         }}
       </h2>
 
-      <BaseList :items="localizedSkills">
+      <BaseList :items="localizedSkills" :count="6">
         <template #default="{ item }">
           <div class="skill-detail">
             <h4>{{ item.name }}</h4>

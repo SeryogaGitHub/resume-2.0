@@ -144,6 +144,9 @@
     .item{
       display: flex;
       flex-direction: column;
+      position: sticky;
+      top: 40px;
+      background: white;
     }
 
     .detail{

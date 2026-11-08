@@ -35,7 +35,7 @@ const localizedFooter = computed(() => ({
             href="#"
             class="back-to-top"
         >
-          <span>{{ buttons.startCollaboration[locale] }}</span> ↑
+          <span>{{ buttons.backToTop[locale] }}</span> ↑
         </a>
 
       </div>
