@@ -34,7 +34,7 @@ const { locale } = useI18n();
             </a>
 
             <a
-                href="https://github.com/SeryogaGitHub/resume-2.0/blob/main/frontend/src/assets/CV/EN-Resume-Front-end.pdf"
+                :href="topSection.linkCV[locale]"
                 class="btn"
                 target="_blank"
             >
