@@ -1,5 +1,24 @@
-<script setup>
 
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+import { descriptionSection } from '@data/descriptionSection.js';
+
+const { locale } = useI18n();
+
+const content = computed(() => ({
+  info: descriptionSection.info.map(item => ({
+    id: item.id,
+    label: item.label[locale.value],
+    value: item.value[locale.value]
+  })),
+
+  text: descriptionSection.text.map(item => ({
+    id: item.id,
+    content: item.content[locale.value]
+  }))
+}));
 </script>
 
 <template>
@@ -7,70 +26,15 @@
     <div class="center">
       <table>
         <tbody>
-        <tr>
-          <td>Вид зайнятості:</td>
-          <td>повна</td>
-        </tr>
-
-        <tr>
-          <td>Зарплата:</td>
-          <td>$1000</td>
-        </tr>
-
-        <tr>
-          <td>Вік:</td>
-          <td>36 років</td>
-        </tr>
-
-        <tr>
-          <td>Місто проживання:</td>
-          <td>Житомир, Україна</td>
-        </tr>
-
-        <tr>
-          <td>Район проживання:</td>
-          <td>Богунський район,вулиця Перемоги</td>
-        </tr>
-
-        <tr>
-          <td>Готовий працювати:</td>
-          <td>Інші країни, Дистанційно</td>
-        </tr>
-
-        <tr>
-          <td>Робочий графік:</td>
-          <td>09:00 - 17:00 (7 робочих годин)</td>
+        <tr v-for="item in content.info" :key="item.id">
+          <td>{{ item.label }}</td>
+          <td>{{ item.value }}</td>
         </tr>
         </tbody>
       </table>
 
-      <p>
-        Досвід самостійного створення повноцінних сайтів від А до Я. Розумію як
-        оптимізувати код, файли, проект під Google Page Speed. Я спеціаліст не просто
-        «переходу дизайну на браузерну мову», а ще з почуттям стиля і розуміння
-        сучасних тенденцій.
-      </p>
-
-      <p>
-        Професію яка приносить задоволення, коли починаю працювати, повністю
-        поглинаюся в процес!
-      </p>
-
-      <p>
-        Шукаю роботу на постійній основі в ОФІСІ з офіційним працевлаштуванням і
-        Кар'єрним ростом. Також цікаво робота віддалено.
-      </p>
-
-      <p>
-        Маю поняття як потрібно працювати віддалено, ставлюся до цього
-        відповідально. Є веб-камера, високошвидкісний інтернет, все що потрібно для
-        зв'язку, акамулятор на 7 годин, потужний ноутбук мешкаю в районі де не
-        вимикали світло в минулому році.
-      </p>
-
-      <p>
-        Преоритетним на даний момент є для мене розвиток і практичне
-        використання: <strong>NodeJs, ES6, VueJs, ReactJs, React Native, TypeScript</strong>
+      <p v-for="item in content.text" :key="item.id">
+        {{ item.content }}
       </p>
     </div>
   </section>

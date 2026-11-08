@@ -48,7 +48,7 @@ const submitForm = () => {
         ></textarea>
 
         <div class="wrap-button">
-          <BaseButton type="button" class="btn">Надіслати</BaseButton>
+          <BaseButton type="buttons" class="btn">Надіслати</BaseButton>
         </div>
       </form>
     </div>

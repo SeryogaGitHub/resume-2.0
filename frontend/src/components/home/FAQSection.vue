@@ -1,38 +1,55 @@
-<script setup>
 
-import Accordion from "@/components/Accordion.vue";
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+import Accordion from '@/components/Accordion.vue';
+import { faqSection } from '@data/faqSection.js';
+
+const { locale } = useI18n();
+
+const content = computed(() => ({
+  title: faqSection.title[locale.value],
+  subtitle: faqSection.subtitle[locale.value],
+
+  items: faqSection.items.map(item => ({
+    id: item.id,
+    title: item.title[locale.value],
+    description: item.description[locale.value]
+  }))
+}));
 </script>
 
 <template>
   <section class="faq-section section">
     <div class="center">
-      <h2>FAQ’s</h2>
+      <h2>
+        {{ content.title }}
+      </h2>
 
       <div class="wrap-accordion-list">
         <div class="left">
           <div class="image">
-            <img src="@img/index-page/faq-section/faq-section.jpg" loading="lazy" alt="">
-            <h4 class="mt-24 mb-0">Залишилися запитання?</h4>
+            <img
+                src="@img/index-page/faq-section/faq-section.jpg"
+                loading="lazy"
+                alt=""
+            >
+
+            <h4 class="mt-24 mb-0">
+              {{ content.subtitle }}
+            </h4>
           </div>
         </div>
 
         <div class="accordion-list">
-          <Accordion title="Який у вас досвід?">
+          <Accordion
+              v-for="item in content.items"
+              :key="item.id"
+              :title="item.title"
+          >
             <p>
-              Маю понад 13 років досвіду у веброзробці.
-            </p>
-          </Accordion>
-
-          <Accordion title="З якими технологіями працюєте?">
-            <p>
-              HTML, CSS, SCSS, JavaScript, Vue.js,
-              React та інші технології.
-            </p>
-          </Accordion>
-
-          <Accordion title="Чи працюєте ви віддалено?">
-            <p>
-              Так, розглядаю віддалену співпрацю.
+              {{ item.description }}
             </p>
           </Accordion>
         </div>

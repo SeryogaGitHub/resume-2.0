@@ -1,10 +1,65 @@
 <script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
-import BaseList from "@/components/BaseList.vue";
+import BaseList from '@/components/BaseList.vue';
+import OpenProjects from '@/components/OpenProjects.vue';
+
 import { skills } from '@/data/skills.js';
 import { tools } from '@/data/tools.js';
-import OpenProjects from "@/components/OpenProjects.vue";
+
+const { locale } = useI18n();
+
+const translate = (value) => {
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  return value?.[locale.value] ?? '';
+};
+
+const localizedSkills = computed(() =>
+    skills.map(item => ({
+      ...item,
+      name: translate(item.name),
+      experience: translate(item.experience),
+      description: translate(item.description)
+    }))
+);
+
+const localizedTools = computed(() =>
+    tools.map(item => ({
+      ...item,
+      name: translate(item.name),
+      experience: translate(item.experience),
+      description: translate(item.description)
+    }))
+);
+
+const sectionTitles = computed(() => {
+  const translations = {
+    uk: {
+      skills: 'Технології',
+      tools: 'Інструменти'
+    },
+    en: {
+      skills: 'Technologies',
+      tools: 'Tools'
+    },
+    pl: {
+      skills: 'Technologie',
+      tools: 'Narzędzia'
+    },
+    de: {
+      skills: 'Technologien',
+      tools: 'Werkzeuge'
+    }
+  };
+
+  return translations[locale.value] ?? translations.uk;
+});
 </script>
 
 <template>
@@ -17,9 +72,9 @@ import OpenProjects from "@/components/OpenProjects.vue";
           class="skills-section full-detail section"
       >
         <div class="center">
-          <h2>Технології</h2>
+          <h2>{{ sectionTitles.skills }}</h2>
 
-          <BaseList :items="skills">
+          <BaseList :items="localizedSkills">
             <template #default="{ item }">
               <div class="skill-detail">
                 <div class="skill">
@@ -34,9 +89,11 @@ import OpenProjects from "@/components/OpenProjects.vue";
             </template>
           </BaseList>
 
-          <h2 class="mt-60">Інструменти</h2>
+          <h2 class="mt-60">
+            {{ sectionTitles.tools }}
+          </h2>
 
-          <BaseList :items="tools">
+          <BaseList :items="localizedTools">
             <template #default="{ item }">
               <div class="skill-detail">
                 <div class="skill">

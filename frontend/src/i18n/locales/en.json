@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Portfolio",
+    "skills": "Skills",
+    "contacts": "Contacts",
+    "blog": "Blog"
+  },
+  "buttons": {
+    "viewProjects": "View projects",
+    "downloadCV": "Download CV",
+    "send": "Send"
+  },
+  "home": {
+    "title": "Web Developer",
+    "description": "I create modern websites and web applications."
+  }
+}

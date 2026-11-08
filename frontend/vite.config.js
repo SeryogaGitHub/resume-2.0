@@ -25,6 +25,10 @@ export default defineConfig({
 
       '@img': fileURLToPath(
           new URL('./src/assets/image', import.meta.url)
+      ),
+
+      '@data': fileURLToPath(
+          new URL('./src/data', import.meta.url)
       )
     },
   },

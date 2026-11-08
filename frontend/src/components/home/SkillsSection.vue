@@ -1,13 +1,36 @@
 <script setup>
-import BaseList from "@/components/BaseList.vue";
-import {RouterLink} from "vue-router";
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { RouterLink } from 'vue-router';
 
-defineProps({
+import BaseList from '@/components/BaseList.vue';
+import {buttons} from "@/data/buttons.js";
+
+const props = defineProps({
   skills: {
-    type: Object,
+    type: Array,
     required: true
   }
 });
+
+const { locale } = useI18n();
+
+const translate = (value) => {
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  return value?.[locale.value] ?? '';
+};
+
+const localizedSkills = computed(() =>
+    props.skills.map(skill => ({
+      ...skill,
+      name: translate(skill.name),
+      experience: translate(skill.experience),
+      description: translate(skill.description)
+    }))
+);
 </script>
 
 <template>
@@ -16,11 +39,19 @@ defineProps({
       class="skills-section section"
   >
     <div class="center">
+
       <h2>
-        Технології, з якими я працюю
+        {{
+          ({
+            uk: 'Технології, з якими я працюю',
+            en: 'Technologies I work with',
+            pl: 'Technologie, z którymi pracuję',
+            de: 'Technologien, mit denen ich arbeite'
+          })[locale]
+        }}
       </h2>
 
-      <BaseList :items="skills">
+      <BaseList :items="localizedSkills">
         <template #default="{ item }">
           <div class="skill-detail">
             <h4>{{ item.name }}</h4>
@@ -29,10 +60,27 @@ defineProps({
         </template>
       </BaseList>
 
-      <RouterLink to="/skills" class="btn">
-        <span>Детальнінше</span>
+      <RouterLink
+          to="/skills"
+          class="btn"
+      >
+        <span>{{ buttons.learnMore[locale] }}</span>
 
-        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.700237 0.700073C0.700237 0.700073 5.7002 4.38249 5.7002 5.70007C5.7002 7.01774 0.700195 10.7001 0.700195 10.7001" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(255, 255, 255); stroke-opacity: 1;"></path></svg>
+        <svg
+            width="7"
+            height="12"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+              d="M0.700237 0.700073C0.700237 0.700073 5.7002 4.38249 5.7002 5.70007C5.7002 7.01774 0.700195 10.7001 0.700195 10.7001"
+              stroke="#fff"
+              stroke-width="1.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+          />
+        </svg>
       </RouterLink>
     </div>
   </section>

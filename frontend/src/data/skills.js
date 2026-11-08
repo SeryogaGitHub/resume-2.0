@@ -1,129 +1,350 @@
+const localized = (uk, en, pl, de) => ({
+  uk,
+  en,
+  pl,
+  de
+});
 
 export const skills = [
   {
     id: 1,
     name: 'HTML / CSS',
-    experience: '16+ років',
-    description: 'Працюю з HTML і CSS з 2009 року. Пройшов шлях від перших вебсторінок із застарілими HTML-атрибутами до сучасної адаптивної та семантичної верстки. Постійно вдосконалюю підходи до розробки, вивчаю нові можливості стандартів і знаходжу ефективні рішення для складних інтерфейсів.'
+    experience: localized(
+        '16+ років',
+        '16+ years',
+        '16+ lat',
+        '16+ Jahre'
+    ),
+    description: localized(
+        'Працюю з HTML і CSS з 2009 року. Пройшов шлях від перших вебсторінок із застарілими HTML-атрибутами до сучасної адаптивної та семантичної верстки. Постійно вдосконалюю підходи до розробки, вивчаю нові можливості стандартів і знаходжу ефективні рішення для складних інтерфейсів.',
+        'I have been working with HTML and CSS since 2009. I have progressed from creating early web pages using outdated HTML attributes to modern responsive and semantic markup. I continuously improve my development practices, explore new web standards and find effective solutions for complex interfaces.',
+        'Pracuję z HTML i CSS od 2009 roku. Przeszedłem drogę od tworzenia pierwszych stron internetowych z użyciem przestarzałych atrybutów HTML do nowoczesnego, responsywnego i semantycznego kodowania. Stale doskonalę swoje podejście do tworzenia stron, poznaję nowe możliwości standardów i znajduję skuteczne rozwiązania dla złożonych interfejsów.',
+        'Ich arbeite seit 2009 mit HTML und CSS. Dabei habe ich mich von den ersten Webseiten mit veralteten HTML-Attributen bis hin zu modernem, responsivem und semantischem Markup weiterentwickelt. Ich verbessere kontinuierlich meine Entwicklungsansätze, beschäftige mich mit neuen Webstandards und finde effektive Lösungen für komplexe Benutzeroberflächen.'
+    )
   },
   {
     id: 2,
     name: 'JavaScript',
-    experience: '12+ років',
-    description: 'Маю практичний досвід розробки інтерактивних елементів інтерфейсу: слайдерів, попапів, кастомних select-компонентів, анімацій та інших UI-рішень. Працюю з npm-бібліотеками, створюю власні компоненти та використовую JavaScript у розробці на Vue.js, React і Node.js.'
+    experience: localized(
+        '12+ років',
+        '12+ years',
+        '12+ lat',
+        '12+ Jahre'
+    ),
+    description: localized(
+        'Маю практичний досвід розробки інтерактивних елементів інтерфейсу: слайдерів, попапів, кастомних select-компонентів, анімацій та інших UI-рішень. Працюю з npm-бібліотеками, створюю власні компоненти та використовую JavaScript у розробці на Vue.js, React і Node.js.',
+        'I have hands-on experience developing interactive UI elements, including sliders, popups, custom select components, animations and other UI solutions. I work with npm libraries, build custom components and use JavaScript in Vue.js, React and Node.js development.',
+        'Mam praktyczne doświadczenie w tworzeniu interaktywnych elementów interfejsu, takich jak slidery, popupy, niestandardowe komponenty select, animacje i inne rozwiązania UI. Pracuję z bibliotekami npm, tworzę własne komponenty i wykorzystuję JavaScript w projektach opartych na Vue.js, React i Node.js.',
+        'Ich verfüge über praktische Erfahrung in der Entwicklung interaktiver Benutzeroberflächenelemente wie Slider, Pop-ups, benutzerdefinierte Select-Komponenten, Animationen und anderer UI-Lösungen. Ich arbeite mit npm-Bibliotheken, entwickle eigene Komponenten und setze JavaScript in Projekten mit Vue.js, React und Node.js ein.'
+    )
   },
   {
     id: 3,
     name: 'Vue.js',
-    experience: '3+ роки',
-    description: 'Маю практичний досвід роботи з Vue.js, зокрема у створенні компонентів та інтерактивних елементів інтерфейсу. Використовував технологію для розробки власного сайту-резюме та закріплення знань на практиці. Постійно поглиблюю розуміння екосистеми Vue.js, компонентного підходу та сучасних принципів розробки.'
+    experience: localized(
+        '3+ роки',
+        '3+ years',
+        '3+ lata',
+        '3+ Jahre'
+    ),
+    description: localized(
+        'Маю практичний досвід роботи з Vue.js, зокрема у створенні компонентів та інтерактивних елементів інтерфейсу. Використовував технологію для розробки власного сайту-резюме та закріплення знань на практиці. Постійно поглиблюю розуміння екосистеми Vue.js, компонентного підходу та сучасних принципів розробки.',
+        'I have practical experience working with Vue.js, particularly in developing components and interactive UI elements. I have used the technology to build my own portfolio website and apply my knowledge in practice. I continuously deepen my understanding of the Vue.js ecosystem, component-based architecture and modern development principles.',
+        'Mam praktyczne doświadczenie w pracy z Vue.js, w szczególności w tworzeniu komponentów i interaktywnych elementów interfejsu. Wykorzystałem tę technologię do stworzenia własnej strony z portfolio i rozwijania umiejętności w praktyce. Stale poszerzam wiedzę na temat ekosystemu Vue.js, podejścia komponentowego i nowoczesnych zasad tworzenia aplikacji.',
+        'Ich habe praktische Erfahrung mit Vue.js, insbesondere bei der Entwicklung von Komponenten und interaktiven Benutzeroberflächenelementen. Ich habe diese Technologie für die Entwicklung meiner eigenen Portfolio-Website genutzt, um meine Kenntnisse praktisch zu vertiefen. Ich erweitere kontinuierlich mein Verständnis des Vue.js-Ökosystems, der komponentenbasierten Architektur und moderner Entwicklungsprinzipien.'
+    )
   },
   {
     id: 4,
     name: 'React',
-    experience: '3+ роки',
-    description: 'Маю досвід роботи з React у комерційних проєктах, зокрема над проєктом сервісу доставки їжі для ринку ОАЕ у 2017 році. Працював над проєктом у команді з досвідченішим розробником. Також використовував React у подальших проєктах для створення інтерактивних компонентів та інтерфейсів.'
+    experience: localized(
+        '3+ роки',
+        '3+ years',
+        '3+ lata',
+        '3+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід роботи з React у комерційних проєктах, зокрема над проєктом сервісу доставки їжі для ринку ОАЕ у 2017 році. Працював над проєктом у команді з досвідченішим розробником. Також використовував React у подальших проєктах для створення інтерактивних компонентів та інтерфейсів.',
+        'I have experience working with React on commercial projects, including a food delivery service for the UAE market in 2017. I worked on the project as part of a team alongside a more experienced developer. I also used React in subsequent projects to build interactive components and user interfaces.',
+        'Mam doświadczenie w pracy z React w projektach komercyjnych, w tym przy tworzeniu serwisu dostawy jedzenia na rynek ZEA w 2017 roku. Pracowałem nad tym projektem w zespole z bardziej doświadczonym programistą. Wykorzystywałem również React w kolejnych projektach do tworzenia interaktywnych komponentów i interfejsów.',
+        'Ich habe Erfahrung mit React in kommerziellen Projekten, darunter die Entwicklung eines Essenslieferdienstes für den Markt der Vereinigten Arabischen Emirate im Jahr 2017. Ich arbeitete dabei in einem Team mit einem erfahreneren Entwickler. Auch in späteren Projekten habe ich React zur Entwicklung interaktiver Komponenten und Benutzeroberflächen eingesetzt.'
+    )
   },
   {
     id: 5,
     name: 'SCSS',
-    experience: '10+ років',
-    description: 'Високий рівень володіння SCSS. Використовую препроцесор у повсякденній роботі для створення масштабованих стилів, повторного використання коду та підтримки структури проєктів. Маю досвід роботи з Grunt, Gulp і Vite.'
+    experience: localized(
+        '10+ років',
+        '10+ years',
+        '10+ lat',
+        '10+ Jahre'
+    ),
+    description: localized(
+        'Високий рівень володіння SCSS. Використовую препроцесор у повсякденній роботі для створення масштабованих стилів, повторного використання коду та підтримки структури проєктів. Маю досвід роботи з Grunt, Gulp і Vite.',
+        'Advanced knowledge of SCSS. I use this preprocessor in my daily work to create scalable stylesheets, reuse code and maintain well-organized project structures. I have experience working with Grunt, Gulp and Vite.',
+        'Bardzo dobra znajomość SCSS. Na co dzień korzystam z tego preprocesora do tworzenia skalowalnych stylów, ponownego wykorzystywania kodu i utrzymywania uporządkowanej struktury projektów. Mam doświadczenie w pracy z Grunt, Gulp i Vite.',
+        'Sehr gute SCSS-Kenntnisse. Ich verwende diesen Präprozessor täglich, um skalierbare Stylesheets zu erstellen, Code wiederzuverwenden und eine übersichtliche Projektstruktur beizubehalten. Ich habe Erfahrung mit Grunt, Gulp und Vite.'
+    )
   },
   {
     id: 6,
     name: 'Node.js',
-    experience: '1+ рік',
-    description: 'Розвиваюся у напрямі Backend-розробки. Маю практичний некомерційний досвід роботи з Node.js, розумію принципи побудови серверної частини застосунків, створюю REST API та працюю з базами даних MySQL, PostgreSQL і MongoDB. Один із пріоритетних напрямів професійного розвитку — Full-stack розробка.'
+    experience: localized(
+        '1+ рік',
+        '1+ year',
+        '1+ rok',
+        '1+ Jahr'
+    ),
+    description: localized(
+        'Розвиваюся у напрямі Backend-розробки. Маю практичний некомерційний досвід роботи з Node.js, розумію принципи побудови серверної частини застосунків, створюю REST API та працюю з базами даних MySQL, PostgreSQL і MongoDB. Один із пріоритетних напрямів професійного розвитку — Full-stack розробка.',
+        'I am developing my skills in backend development. I have practical, non-commercial experience with Node.js, understand the principles of building application backends, create REST APIs and work with MySQL, PostgreSQL and MongoDB databases. Full-stack development is one of my main professional development priorities.',
+        'Rozwijam się w kierunku programowania backendowego. Mam praktyczne, niekomercyjne doświadczenie z Node.js, rozumiem zasady budowania zaplecza aplikacji, tworzę REST API i pracuję z bazami danych MySQL, PostgreSQL oraz MongoDB. Jednym z głównych kierunków mojego rozwoju zawodowego jest Full-stack development.',
+        'Ich entwickle mich im Bereich der Backend-Entwicklung weiter. Ich verfüge über praktische, nicht-kommerzielle Erfahrung mit Node.js, verstehe die Grundlagen der Entwicklung serverseitiger Anwendungen, erstelle REST-APIs und arbeite mit den Datenbanken MySQL, PostgreSQL und MongoDB. Full-Stack-Entwicklung ist einer meiner wichtigsten beruflichen Entwicklungsschwerpunkte.'
+    )
   },
   {
     id: 7,
     name: 'PHP',
-    experience: '14+ років',
-    description: 'Маю досвід роботи з PHP у десятках вебпроєктів. Переважно займався розробкою та доопрацюванням функціональності, інтеграцією рішень і модифікацією тем та модулів. Працював із WordPress, OpenCart, Symfony, Yii2 і Laravel.'
+    experience: localized(
+        '14+ років',
+        '14+ years',
+        '14+ lat',
+        '14+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід роботи з PHP у десятках вебпроєктів. Переважно займався розробкою та доопрацюванням функціональності, інтеграцією рішень і модифікацією тем та модулів. Працював із WordPress, OpenCart, Symfony, Yii2 і Laravel.',
+        'I have experience working with PHP across dozens of web projects. My work has mainly involved developing and extending functionality, integrating solutions, and modifying themes and modules. I have worked with WordPress, OpenCart, Symfony, Yii2 and Laravel.',
+        'Mam doświadczenie w pracy z PHP w kilkudziesięciu projektach internetowych. Zajmowałem się głównie tworzeniem i rozbudową funkcjonalności, integracją rozwiązań oraz modyfikacją motywów i modułów. Pracowałem z WordPress, OpenCart, Symfony, Yii2 i Laravel.',
+        'Ich habe Erfahrung mit PHP in Dutzenden von Webprojekten. Zu meinen Aufgaben gehörten hauptsächlich die Entwicklung und Erweiterung von Funktionen, die Integration von Lösungen sowie die Anpassung von Themes und Modulen. Ich habe mit WordPress, OpenCart, Symfony, Yii2 und Laravel gearbeitet.'
+    )
   },
   {
     id: 8,
     name: 'LESS',
-    experience: '12+ років',
-    description: 'Маю багаторічний досвід використання LESS у вебпроєктах. Використовую препроцесор для організації стилів, роботи зі змінними, вкладеністю та повторного використання CSS-коду.'
+    experience: localized(
+        '12+ років',
+        '12+ years',
+        '12+ lat',
+        '12+ Jahre'
+    ),
+    description: localized(
+        'Маю багаторічний досвід використання LESS у вебпроєктах. Використовую препроцесор для організації стилів, роботи зі змінними, вкладеністю та повторного використання CSS-коду.',
+        'I have many years of experience using LESS in web projects. I use this preprocessor to organize stylesheets, work with variables and nesting, and reuse CSS code.',
+        'Mam wieloletnie doświadczenie w korzystaniu z LESS w projektach internetowych. Używam tego preprocesora do organizowania stylów, pracy ze zmiennymi i zagnieżdżeniami oraz ponownego wykorzystywania kodu CSS.',
+        'Ich verfüge über langjährige Erfahrung mit LESS in Webprojekten. Ich verwende diesen Präprozessor zur Strukturierung von Stylesheets, zur Arbeit mit Variablen und Verschachtelungen sowie zur Wiederverwendung von CSS-Code.'
+    )
   },
   {
     id: 9,
     name: 'MySQL',
-    experience: '14+ років',
-    description: 'Маю досвід роботи з MySQL, переважно під час розгортання, налаштування та наповнення баз даних. Працюю із SQL-запитами, таблицями та структурою даних, необхідною для функціонування вебзастосунків.'
+    experience: localized(
+        '14+ років',
+        '14+ years',
+        '14+ lat',
+        '14+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід роботи з MySQL, переважно під час розгортання, налаштування та наповнення баз даних. Працюю із SQL-запитами, таблицями та структурою даних, необхідною для функціонування вебзастосунків.',
+        'I have experience working with MySQL, mainly in database deployment, configuration and data management. I work with SQL queries, tables and data structures required for web applications.',
+        'Mam doświadczenie w pracy z MySQL, głównie podczas wdrażania, konfiguracji i uzupełniania baz danych. Pracuję z zapytaniami SQL, tabelami i strukturami danych niezbędnymi do działania aplikacji internetowych.',
+        'Ich habe Erfahrung mit MySQL, hauptsächlich bei der Bereitstellung, Konfiguration und Befüllung von Datenbanken. Ich arbeite mit SQL-Abfragen, Tabellen und Datenstrukturen, die für den Betrieb von Webanwendungen erforderlich sind.'
+    )
   },
   {
     id: 10,
     name: 'Tailwind CSS',
-    experience: '6 проєктів',
-    description: 'Маю практичний досвід використання Tailwind CSS у кількох проєктах. Розумію utility-first підхід, принципи побудови адаптивних інтерфейсів і можливості швидкого створення стилізованих компонентів.'
+    experience: localized(
+        '6 проєктів',
+        '6 projects',
+        '6 projektów',
+        '6 Projekte'
+    ),
+    description: localized(
+        'Маю практичний досвід використання Tailwind CSS у кількох проєктах. Розумію utility-first підхід, принципи побудови адаптивних інтерфейсів і можливості швидкого створення стилізованих компонентів.',
+        'I have practical experience using Tailwind CSS in several projects. I understand the utility-first approach, the principles of building responsive interfaces and how to quickly create styled components.',
+        'Mam praktyczne doświadczenie w korzystaniu z Tailwind CSS w kilku projektach. Znam podejście utility-first, zasady tworzenia responsywnych interfejsów oraz możliwości szybkiego budowania stylizowanych komponentów.',
+        'Ich habe praktische Erfahrung mit Tailwind CSS in mehreren Projekten. Ich kenne den Utility-First-Ansatz, die Prinzipien der Entwicklung responsiver Benutzeroberflächen und die Möglichkeiten zur schnellen Erstellung gestalteter Komponenten.'
+    )
   },
   {
     id: 11,
     name: 'React Native',
-    experience: '4 проєкти',
-    description: 'Маю досвід роботи з React Native над кількома невеликими проєктами. Самостійно опановував документацію та реалізовував функціональність мобільних застосунків. Один із перших проєктів був виконаний як університетська екзаменаційна робота та отримав оцінку 86 зі 100.'
+    experience: localized(
+        '4 проєкти',
+        '4 projects',
+        '4 projekty',
+        '4 Projekte'
+    ),
+    description: localized(
+        'Маю досвід роботи з React Native над кількома невеликими проєктами. Самостійно опановував документацію та реалізовував функціональність мобільних застосунків. Один із перших проєктів був виконаний як університетська екзаменаційна робота та отримав оцінку 86 зі 100.',
+        'I have experience working with React Native on several small projects. I independently studied the documentation and implemented functionality for mobile applications. One of my first projects was completed as a university examination assignment and received a score of 86 out of 100.',
+        'Mam doświadczenie w pracy z React Native przy kilku mniejszych projektach. Samodzielnie poznawałem dokumentację i wdrażałem funkcjonalności aplikacji mobilnych. Jeden z moich pierwszych projektów został wykonany jako praca egzaminacyjna na uczelni i otrzymał ocenę 86 na 100.',
+        'Ich habe Erfahrung mit React Native aus mehreren kleineren Projekten. Ich habe mich selbstständig mit der Dokumentation vertraut gemacht und Funktionen für mobile Anwendungen entwickelt. Eines meiner ersten Projekte entstand als universitäre Prüfungsarbeit und erhielt 86 von 100 Punkten.'
+    )
   },
   {
     id: 12,
-    name: 'Методологія БЕМ',
-    experience: 'Практичний досвід',
-    description: 'Розумію принципи методології БЕМ та її застосування для побудови структурованої, передбачуваної й масштабованої CSS-архітектури.'
+    name: localized(
+        'Методологія БЕМ',
+        'BEM Methodology',
+        'Metodologia BEM',
+        'BEM-Methodik'
+    ),
+    experience: localized(
+        'Практичний досвід',
+        'Practical experience',
+        'Doświadczenie praktyczne',
+        'Praktische Erfahrung'
+    ),
+    description: localized(
+        'Розумію принципи методології БЕМ та її застосування для побудови структурованої, передбачуваної й масштабованої CSS-архітектури.',
+        'I understand the principles of the BEM methodology and how to apply them to build structured, predictable and scalable CSS architectures.',
+        'Znam zasady metodologii BEM i jej zastosowanie w tworzeniu uporządkowanej, przewidywalnej i skalowalnej architektury CSS.',
+        'Ich verstehe die Prinzipien der BEM-Methodik und ihre Anwendung beim Aufbau einer strukturierten, vorhersehbaren und skalierbaren CSS-Architektur.'
+    )
   },
   {
     id: 13,
     name: 'Git, GitHub, GitLab',
-    experience: '10+ років',
-    description: 'Використовую Git для контролю версій у робочих проєктах. Маю досвід ведення історії змін, роботи з репозиторіями та підтримки командної розробки.'
+    experience: localized(
+        '10+ років',
+        '10+ years',
+        '10+ lat',
+        '10+ Jahre'
+    ),
+    description: localized(
+        'Використовую Git для контролю версій у робочих проєктах. Маю досвід ведення історії змін, роботи з репозиторіями та підтримки командної розробки.',
+        'I use Git for version control in professional projects. I have experience maintaining change history, working with repositories and supporting collaborative development.',
+        'Używam Git do kontroli wersji w projektach komercyjnych. Mam doświadczenie w prowadzeniu historii zmian, pracy z repozytoriami i wspieraniu pracy zespołowej.',
+        'Ich verwende Git zur Versionskontrolle in beruflichen Projekten. Ich habe Erfahrung mit der Verwaltung der Änderungshistorie, der Arbeit mit Repositories und der Unterstützung gemeinsamer Entwicklungsprozesse.'
+    )
   },
   {
     id: 14,
     name: 'Bootstrap',
-    experience: '12+ років',
-    description: 'Маю багаторічний досвід використання Bootstrap у вебпроєктах. Використовую готову сітку, компоненти та утиліти, за потреби адаптую стандартні стилі під дизайн і вимоги конкретного проєкту.'
+    experience: localized(
+        '12+ років',
+        '12+ years',
+        '12+ lat',
+        '12+ Jahre'
+    ),
+    description: localized(
+        'Маю багаторічний досвід використання Bootstrap у вебпроєктах. Використовую готову сітку, компоненти та утиліти, за потреби адаптую стандартні стилі під дизайн і вимоги конкретного проєкту.',
+        'I have many years of experience using Bootstrap in web projects. I work with its grid system, components and utility classes, adapting the default styles to match the design and requirements of each project when necessary.',
+        'Mam wieloletnie doświadczenie w korzystaniu z Bootstrap w projektach internetowych. Używam gotowego systemu siatki, komponentów i klas pomocniczych, a w razie potrzeby dostosowuję domyślne style do projektu graficznego i wymagań konkretnego projektu.',
+        'Ich verfüge über langjährige Erfahrung mit Bootstrap in Webprojekten. Ich verwende das integrierte Grid-System, Komponenten und Utility-Klassen und passe bei Bedarf die Standardstile an das Design und die Anforderungen des jeweiligen Projekts an.'
+    )
   },
   {
     id: 15,
     name: 'jQuery',
-    experience: '13+ років',
-    description: 'Використовую для розробки інтерактивних елементів вебінтерфейсів, бібліотеку для роботи з DOM, обробки подій, AJAX-запитів, створення анімацій та взаємодії з іншими плагінами й бібліотеками. Допомагає швидко реалізовувати функціональність і підтримувати наявні вебпроєкти.'
+    experience: localized(
+        '13+ років',
+        '13+ years',
+        '13+ lat',
+        '13+ Jahre'
+    ),
+    description: localized(
+        'Використовую бібліотеку для розробки інтерактивних елементів вебінтерфейсів, роботи з DOM, обробки подій, AJAX-запитів, створення анімацій та взаємодії з іншими плагінами й бібліотеками. Допомагає швидко реалізовувати функціональність і підтримувати наявні вебпроєкти.',
+        'I use this library to develop interactive web interface elements, manipulate the DOM, handle events and AJAX requests, create animations, and integrate with other plugins and libraries. It helps me implement functionality quickly and maintain existing web projects.',
+        'Wykorzystuję tę bibliotekę do tworzenia interaktywnych elementów interfejsów internetowych, pracy z DOM, obsługi zdarzeń i zapytań AJAX, tworzenia animacji oraz integracji z innymi wtyczkami i bibliotekami. Ułatwia szybkie wdrażanie funkcjonalności i utrzymywanie istniejących projektów internetowych.',
+        'Ich verwende diese Bibliothek zur Entwicklung interaktiver Weboberflächenelemente, zur Arbeit mit dem DOM, zur Verarbeitung von Ereignissen und AJAX-Anfragen, zur Erstellung von Animationen sowie zur Integration anderer Plugins und Bibliotheken. Sie ermöglicht eine schnelle Implementierung von Funktionen und die Wartung bestehender Webprojekte.'
+    )
   },
   {
     id: 16,
     name: 'NPM',
-    experience: '13+ років',
-    description: 'Використовую для підключення, налаштування й інтеграції сторонніх бібліотек і модулів у вебпроєкти. Працював із різноманітними рішеннями для реалізації анімацій, слайдерів, попапів, вбудовування YouTube-контенту та інших інтерактивних елементів інтерфейсу.'
+    experience: localized(
+        '13+ років',
+        '13+ years',
+        '13+ lat',
+        '13+ Jahre'
+    ),
+    description: localized(
+        'Використовую для підключення, налаштування й інтеграції сторонніх бібліотек і модулів у вебпроєкти. Працював із різноманітними рішеннями для реалізації анімацій, слайдерів, попапів, вбудовування YouTube-контенту та інших інтерактивних елементів інтерфейсу.',
+        'I use npm to install, configure and integrate third-party libraries and modules into web projects. I have worked with various solutions for implementing animations, sliders, popups, embedding YouTube content and adding other interactive interface elements.',
+        'Używam npm do instalowania, konfigurowania i integrowania zewnętrznych bibliotek oraz modułów w projektach internetowych. Pracowałem z różnymi rozwiązaniami do tworzenia animacji, sliderów, popupów, osadzania treści z YouTube i innych interaktywnych elementów interfejsu.',
+        'Ich verwende npm, um externe Bibliotheken und Module in Webprojekte einzubinden, zu konfigurieren und zu integrieren. Ich habe mit verschiedenen Lösungen zur Umsetzung von Animationen, Slidern, Pop-ups, der Einbettung von YouTube-Inhalten und anderen interaktiven Benutzeroberflächenelementen gearbeitet.'
+    )
   },
   {
     id: 17,
     name: 'Gulp',
-    experience: '8+ років',
-    description: 'Автоматизації процесів розробки та збирання вебпроєктів. Налаштовував завдання для компіляції SCSS, обробки й оптимізації CSS, JavaScript та графічних ресурсів. Використовував для автоматизації рутинних процесів і прискорення розробки.'
+    experience: localized(
+        '8+ років',
+        '8+ years',
+        '8+ lat',
+        '8+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід автоматизації процесів розробки та збирання вебпроєктів. Налаштовував завдання для компіляції SCSS, обробки й оптимізації CSS, JavaScript та графічних ресурсів. Використовував Gulp для автоматизації рутинних процесів і прискорення розробки.',
+        'I have experience automating development workflows and web project build processes. I configured tasks for SCSS compilation and for processing and optimizing CSS, JavaScript and image assets. I used Gulp to automate repetitive tasks and speed up development.',
+        'Mam doświadczenie w automatyzacji procesów tworzenia i budowania projektów internetowych. Konfigurowałem zadania do kompilacji SCSS oraz przetwarzania i optymalizacji CSS, JavaScript i zasobów graficznych. Używałem Gulp do automatyzacji powtarzalnych zadań i przyspieszania pracy.',
+        'Ich habe Erfahrung mit der Automatisierung von Entwicklungsabläufen und Build-Prozessen für Webprojekte. Ich habe Aufgaben zur SCSS-Kompilierung sowie zur Verarbeitung und Optimierung von CSS, JavaScript und Grafikressourcen eingerichtet. Mit Gulp habe ich wiederkehrende Aufgaben automatisiert und die Entwicklung beschleunigt.'
+    )
   },
   {
     id: 18,
     name: 'Vite',
-    experience: '2+ роки',
-    description: 'Основний інструмент для збирання сучасних вебпроєктів. Маю досвід налаштування середовища розробки, роботи з модулями, інтеграції SCSS та JavaScript, швидкого оновлення сторінок під час розробки й підготовки оптимізованої production-збірки. Планую надалі розвивати експертизу в екосистемі Vite.'
+    experience: localized(
+        '2+ роки',
+        '2+ years',
+        '2+ lata',
+        '2+ Jahre'
+    ),
+    description: localized(
+        'Основний інструмент для збирання сучасних вебпроєктів. Маю досвід налаштування середовища розробки, роботи з модулями, інтеграції SCSS та JavaScript, швидкого оновлення сторінок під час розробки й підготовки оптимізованої production-збірки. Планую надалі розвивати експертизу в екосистемі Vite.',
+        'My primary tool for building modern web projects. I have experience configuring development environments, working with modules, integrating SCSS and JavaScript, using fast page updates during development and preparing optimized production builds. I plan to continue expanding my expertise in the Vite ecosystem.',
+        'To moje główne narzędzie do budowania nowoczesnych projektów internetowych. Mam doświadczenie w konfiguracji środowiska programistycznego, pracy z modułami, integracji SCSS i JavaScript, korzystaniu z szybkiego odświeżania stron podczas developmentu oraz przygotowywaniu zoptymalizowanych wersji produkcyjnych. Planuję dalej rozwijać swoją wiedzę w ekosystemie Vite.',
+        'Mein wichtigstes Werkzeug zum Erstellen moderner Webprojekte. Ich habe Erfahrung mit der Konfiguration von Entwicklungsumgebungen, der Arbeit mit Modulen, der Integration von SCSS und JavaScript, schnellen Seitenaktualisierungen während der Entwicklung und der Erstellung optimierter Production-Builds. Ich plane, meine Kenntnisse im Vite-Ökosystem weiter auszubauen.'
+    )
   },
   {
     id: 19,
     name: 'HTML Email',
-    experience: '6+ років',
-    description: 'Кількох десятків HTML-листів та email-розсилок. Розумію особливості верстки для різних поштових клієнтів, створення адаптивних шаблонів і сумісності стилів з урахуванням обмеженої підтримки CSS.'
+    experience: localized(
+        '6+ років',
+        '6+ years',
+        '6+ lat',
+        '6+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід створення кількох десятків HTML-листів та email-розсилок. Розумію особливості верстки для різних поштових клієнтів, створення адаптивних шаблонів і забезпечення сумісності стилів з урахуванням обмеженої підтримки CSS.',
+        'I have experience creating dozens of HTML emails and email campaigns. I understand the specifics of email development for different email clients, creating responsive templates and ensuring style compatibility despite limited CSS support.',
+        'Mam doświadczenie w tworzeniu kilkudziesięciu wiadomości HTML i kampanii mailingowych. Znam specyfikę kodowania wiadomości dla różnych klientów pocztowych, tworzenia responsywnych szablonów i zapewniania zgodności stylów z uwzględnieniem ograniczonej obsługi CSS.',
+        'Ich habe Erfahrung mit der Erstellung von Dutzenden HTML-E-Mails und E-Mail-Kampagnen. Ich kenne die Besonderheiten der E-Mail-Entwicklung für verschiedene E-Mail-Clients, der Erstellung responsiver Vorlagen und der Sicherstellung der Stilkompatibilität unter Berücksichtigung der eingeschränkten CSS-Unterstützung.'
+    )
   },
   {
     id: 20,
     name: 'OpenCart',
-    experience: '5+ років',
-    description: 'Досвід роботи з кількома десятками проєктів на OpenCart. Займався доопрацюванням функціональності, адаптацією тем, внесенням змін у шаблони та виправленням помилок. Останнім часом переважно виконую точкові доопрацювання.'
+    experience: localized(
+        '5+ років',
+        '5+ years',
+        '5+ lat',
+        '5+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід роботи з кількома десятками проєктів на OpenCart. Займався доопрацюванням функціональності, адаптацією тем, внесенням змін у шаблони та виправленням помилок. Останнім часом переважно виконую точкові доопрацювання.',
+        'I have experience working on several dozen OpenCart projects. My work has included extending functionality, adapting themes, modifying templates and fixing bugs. Recently, I have mainly focused on specific improvements and targeted modifications.',
+        'Mam doświadczenie w pracy przy kilkudziesięciu projektach opartych na OpenCart. Zajmowałem się rozbudową funkcjonalności, dostosowywaniem motywów, modyfikacją szablonów i usuwaniem błędów. Ostatnio skupiam się głównie na konkretnych poprawkach i punktowych modyfikacjach.',
+        'Ich habe Erfahrung mit mehreren Dutzend OpenCart-Projekten. Zu meinen Aufgaben gehörten die Erweiterung der Funktionalität, die Anpassung von Themes, Änderungen an Templates und die Fehlerbehebung. In letzter Zeit konzentriere ich mich hauptsächlich auf gezielte Anpassungen und punktuelle Verbesserungen.'
+    )
   },
   {
     id: 21,
     name: 'WordPress',
-    experience: '5+ років',
-    description: 'Десятками проєктів на WordPress. Займався налаштуванням і доопрацюванням сайтів, модифікацією тем, адаптацією шаблонів та розширенням функціональності. Останнім часом переважно виконую точкові доопрацювання.'
+    experience: localized(
+        '5+ років',
+        '5+ years',
+        '5+ lat',
+        '5+ Jahre'
+    ),
+    description: localized(
+        'Маю досвід роботи з десятками проєктів на WordPress. Займався налаштуванням і доопрацюванням сайтів, модифікацією тем, адаптацією шаблонів та розширенням функціональності. Останнім часом переважно виконую точкові доопрацювання.',
+        'I have experience working on dozens of WordPress projects. My work has included website configuration and improvements, theme modifications, template customization and functionality extensions. Recently, I have mainly focused on specific improvements and targeted modifications.',
+        'Mam doświadczenie w pracy przy dziesiątkach projektów opartych na WordPress. Zajmowałem się konfiguracją i rozbudową stron, modyfikacją motywów, dostosowywaniem szablonów oraz rozszerzaniem funkcjonalności. Ostatnio skupiam się głównie na konkretnych poprawkach i punktowych modyfikacjach.',
+        'Ich habe Erfahrung mit Dutzenden WordPress-Projekten. Zu meinen Aufgaben gehörten die Konfiguration und Erweiterung von Websites, die Anpassung von Themes und Templates sowie die Erweiterung der Funktionalität. In letzter Zeit konzentriere ich mich hauptsächlich auf gezielte Anpassungen und punktuelle Verbesserungen.'
+    )
   }
 ];

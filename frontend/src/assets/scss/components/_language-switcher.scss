@@ -1,0 +1,43 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 30px;
+  background: #f3f3f3;
+
+  button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 7px 10px;
+    border-radius: 20px;
+    color: #777;
+    font-size: 13px;
+    font-weight: 500;
+    transition:
+            color 0.3s ease,
+            background 0.3s ease,
+            transform 0.3s ease;
+
+    &:hover {
+      color: #111;
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      color: #fff;
+      background: #222;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-switcher button,
+  .language-switcher button.active {
+    animation: none;
+    transition: none;
+  }
+}

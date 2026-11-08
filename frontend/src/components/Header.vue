@@ -1,7 +1,10 @@
 <script setup>
+import {ref, watch, onUnmounted, computed} from 'vue';
+import { useI18n } from 'vue-i18n';
+import { header } from '@data/header';
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 
-import { ref, watch, onUnmounted } from 'vue';
-
+const { locale } = useI18n();
 const btnMenu = ref(false);
 
 watch(btnMenu, (value) => {
@@ -12,32 +15,32 @@ onUnmounted(() => {
   document.body.classList.remove('open-menu');
 });
 
-const navigation = [
+const navigation = computed(() => [
   {
-    title: 'Головна',
+    title: header.navigation.home[locale.value],
     to: '/'
   },
   {
-    title: 'Технології',
+    title: header.navigation.skills[locale.value],
     to: '/skills'
   },
   {
-    title: 'Портфоліо',
+    title: header.navigation.projects[locale.value],
     to: '/projects'
   },
   {
-    title: 'Про мене',
+    title: header.navigation.about[locale.value],
     to: '/about'
   },
   // {
-  //   title: 'Блог',
+  //   title: header.navigation.blog[locale.value],
   //   to: '/blog'
   // },
   {
-    title: 'Контакти',
+    title: header.navigation.contacts[locale.value],
     to: '/contact'
   }
-];
+]);
 </script>
 
 <template>
@@ -60,6 +63,8 @@ const navigation = [
           {{ item.title }}
         </RouterLink>
       </nav>
+
+      <LanguageSwitcher />
 
       <button
           class="btn-menu"

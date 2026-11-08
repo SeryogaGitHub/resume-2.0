@@ -3,33 +3,10 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import ProjectsCard from '@/components/home/ProjectsCard.vue';
 import OpenProjects from '@/components/OpenProjects.vue';
-
-// import { getProjects } from '@/data/projects.js';
+import { useI18n } from 'vue-i18n';
 import { projects } from '@/data/projects';
-// import { onMounted, ref } from 'vue';
-import PortfolioAlert from "@/components/PortfolioAlert.vue";
 
-// const projects = ref([]);
-// const loading = ref(false);
-// const error = ref('');
-//
-// async function loadProjects() {
-//   loading.value = true;
-//   error.value = '';
-//
-//   try {
-//     // projects.value = await getProjects();
-//   } catch (err) {
-//     error.value = 'Не вдалося завантажити проєкти. Технічні роботи.';
-//     console.error(err);
-//   } finally {
-//     loading.value = false;
-//   }
-// }
-
-// onMounted(() => {
-//   loadProjects();
-// });
+const { locale } = useI18n();
 </script>
 
 <template>
@@ -39,9 +16,16 @@ import PortfolioAlert from "@/components/PortfolioAlert.vue";
     <main class="main-content">
       <section class="projects-section section">
         <div class="center">
-          <h1>Портфоліо</h1>
-
-<!--          <PortfolioAlert v-if="!projects.length" :loading :error />-->
+          <h1>
+            {{
+              ({
+                uk: 'Портфоліо',
+                en: 'Portfolio',
+                pl: 'Portfolio',
+                de: 'Portfolio'
+              })[locale]
+            }}
+          </h1>
 
           <div class="items align-center">
             <ProjectsCard

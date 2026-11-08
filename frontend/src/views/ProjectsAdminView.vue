@@ -202,7 +202,7 @@ onMounted(loadProjects);
 
             <BaseButton
                 v-if="editingId !== null"
-                type="button"
+                type="buttons"
                 @click="resetForm"
             >
               Скасувати
@@ -220,7 +220,7 @@ onMounted(loadProjects);
               <span>{{ project.title }} ({{ project.year }})</span>
 
               <BaseButton
-                  type="button"
+                  type="buttons"
                   @click="editProject(project)"
                   class="btn white"
               >
@@ -228,7 +228,7 @@ onMounted(loadProjects);
               </BaseButton>
 
               <BaseButton
-                  type="button"
+                  type="buttons"
                   @click="removeProject(project.id)"
                   class="btn"
               >

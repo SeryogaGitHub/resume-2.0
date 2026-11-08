@@ -1,6 +1,13 @@
+
 <script setup>
-import ProjectsCard from './ProjectsCard.vue';
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
+
+import ProjectsCard from './ProjectsCard.vue';
+import { projectsSection } from '@data/projectsSection';
+import { messages } from '@data/messages';
+import { buttons } from '@data/buttons';
 
 const props = defineProps({
   projects: {
@@ -9,12 +16,22 @@ const props = defineProps({
   },
   loading: {
     type: Boolean,
+    default: false
   },
   error: {
     type: String,
+    default: ''
   }
 });
 
+const { locale } = useI18n();
+
+const content = computed(() => ({
+  title: projectsSection.title[locale.value],
+  description: projectsSection.description[locale.value],
+  allProjects: buttons.allProjects[locale.value],
+  loading: messages.loading[locale.value]
+}));
 </script>
 
 <template>
@@ -22,62 +39,48 @@ const props = defineProps({
       id="projects"
       class="projects-section section"
   >
-    <div class="center" v-if="loading">
+    <div class="center">
+
       <header class="header">
         <div class="items">
+
           <h2 class="item">
-            Проекти
+            {{ content.title }}
           </h2>
 
           <div class="text-btn item">
+
             <div class="text">
               <p>
-                Усі проекти - Це тільки Декілька проектів ~7%:
+                {{ content.description }}
               </p>
             </div>
 
             <div>
-              <RouterLink to="/projects" class="btn white">
-                Усі проєкти →
+              <RouterLink
+                  to="/projects"
+                  class="btn white"
+              >
+                {{ content.allProjects }} →
               </RouterLink>
             </div>
+
           </div>
         </div>
       </header>
 
-      <p>Завантаження проєктів...</p>
-    </div>
+      <p v-if="loading">
+        {{ content.loading }}
+      </p>
 
-    <div class="center" v-if="error">
-      <p >
+      <p v-else-if="error">
         {{ error }}
       </p>
-    </div>
 
-    <div class="center" v-else>
-      <header class="header">
-        <div class="items">
-          <h2 class="item">
-            Проекти
-          </h2>
-
-          <div class="text-btn item">
-            <div class="text">
-              <p>
-                Усі проекти - Це тільки Декілька проектів ~7%:
-              </p>
-            </div>
-
-            <div>
-              <RouterLink to="/projects" class="btn white">
-                Усі проєкти →
-              </RouterLink>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <div class="items align-center">
+      <div
+          v-else
+          class="items align-center"
+      >
         <ProjectsCard
             v-for="(project, index) in props.projects"
             v-show="index < 4"
@@ -85,6 +88,7 @@ const props = defineProps({
             :project="project"
         />
       </div>
+
     </div>
   </section>
 </template>

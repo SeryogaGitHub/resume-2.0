@@ -1,7 +1,9 @@
-
 <script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
-import defaultImage from "@/assets/image/default.svg";
+
+import defaultImage from '@/assets/image/default.svg';
 
 defineProps({
   project: {
@@ -10,6 +12,44 @@ defineProps({
   }
 });
 
+const { locale } = useI18n();
+
+const content = computed(() => ({
+  back: {
+    uk: '← Усі проєкти',
+    en: '← All projects',
+    pl: '← Wszystkie projekty',
+    de: '← Alle Projekte'
+  }[locale.value],
+
+  overview: {
+    uk: 'Огляд проєкту',
+    en: 'Project overview',
+    pl: 'Opis projektu',
+    de: 'Projektübersicht'
+  }[locale.value],
+
+  year: {
+    uk: 'Рік:',
+    en: 'Year:',
+    pl: 'Rok:',
+    de: 'Jahr:'
+  }[locale.value],
+
+  role: {
+    uk: 'Роль:',
+    en: 'Role:',
+    pl: 'Rola:',
+    de: 'Rolle:'
+  }[locale.value],
+
+  technologies: {
+    uk: 'Технології:',
+    en: 'Technologies:',
+    pl: 'Technologie:',
+    de: 'Technologien:'
+  }[locale.value]
+}));
 </script>
 
 <template>
@@ -20,7 +60,7 @@ defineProps({
             :to="{ name: 'projects' }"
             class="h4"
         >
-          ← Усі проєкти
+          {{ content.back }}
         </RouterLink>
 
         <h1 class="mt-24">{{ project.title }}</h1>
@@ -42,23 +82,24 @@ defineProps({
 
         <section class="description-detail section">
           <div class="description">
-            <h3>Огляд проєкту</h3>
-            <p>{{ project.description }}</p>
+            <h3>{{ content.overview }}</h3>
+            <p>{{ project.description[locale] }}</p>
           </div>
 
           <div class="detail">
             <div>
-              <h3>Рік:</h3>
+              <h3>{{ content.year }}</h3>
               <p>{{ project.year }}</p>
             </div>
 
             <div>
-              <h3>Роль:</h3>
+              <h3>{{ content.role }}</h3>
               <p>UX/UI Design, Web Strategy</p>
             </div>
 
             <div>
-              <h3>Технології:</h3>
+              <h3>{{ content.technologies }}</h3>
+
               <ul class="list">
                 <li
                     v-for="technology in project.technologies"
