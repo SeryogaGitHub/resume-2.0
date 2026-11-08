@@ -20,6 +20,13 @@ export const topSection = {
       'Serhii Lypianets'
   ),
 
+  linkCV: localized(
+      'https://github.com/SeryogaGitHub/resume-2.0/blob/main/frontend/src/assets/CV/UA-Resume-Front-end.pdf',
+      'https://github.com/SeryogaGitHub/resume-2.0/blob/main/frontend/src/assets/CV/EN-Resume-Front-end.pdf',
+      'https://github.com/SeryogaGitHub/resume-2.0/blob/main/frontend/src/assets/CV/PL-Resume-Front-end.pdf',
+      'https://github.com/SeryogaGitHub/resume-2.0/blob/main/frontend/src/assets/CV/DE-Resume-Front-end.pdf'
+  ),
+
   description: localized(
       'Розглядаю пропозиції віддаленої роботи на постійній основі. Маю багаторічний досвід веброзробки, створюю сучасні, швидкі та адаптивні вебінтерфейси. Відкритий до роботи з різними технологіями, швидко опановую нові інструменти та розвиваюся в напрямі Full-stack (Node.js, React, Vue). Віддаю перевагу можливості переїзду за кордон і готовий вивчати іноземну мову.',
       'I am looking for long-term remote work opportunities. I have extensive experience in web development and create modern, fast, and responsive web interfaces. I am open to working with different technologies, quickly adapt to new tools, and am developing my skills in Full-stack development (Node.js, React, Vue). I am also open to relocating abroad and learning a foreign language.',
