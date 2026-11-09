@@ -7,10 +7,10 @@ const localized = (uk, en, pl, de) => ({
 
 export const topSection = {
   title: localized(
-      'Front-end / Web Developer | Full-stack Developer (Junior: Node.js, React.js, Vue.js)',
-      'Front-end / Web Developer | Full-stack Developer (Junior: Node.js, React.js, Vue.js)',
-      'Front-end / Web Developer | Full-stack Developer (Junior: Node.js, React.js, Vue.js)',
-      'Front-end / Web Developer | Full-stack Developer (Junior: Node.js, React.js, Vue.js)'
+      'Full-stack (NodeJs, VueJs, ReactJs)',
+      'Full-stack (NodeJs, VueJs, ReactJs)',
+      'Full-stack (NodeJs, VueJs, ReactJs)',
+      'Full-stack (NodeJs, VueJs, ReactJs)'
   ),
 
   name: localized(
