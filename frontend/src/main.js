@@ -1,22 +1,18 @@
+
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import i18n from './i18n';
-import 'animate.css';
 
-import WOW from 'wow.js';
+import gsapAnimation from '@/directives/gsap';
 
-import './assets/scss/main.scss';
+import '@scss/main.scss';
 
-createApp(App)
-    .use(i18n)
-    .use(router)
-    .mount('#app');
+const app = createApp(App);
 
-new WOW({
-  boxClass: 'wow',
-  animateClass: 'animate__animated',
-  offset: 100,
-  mobile: true,
-  live: true
-}).init();
+app.use(i18n);
+app.use(router);
+
+app.directive('gsap', gsapAnimation);
+
+app.mount('#app');

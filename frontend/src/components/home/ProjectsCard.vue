@@ -22,7 +22,8 @@ defineProps({
           name: 'project-detail',
           params: { id: project.id }
         }"
-      class="item mt-60 wow animate__fadeInUp"
+      class="item mt-60"
+      v-gsap
   >
     <img
         :src="project.image"

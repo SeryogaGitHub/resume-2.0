@@ -9,10 +9,10 @@ const { locale } = useI18n();
 <template>
   <section class="who-i-am section">
     <div class="center">
-      <h2 class="wow animate__fadeInUp">{{ whoIAm.title[locale] }}</h2>
+      <h2 v-gsap>{{ whoIAm.title[locale] }}</h2>
 
       <div class="flex">
-        <div class="image-left wow animate__fadeInUp">
+        <div v-gsap class="image-left">
           <img
               src="@img/index-page/who-i-am/who-i-am-left.jpg"
               loading="lazy"
@@ -20,12 +20,12 @@ const { locale } = useI18n();
           >
         </div>
 
-        <div class="text">
-          <p class="wow animate__fadeInUp">{{ whoIAm.description[locale] }}</p>
+        <div v-gsap class="text">
+          <p>{{ whoIAm.description[locale] }}</p>
 
-          <p class="wow animate__fadeInUp">{{ whoIAm.workPreferences[locale] }}</p>
+          <p>{{ whoIAm.workPreferences[locale] }}</p>
 
-          <RouterLink to="/about" class="btn white wow animate__fadeInUp">
+          <RouterLink to="/about" class="btn white">
             <span>{{ buttons.learnMore[locale] }}</span>
 
             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ const { locale } = useI18n();
           </RouterLink>
         </div>
 
-        <div class="image-right wow animate__fadeInUp">
+        <div v-gsap class="image-right">
           <img
               src="@img/index-page/who-i-am/who-i-am-right.jpg"
               loading="lazy"

@@ -59,6 +59,7 @@ const content = computed(() => ({
         <RouterLink
             :to="{ name: 'projects' }"
             class="h4"
+            v-gsap
         >
           {{ content.back }}
         </RouterLink>
@@ -68,6 +69,7 @@ const content = computed(() => ({
         <header
             v-if="project.image"
             class="top-image"
+            v-gsap
             :style="{ backgroundImage: `url(${project.image})` }"
         >
         </header>
@@ -78,32 +80,34 @@ const content = computed(() => ({
             :alt="project.title"
             class="rotate"
             loading="lazy"
+            v-gsap
         >
 
         <section class="description-detail section">
-          <div class="description">
+          <div v-gsap class="description">
             <h3>{{ content.overview }}</h3>
             <p>{{ project.description[locale] }}</p>
           </div>
 
-          <div class="detail">
+          <div v-gsap class="detail">
             <div>
               <h3>{{ content.year }}</h3>
               <p>{{ project.year }}</p>
             </div>
 
-            <div>
+            <div v-gsap>
               <h3>{{ content.role }}</h3>
               <p>UX/UI Design, Web Strategy</p>
             </div>
 
             <div>
-              <h3>{{ content.technologies }}</h3>
+              <h3 v-gsap>{{ content.technologies }}</h3>
 
               <ul class="list">
                 <li
                     v-for="technology in project.technologies"
                     :key="technology"
+                    v-gsap
                 >
                   {{ technology }}
                 </li>

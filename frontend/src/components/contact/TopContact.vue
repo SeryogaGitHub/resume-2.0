@@ -32,17 +32,17 @@ const localizedContact = computed(() => ({
     <div class="center">
       <div class="items">
         <div class="text">
-          <h1 class="wow animate__fadeInUp">{{ localizedContact.title }}</h1>
+          <h1 v-gsap>{{ localizedContact.title }}</h1>
 
-          <h4 class="title wow animate__fadeInUp">
+          <h4 v-gsap class="title">
             {{ localizedContact.location }}
           </h4>
 
-          <p class="wow animate__fadeInUp">
+          <p v-gsap>
             {{ localizedContact.description }}
           </p>
 
-          <div class="mt-24 wow animate__fadeInUp">
+          <div v-gsap class="mt-24">
             {{ localizedContact.email }}:
 
             <a href="mailto:main.email.seryoga@gmail.com">
@@ -52,7 +52,7 @@ const localizedContact = computed(() => ({
             <CopyButton copy="main.email.seryoga@gmail.com" />
           </div>
 
-          <div class="mt-24 wow animate__fadeInUp">
+          <div v-gsap class="mt-24">
             {{ localizedContact.phone }}:
 
             <a href="tel:+380961225761">
@@ -62,14 +62,13 @@ const localizedContact = computed(() => ({
             <CopyButton copy="+380961225761" />
           </div>
 
-          <Network class="mt-24 wow animate__fadeInUp" id="network-contact" />
+          <Network v-gsap class="mt-24" id="network-contact" />
         </div>
 
         <div class="image">
-          <img
+          <img v-gsap
               src="@img/contact-page/contact-image.jpg"
               loading="lazy"
-              class="wow animate__fadeInUp"
               alt="Contact"
           >
         </div>

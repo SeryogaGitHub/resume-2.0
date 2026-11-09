@@ -23,20 +23,21 @@ const content = computed(() => ({
 <template>
   <section class="faq-section section">
     <div class="center">
-      <h2 class="wow animate__fadeInUp">
+      <h2 v-gsap>
         {{ content.title }}
       </h2>
 
       <div class="wrap-accordion-list">
         <div class="left">
-          <div class="image wow animate__fadeInUp">
+          <div class="image">
             <img
                 src="@img/index-page/faq-section/faq-section.jpg"
                 loading="lazy"
                 alt=""
+                v-gsap
             >
 
-            <h4 class="mt-24 mb-0 wow animate__fadeInUp">
+            <h4 v-gsap class="mt-24 mb-0">
               {{ content.subtitle }}
             </h4>
           </div>
@@ -46,8 +47,8 @@ const content = computed(() => ({
           <Accordion
               v-for="item in content.items"
               :key="item.id"
+              v-gsap
               :title="item.title"
-              class="wow animate__fadeInUp"
           >
             <p>
               {{ item.description }}

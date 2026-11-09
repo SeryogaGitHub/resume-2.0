@@ -18,7 +18,7 @@ const content = computed(() => ({
 <template>
   <section class="section open-projects">
     <div class="center">
-      <h2 class="wow animate__fadeInUp">{{ content.title }}</h2>
+      <h2 v-gsap>{{ content.title }}</h2>
 
       <div class="items">
         <div class="item">
@@ -28,14 +28,14 @@ const content = computed(() => ({
               src="@img/open-projects/open-projects-1.jpg"
               loading="lazy"
               alt=""
-              class="wow animate__fadeInUp"
+              v-gsap
           >
         </div>
 
         <div class="item big">
           <div class="description">
             <div>
-              <p class="wow animate__fadeInUp">{{ content.description }}</p>
+              <p v-gsap>{{ content.description }}</p>
 
               <RouterLink
                   to="/contact"
@@ -66,7 +66,7 @@ const content = computed(() => ({
           <img
               src="@img/open-projects/open-projects-2.jpg"
               loading="lazy"
-              class="wow animate__fadeInUp"
+              v-gsap
               alt=""
           >
         </div>
@@ -75,7 +75,7 @@ const content = computed(() => ({
           <img
               src="@img/open-projects/open-projects-3.jpg"
               loading="lazy"
-              class="wow animate__fadeInUp"
+              v-gsap
               alt=""
           >
 

@@ -41,7 +41,7 @@ const content = computed(() => ({
   >
     <div class="center">
 
-      <header class="header wow animate__fadeInUp">
+      <header v-gsap class="header">
         <div class="items">
 
           <h2 class="item">
