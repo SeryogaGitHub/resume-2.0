@@ -111,6 +111,15 @@ ol:not(.ol) {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+
+  width: 100%;
+  table-layout: fixed;
+
+td,
+th {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 }
 
 fieldset,

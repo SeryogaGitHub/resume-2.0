@@ -2,7 +2,6 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-import { footer } from '@/data/footer.js';
 import {buttons} from "@/data/buttons.js";
 
 const { locale } = useI18n();
@@ -28,7 +27,7 @@ const localizedFooter = computed(() => ({
       <div class="flex">
 
         <p class="copyright">
-          © {{ currentYear }} {{ localizedFooter.copyright }}
+          © {{ currentYear }}
         </p>
 
         <a

@@ -11,7 +11,7 @@ export const descriptionSection = {
     {
       id: 2,
       label: localized('Зарплата:', 'Salary:', 'Wynagrodzenie:', 'Gehaltsvorstellung:'),
-      value: localized('$1000', '$1000', '$1000', '1.000 $')
+      value: localized('$1500', '$1500', '$1500', '€1500 ')
     },
     {
       id: 3,

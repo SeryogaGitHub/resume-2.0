@@ -2,12 +2,12 @@
 
 .project-detail{
   .top-image{
-    height: 30vw;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    aspect-ratio: 20 / 9;
     padding: 20px;
+    border: $border;
   }
 
   .description-detail{
