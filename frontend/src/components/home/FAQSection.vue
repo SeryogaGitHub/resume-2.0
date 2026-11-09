@@ -23,7 +23,14 @@ const content = computed(() => ({
 <template>
   <section class="faq-section section">
     <div class="center">
-      <h2 v-gsap>
+      <h2 v-gsap-text="{
+        opacity: 0,
+        y: 20,
+        duration: 2,
+        stagger: 0.2,
+        delay: 2,
+        ease: 'power3.out'
+      }">
         {{ content.title }}
       </h2>
 

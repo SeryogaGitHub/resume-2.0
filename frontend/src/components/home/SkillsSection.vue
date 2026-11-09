@@ -40,7 +40,16 @@ const localizedSkills = computed(() =>
   >
     <div class="center">
 
-      <h2 v-gsap>
+      <h2
+        v-gsap-text="{
+          opacity: 0,
+          y: 20,
+          duration: 2,
+          stagger: 0.2,
+          delay: 2,
+          ease: 'power3.out'
+        }"
+      >
         {{
           ({
             uk: 'Технології, з якими я працюю',
@@ -63,7 +72,13 @@ const localizedSkills = computed(() =>
       <RouterLink
           to="/skills"
           class="btn"
-          v-gsap
+          v-gsap-tilt="{
+            perspective: 300,
+            rotation: 20,
+            movement: 8,
+            duration: 0.4,
+            ease: 'power3.out'
+          }"
       >
         <span>{{ buttons.learnMore[locale] }}</span>
 

@@ -9,7 +9,15 @@ const { locale } = useI18n();
 <template>
   <section class="who-i-am section">
     <div class="center">
-      <h2 v-gsap>{{ whoIAm.title[locale] }}</h2>
+      <h2 v-gsap-text="{
+        opacity: 0,
+        y: 20,
+        duration: 2,
+        stagger: 0.2,
+        delay: 2,
+        ease: 'power3.out'
+      }"
+      >{{ whoIAm.title[locale] }}</h2>
 
       <div class="flex">
         <div v-gsap class="image-left">
@@ -20,12 +28,22 @@ const { locale } = useI18n();
           >
         </div>
 
-        <div v-gsap class="text">
+        <div v-gsap="{ y: -120, duration: 1, delay: 0.3 }" class="text">
           <p>{{ whoIAm.description[locale] }}</p>
 
           <p>{{ whoIAm.workPreferences[locale] }}</p>
 
-          <RouterLink to="/about" class="btn white">
+          <RouterLink
+              to="/about"
+              class="btn white"
+              v-gsap-tilt="{
+                perspective: 300,
+                rotation: 20,
+                movement: 8,
+                duration: 0.4,
+                ease: 'power3.out'
+              }"
+          >
             <span>{{ buttons.learnMore[locale] }}</span>
 
             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">

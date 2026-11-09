@@ -10,8 +10,12 @@
     .item {
       max-width: 800px;
 
-      img{
+      img:not(.rotate){
         border: $border;
+      }
+
+      .rotate{
+        max-height: 200px;
       }
 
       @include m(560px){

@@ -46,7 +46,14 @@ const setDefaultImage = (event) => {
       class="experience-section section"
   >
     <div class="center">
-      <h2>
+      <h2 v-gsap-text="{
+        opacity: 0,
+        y: 20,
+        duration: 2,
+        stagger: 0.2,
+        delay: 2,
+        ease: 'power3.out'
+      }">
         {{ content.title }}
       </h2>
 
@@ -56,7 +63,7 @@ const setDefaultImage = (event) => {
             <p
                 v-for="(paragraph, index) in content.paragraphs"
                 :key="index"
-                v-gsap
+                v-gsap="{x: 260, duration: 1, delay: 0.3}"
             >
               {{ paragraph }}
             </p>

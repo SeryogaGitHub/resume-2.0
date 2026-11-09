@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import {RouterLink} from 'vue-router';
 import defaultImage from '@img/default.svg';
 
 const setDefaultImage = (event) => {
@@ -29,6 +29,13 @@ defineProps({
         :src="project.image"
         :alt="project.title"
         loading="lazy"
+        v-gsap-tilt="{
+          perspective: 800,
+          rotation: 15,
+          movement: 25,
+          duration: 0.8,
+          ease: 'power3.out'
+        }"
         @error="setDefaultImage"
     >
 

@@ -1,7 +1,12 @@
-<script setup>
-import { ref } from 'vue';
 
-defineProps({
+<script setup>
+import { ref, watch, nextTick, onUnmounted } from 'vue';
+import { gsap } from 'gsap';
+import { SplitText } from 'gsap/SplitText';
+
+gsap.registerPlugin(SplitText);
+
+const props = defineProps({
   title: {
     type: String,
     required: true
@@ -9,6 +14,54 @@ defineProps({
 });
 
 const isOpen = ref(false);
+const content = ref(null);
+
+let split;
+let animation;
+
+watch(isOpen, async (value) => {
+  if (!value) {
+    animation?.kill();
+    split?.revert();
+    split = null;
+    return;
+  }
+
+  await nextTick();
+  await document.fonts.ready;
+
+  if (!content.value) return;
+
+  split?.revert();
+
+  const text = content.value.querySelector('.accordion__text');
+
+  if (!text) return;
+
+  split = SplitText.create(text, {
+    type: 'chars',
+    charsClass: 'char'
+  });
+
+  animation = gsap.from(split.chars, {
+    opacity: 0,
+    y: 30,
+    rotationX: 90,
+    scale: 0.8,
+    duration: 0.6,
+    ease: 'back.out(1.7)',
+    stagger: 0.02,
+    onComplete: () => {
+      split?.revert();
+      split = null;
+    }
+  });
+});
+
+onUnmounted(() => {
+  animation?.kill();
+  split?.revert();
+});
 </script>
 
 <template>
@@ -30,16 +83,20 @@ const isOpen = ref(false);
     </button>
 
     <div
+        ref="content"
         class="accordion__content"
         :class="{ 'is-open': isOpen }"
         :inert="!isOpen"
     >
       <div class="accordion__inner">
-        <slot />
+        <div class="accordion__text">
+          <slot />
+        </div>
       </div>
     </div>
   </div>
 </template>
+
 
 <style lang="scss" scoped>
 .accordion {
@@ -95,6 +152,17 @@ const isOpen = ref(false);
   .accordion__content,
   .accordion__icon {
     transition: none;
+  }
+}
+
+.accordion {
+  &__text {
+    perspective: 500px;
+  }
+
+  &__text .char {
+    display: inline-block;
+    transform-style: preserve-3d;
   }
 }
 </style>

@@ -12,7 +12,7 @@ const { locale } = useI18n();
   <section class="top-section section pb-0">
     <div class="center m-auto">
       <div class="flex align-center">
-        <div v-gsap class="text max-w-700">
+        <div v-gsap="{ y: 60, duration: 1, delay: 0.3 }" class="text max-w-700">
           <p class="h3 text-red">
             {{ topSection.title[locale] }}
           </p>
@@ -29,6 +29,13 @@ const { locale } = useI18n();
             <a
                 href="#projects"
                 class="btn"
+                v-gsap-tilt="{
+                  perspective: 300,
+                  rotation: 20,
+                  movement: 8,
+                  duration: 0.4,
+                  ease: 'power3.out'
+                }"
             >
               {{ buttons.viewWork[locale] }}
             </a>
@@ -37,13 +44,20 @@ const { locale } = useI18n();
                 :href="topSection.linkCV[locale]"
                 class="btn"
                 target="_blank"
+                v-gsap-tilt="{
+                  perspective: 300,
+                  rotation: 20,
+                  movement: 8,
+                  duration: 0.4,
+                  ease: 'power3.out'
+                }"
             >
               {{ buttons.downloadCV[locale] }}
             </a>
           </div>
         </div>
 
-        <div v-gsap class="image">
+        <div v-gsap="{ y: -60, duration: 1 }" class="image">
           <img src="@img/photo.jpg" loading="lazy" alt="Фото">
         </div>
       </div>
