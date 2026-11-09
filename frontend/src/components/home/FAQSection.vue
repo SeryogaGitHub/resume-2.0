@@ -23,20 +23,20 @@ const content = computed(() => ({
 <template>
   <section class="faq-section section">
     <div class="center">
-      <h2>
+      <h2 class="wow animate__fadeInUp">
         {{ content.title }}
       </h2>
 
       <div class="wrap-accordion-list">
         <div class="left">
-          <div class="image">
+          <div class="image wow animate__fadeInUp">
             <img
                 src="@img/index-page/faq-section/faq-section.jpg"
                 loading="lazy"
                 alt=""
             >
 
-            <h4 class="mt-24 mb-0">
+            <h4 class="mt-24 mb-0 wow animate__fadeInUp">
               {{ content.subtitle }}
             </h4>
           </div>
@@ -47,6 +47,7 @@ const content = computed(() => ({
               v-for="item in content.items"
               :key="item.id"
               :title="item.title"
+              class="wow animate__fadeInUp"
           >
             <p>
               {{ item.description }}

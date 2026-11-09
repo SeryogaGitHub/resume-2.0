@@ -41,7 +41,7 @@ const content = computed(() => ({
   >
     <div class="center">
 
-      <header class="header">
+      <header class="header wow animate__fadeInUp">
         <div class="items">
 
           <h2 class="item">

@@ -40,7 +40,7 @@ const localizedSkills = computed(() =>
   >
     <div class="center">
 
-      <h2>
+      <h2 class="wow animate__fadeInUp">
         {{
           ({
             uk: 'Технології, з якими я працюю',
@@ -53,7 +53,7 @@ const localizedSkills = computed(() =>
 
       <BaseList :items="localizedSkills" :count="6">
         <template #default="{ item }">
-          <div class="skill-detail">
+          <div class="skill-detail wow animate__fadeInUp">
             <h4>{{ item.name }}</h4>
             <h5>{{ item.experience }}</h5>
           </div>
@@ -62,7 +62,7 @@ const localizedSkills = computed(() =>
 
       <RouterLink
           to="/skills"
-          class="btn"
+          class="btn wow animate__fadeInUp"
       >
         <span>{{ buttons.learnMore[locale] }}</span>
 

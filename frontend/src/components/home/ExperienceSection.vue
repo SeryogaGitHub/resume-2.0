@@ -56,6 +56,7 @@ const setDefaultImage = (event) => {
             <p
                 v-for="(paragraph, index) in content.paragraphs"
                 :key="index"
+                class="wow animate__fadeInUp"
             >
               {{ paragraph }}
             </p>
@@ -68,7 +69,7 @@ const setDefaultImage = (event) => {
               :key="item.id"
               class="item"
           >
-            <div class="detail">
+            <div class="detail wow animate__fadeInUp">
               <div class="logo-text">
                 <div class="logo">
                   <img

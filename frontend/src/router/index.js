@@ -1,15 +1,18 @@
+
 import { createRouter, createWebHistory } from 'vue-router';
+import { nextTick } from 'vue';
+import WOW from 'wow.js';
 
 import HomeView from '@/views/HomeView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 import SkillsView from '@/views/SkillsView.vue';
 import ContactView from '@/views/ContactView.vue';
-import NotFoundView from "@/views/NotFoundView.vue";
-import ProjectsDetailView from "@/views/ProjectsDetailView.vue";
-import AboutView from "@/views/AboutView.vue";
-import ProjectsAdminView from "@/views/ProjectsAdminView.vue";
-import BlogView from "@/views/BlogView.vue";
-import BlogDetailView from "@/views/BlogDetailView.vue";
+import NotFoundView from '@/views/NotFoundView.vue';
+import ProjectsDetailView from '@/views/ProjectsDetailView.vue';
+import AboutView from '@/views/AboutView.vue';
+import ProjectsAdminView from '@/views/ProjectsAdminView.vue';
+import BlogView from '@/views/BlogView.vue';
+import BlogDetailView from '@/views/BlogDetailView.vue';
 
 const routes = [
   {
@@ -53,23 +56,37 @@ const routes = [
     component: ContactView
   },
   {
-    path: '/:pathMatch(.*)*',
-    name: 'not-found',
-    component: NotFoundView
-  },
-  {
     path: '/admin/projects',
     name: 'projects-admin',
     component: ProjectsAdminView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundView
   }
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+
+  scrollBehavior() {
     return { top: 0, left: 0 };
   }
+});
+
+const wow = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animate__animated',
+  offset: 100,
+  mobile: true,
+  live: true
+});
+
+router.afterEach(async () => {
+  await nextTick();
+  wow.sync();
 });
 
 export default router;

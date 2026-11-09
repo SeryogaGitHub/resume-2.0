@@ -12,7 +12,7 @@ const { locale } = useI18n();
   <section class="top-section section pb-0">
     <div class="center m-auto">
       <div class="flex align-center">
-        <div class="text max-w-700">
+        <div class="text max-w-700 wow animate__fadeInLeft">
           <p class="h3 text-red">
             {{ topSection.title[locale] }}
           </p>
@@ -43,7 +43,7 @@ const { locale } = useI18n();
           </div>
         </div>
 
-        <div class="image">
+        <div class="image wow animate__fadeInRight">
           <img src="@img/photo.jpg" loading="lazy" alt="Фото">
         </div>
       </div>

@@ -26,14 +26,14 @@ const content = computed(() => ({
     <div class="center">
       <table>
         <tbody>
-        <tr v-for="item in content.info" :key="item.id">
+        <tr v-for="item in content.info" :key="item.id" class="wow animate__fadeInUp">
           <td>{{ item.label }}</td>
           <td>{{ item.value }}</td>
         </tr>
         </tbody>
       </table>
 
-      <p v-for="item in content.text" :key="item.id">
+      <p v-for="item in content.text" :key="item.id" class="wow animate__fadeInUp">
         {{ item.content }}
       </p>
     </div>
