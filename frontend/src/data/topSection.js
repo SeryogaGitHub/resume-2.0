@@ -14,7 +14,7 @@ export const topSection = {
   ),
 
   name: localized(
-      'Сергій Лип’янець',
+      'Сергій Липянець',
       'Serhii Lypianets',
       'Serhii Lypianets',
       'Serhii Lypianets'
