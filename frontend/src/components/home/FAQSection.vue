@@ -23,14 +23,17 @@ const content = computed(() => ({
 <template>
   <section class="faq-section section">
     <div class="center">
-      <h2 v-gsap-text="{
-        opacity: 0,
-        y: 20,
-        duration: 2,
-        stagger: 0.2,
-        delay: 2,
-        ease: 'power3.out'
-      }">
+      <h2
+        :key="locale"
+        v-gsap-text="{
+          opacity: 0,
+          y: 20,
+          duration: 2,
+          stagger: 0.2,
+          delay: 2,
+          ease: 'power3.out'
+        }"
+      >
         {{ content.title }}
       </h2>
 
@@ -53,7 +56,7 @@ const content = computed(() => ({
         <div class="accordion-list">
           <Accordion
               v-for="item in content.items"
-              :key="item.id"
+              :key="locale"
               v-gsap
               :title="item.title"
           >

@@ -1,4 +1,3 @@
-
 <script setup>
 import { ref, watch, nextTick, onUnmounted } from 'vue';
 import { gsap } from 'gsap';
@@ -6,7 +5,7 @@ import { SplitText } from 'gsap/SplitText';
 
 gsap.registerPlugin(SplitText);
 
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     required: true
@@ -34,7 +33,7 @@ watch(isOpen, async (value) => {
 
   split?.revert();
 
-  const text = content.value.querySelector('.accordion__text');
+  const text = content.value.querySelector('.accordion-text');
 
   if (!text) return;
 
@@ -67,14 +66,14 @@ onUnmounted(() => {
 <template>
   <div class="accordion">
     <button
-        class="accordion__header"
+        class="accordion-header"
         :aria-expanded="isOpen"
         @click="isOpen = !isOpen"
     >
       <span>{{ title }}</span>
 
       <span
-          class="accordion__icon"
+          class="accordion-icon"
           :class="{ 'is-open': isOpen }"
           aria-hidden="true"
       >
@@ -84,12 +83,12 @@ onUnmounted(() => {
 
     <div
         ref="content"
-        class="accordion__content"
+        class="accordion-content"
         :class="{ 'is-open': isOpen }"
         :inert="!isOpen"
     >
-      <div class="accordion__inner">
-        <div class="accordion__text">
+      <div class="accordion-inner">
+        <div class="accordion-text">
           <slot />
         </div>
       </div>
@@ -97,72 +96,69 @@ onUnmounted(() => {
   </div>
 </template>
 
-
 <style lang="scss" scoped>
 .accordion {
   border-bottom: 1px solid #ddd;
+}
 
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 0;
-    border: 0;
-    background: transparent;
-    text-align: left;
-    font: inherit;
-    cursor: pointer;
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
 
-    @media screen and (max-width: 768px){
-      padding: 10px 0;
-    }
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
   }
+}
 
-  &__icon {
-    font-size: 24px;
-    transition: transform 0.3s ease;
+.accordion-icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
 
-    &.is-open {
-      transform: rotate(45deg);
-    }
+  &.is-open {
+    transform: rotate(45deg);
   }
+}
 
-  &__content {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.35s ease;
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
 
-    &.is-open {
-      grid-template-rows: 1fr;
-    }
+  &.is-open {
+    grid-template-rows: 1fr;
   }
+}
 
-  &__inner {
-    min-height: 0;
-    overflow: hidden;
-  }
+.accordion-inner {
+  min-height: 0;
+  overflow: hidden;
+}
 
-  &__content.is-open &__inner {
-    padding-bottom: 20px;
-  }
+.accordion-content.is-open .accordion-inner {
+  padding-bottom: 20px;
+}
+
+.accordion-text {
+  perspective: 500px;
+}
+
+.accordion-text .char {
+  display: inline-block;
+  transform-style: preserve-3d;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .accordion__content,
-  .accordion__icon {
+  .accordion-content,
+  .accordion-icon {
     transition: none;
-  }
-}
-
-.accordion {
-  &__text {
-    perspective: 500px;
-  }
-
-  &__text .char {
-    display: inline-block;
-    transform-style: preserve-3d;
   }
 }
 </style>

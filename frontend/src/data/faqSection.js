@@ -7,7 +7,7 @@ const localized = (uk, en, pl, de) => ({
 
 export const faqSection = {
   title: localized(
-      "FAQ’s",
+      "Запитання",
       "FAQ’s",
       "FAQ’s",
       "FAQ’s"

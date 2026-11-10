@@ -44,6 +44,7 @@ const content = computed(() => ({
         <div class="items">
 
           <h2
+              :key="locale"
             v-gsap-text="{
               opacity: 0,
               y: 20,

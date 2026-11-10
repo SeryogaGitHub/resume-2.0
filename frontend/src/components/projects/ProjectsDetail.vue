@@ -83,7 +83,7 @@ const content = computed(() => ({
             v-gsap
         >
 
-        <section class="description-detail section">
+        <article class="description-detail mt-60">
           <div v-gsap class="description">
             <h3>{{ content.overview }}</h3>
             <p>{{ project.description[locale] }}</p>
@@ -114,7 +114,7 @@ const content = computed(() => ({
               </ul>
             </div>
           </div>
-        </section>
+        </article>
       </template>
     </div>
   </section>

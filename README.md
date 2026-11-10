@@ -7,6 +7,10 @@ v24.21.0
 
 1024, 768, 560, 460, 359
 
+@include m(1024px){
+
+}
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup

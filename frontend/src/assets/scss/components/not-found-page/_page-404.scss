@@ -1,4 +1,5 @@
 @use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
 
 .not-found {
   .items{
@@ -15,6 +16,16 @@
     width: 30vw;
     height: 16.146vw;
     object-fit: cover;
+
+    @include m(1024px){
+      width: 280px;
+      height: 100%;
+    }
+
+    @include m(460px){
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .bottom-image{
@@ -34,14 +45,26 @@
       position: absolute;
       height: 1px;
       background-color: rgba($black, 0.06);
+
+      @include m(460px){
+        width: 100%;
+      }
     }
 
     &:after {
       top: 40px;
+
+      @include m(1024px){
+        top: 26px;
+      }
     }
 
     &:before{
       bottom: 40px;
+
+      @include m(1024px){
+        bottom: 26px;
+      }
     }
   }
 }

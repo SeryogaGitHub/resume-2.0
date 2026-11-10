@@ -75,6 +75,10 @@
 }
 
 body.open-menu{
+  @include m(1024px){
+    overflow: hidden;
+  }
+
   .main-header{
     .main-nav{
       @include m(1024px){

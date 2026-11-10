@@ -9,7 +9,7 @@ import WhoIAm from "@/components/home/WhoIAm.vue";
 import FAQSection from "@/components/home/FAQSection.vue";
 import {ref} from "vue";
 import { projects } from '@/data/projects';
-import { skills } from '@/data/skills.js';
+import { skills, skillsSection } from '@/data/skills.js';
 
 const selectedProject = ref(null);
 </script>
@@ -27,7 +27,7 @@ const selectedProject = ref(null);
           @select-project="selectedProject = $event"
       />
       <FAQSection />
-      <SkillsSection :skills />
+      <SkillsSection :skills :skillsSection />
     </main>
 
     <Footer />

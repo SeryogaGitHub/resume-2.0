@@ -1,19 +1,24 @@
+
 <script setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
 
 import BaseList from '@/components/BaseList.vue';
-import {buttons} from "@/data/buttons.js";
+import { buttons } from '@/data/buttons.js';
 
 const props = defineProps({
   skills: {
     type: Array,
     required: true
+  },
+  skillsSection: {
+    type: Object,
+    required: true
   }
 });
 
-const { locale } = useI18n();
+const { locale } = useI18n({ useScope: 'global' });
 
 const translate = (value) => {
   if (typeof value === 'string') {
@@ -34,30 +39,21 @@ const localizedSkills = computed(() =>
 </script>
 
 <template>
-  <section
-      id="skills"
-      class="skills-section section"
-  >
+  <section id="skills" class="skills-section section">
     <div class="center">
 
       <h2
+        :key="locale"
         v-gsap-text="{
           opacity: 0,
           y: 20,
           duration: 2,
           stagger: 0.2,
-          delay: 2,
+          delay: 0,
           ease: 'power3.out'
         }"
       >
-        {{
-          ({
-            uk: 'Технології, з якими я працюю',
-            en: 'Technologies I work with',
-            pl: 'Technologie, z którymi pracuję',
-            de: 'Technologien, mit denen ich arbeite'
-          })[locale]
-        }}
+        {{ skillsSection.title[locale] }}
       </h2>
 
       <BaseList :items="localizedSkills" :count="6">
@@ -73,12 +69,12 @@ const localizedSkills = computed(() =>
           to="/skills"
           class="btn"
           v-gsap-tilt="{
-            perspective: 300,
-            rotation: 20,
-            movement: 8,
-            duration: 0.4,
-            ease: 'power3.out'
-          }"
+          perspective: 300,
+          rotation: 20,
+          movement: 8,
+          duration: 0.4,
+          ease: 'power3.out'
+        }"
       >
         <span>{{ buttons.learnMore[locale] }}</span>
 
@@ -98,6 +94,7 @@ const localizedSkills = computed(() =>
           />
         </svg>
       </RouterLink>
+
     </div>
   </section>
 </template>

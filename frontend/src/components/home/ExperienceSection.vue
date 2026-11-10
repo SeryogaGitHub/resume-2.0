@@ -46,7 +46,9 @@ const setDefaultImage = (event) => {
       class="experience-section section"
   >
     <div class="center">
-      <h2 v-gsap-text="{
+      <h2
+          :key="locale"
+          v-gsap-text="{
         opacity: 0,
         y: 20,
         duration: 2,
