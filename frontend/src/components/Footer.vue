@@ -26,7 +26,7 @@ const content = computed(() => ({
       <div class="bottom">
         <div class="info-contact item">
           <div>
-            <h4 class="font-weight-4">{{ content.location }}</h4>
+            <h5 class="font-weight-4">{{ content.location }}</h5>
             <h5 class="font-weight-4">{{ content.time }}</h5>
           </div>
 

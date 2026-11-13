@@ -3,6 +3,7 @@ import Header from '@/components/Header.vue';
 import FormSection from '@/components/contact/FormSection.vue';
 import Footer from '@/components/Footer.vue';
 import TopContact from "@/components/contact/TopContact.vue";
+import FAQSection from "@/components/home/FAQSection.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import TopContact from "@/components/contact/TopContact.vue";
     <main class="main-content">
       <TopContact />
 <!--      <FormSection />-->
+      <FAQSection />
     </main>
 
     <Footer />
