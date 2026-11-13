@@ -1,8 +1,10 @@
-const localized = (uk, en, pl, de) => ({
+
+const localized = (uk, en, pl, de, fr) => ({
   uk,
   en,
   pl,
-  de
+  de,
+  fr
 });
 
 export const header = {
@@ -11,16 +13,19 @@ export const header = {
         'Головна',
         'Home',
         'Strona główna',
-        'Startseite'
+        'Startseite',
+        'Accueil'
     ),
     about: localized(
         'Про мене',
         'About me',
         'O mnie',
-        'Über mich'
+        'Über mich',
+        'À propos'
     ),
     projects: localized(
         'Портфоліо',
+        'Portfolio',
         'Portfolio',
         'Portfolio',
         'Portfolio'
@@ -29,16 +34,19 @@ export const header = {
         'Навички',
         'Skills',
         'Umiejętności',
-        'Fähigkeiten'
+        'Fähigkeiten',
+        'Compétences'
     ),
     contacts: localized(
         'Контакти',
         'Contacts',
         'Kontakt',
-        'Kontakt'
+        'Kontakt',
+        'Contact'
     ),
     blog: localized(
         'Блог',
+        'Blog',
         'Blog',
         'Blog',
         'Blog'

@@ -169,7 +169,8 @@ export const gsapText = {
 
       split = SplitText.create(el, {
         type: 'chars, words',
-        charsClass: 'char',
+        wordsClass: 'gsap-word',
+        charsClass: 'gsap-char',
         aria: 'auto'
       });
 
@@ -204,3 +205,4 @@ export const gsapText = {
     gsap.killTweensOf(el);
   }
 };
+

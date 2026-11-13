@@ -33,7 +33,7 @@ watch(isOpen, async (value) => {
 
   split?.revert();
 
-  const text = content.value.querySelector('.accordion-text');
+  const text = content.value.querySelector('.accordion-text p');
 
   if (!text) return;
 
@@ -97,68 +97,5 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-.accordion {
-  border-bottom: 1px solid #ddd;
-}
 
-.accordion-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 0;
-  border: 0;
-  background: transparent;
-  text-align: left;
-  font: inherit;
-  cursor: pointer;
-
-  @media screen and (max-width: 768px) {
-    padding: 10px 0;
-  }
-}
-
-.accordion-icon {
-  font-size: 24px;
-  transition: transform 0.3s ease;
-
-  &.is-open {
-    transform: rotate(45deg);
-  }
-}
-
-.accordion-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s ease;
-
-  &.is-open {
-    grid-template-rows: 1fr;
-  }
-}
-
-.accordion-inner {
-  min-height: 0;
-  overflow: hidden;
-}
-
-.accordion-content.is-open .accordion-inner {
-  padding-bottom: 20px;
-}
-
-.accordion-text {
-  perspective: 500px;
-}
-
-.accordion-text .char {
-  display: inline-block;
-  transform-style: preserve-3d;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .accordion-content,
-  .accordion-icon {
-    transition: none;
-  }
-}
 </style>

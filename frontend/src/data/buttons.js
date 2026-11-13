@@ -1,8 +1,9 @@
-const localized = (uk, en, pl, de) => ({
+const localized = (uk, en, pl, de, fr) => ({
   uk,
   en,
   pl,
-  de
+  de,
+  fr
 });
 
 export const buttons = {
@@ -10,41 +11,47 @@ export const buttons = {
       'Переглянути роботи',
       'View my work',
       'Zobacz moje prace',
-      'Meine Arbeiten ansehen'
+      'Meine Arbeiten ansehen',
+      'Voir mes réalisations'
   ),
 
   downloadCV: localized(
       'Завантажити CV',
       'Download CV',
       'Pobierz CV',
-      'Lebenslauf herunterladen'
+      'Lebenslauf herunterladen',
+      'Télécharger mon CV'
   ),
 
   learnMore: localized(
       'Детальніше',
       'Learn more',
       'Więcej',
-      'Mehr erfahren'
+      'Mehr erfahren',
+      'En savoir plus'
   ),
 
   allProjects: localized(
       'Усі проєкти',
       'All projects',
       'Wszystkie projekty',
-      'Alle Projekte'
+      'Alle Projekte',
+      'Tous les projets'
   ),
 
   backToTop: localized(
       'Угору',
       'Back to top',
       'Do góry',
-      'Nach oben'
+      'Nach oben',
+      'Retour en haut'
   ),
 
   startCollaboration: localized(
       'Розпочати співпрацю',
       'Start a collaboration',
       'Rozpocznij współpracę',
-      'Zusammenarbeit starten'
+      'Zusammenarbeit starten',
+      'Commençons à collaborer'
   )
 };

@@ -1,8 +1,10 @@
-const localized = (uk, en, pl, de) => ({
+
+const localized = (uk, en, pl, de, fr) => ({
   uk,
   en,
   pl,
-  de
+  de,
+  fr
 });
 
 export const messages = {
@@ -10,6 +12,7 @@ export const messages = {
       'Завантаження проєктів...',
       'Loading projects...',
       'Ładowanie projektów...',
-      'Projekte werden geladen...'
+      'Projekte werden geladen...',
+      'Chargement des projets...'
   )
 };

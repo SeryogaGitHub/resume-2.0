@@ -39,7 +39,14 @@ const content = computed(() => ({
 
               <RouterLink
                   to="/contact"
-                  class="btn white wow animate__fadeInUp"
+                  class="btn white"
+                  v-gsap-tilt="{
+                    perspective: 300,
+                    rotation: 20,
+                    movement: 8,
+                    duration: 0.4,
+                    ease: 'power3.out'
+                }"
               >
                 <span>{{ buttons.startCollaboration[locale] }}</span>
 

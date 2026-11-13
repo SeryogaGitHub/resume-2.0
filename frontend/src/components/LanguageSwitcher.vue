@@ -7,7 +7,8 @@ const languages = [
   { code: 'uk', name: 'UA' },
   { code: 'en', name: 'EN' },
   { code: 'pl', name: 'PL' },
-  { code: 'de', name: 'DE' }
+  { code: 'de', name: 'DE' },
+  { code: 'fr', name: 'FR' },
 ];
 
 const changeLanguage = (language) => {

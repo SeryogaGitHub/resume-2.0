@@ -1,0 +1,57 @@
+@use '@scss/variables' as *;
+@use '@scss/mixins/media-queries' as *;
+
+.accordion{
+  & + .accordion{
+    border-top: $border;
+  }
+
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+
+    @include m(768px) {
+      padding: 10px 0;
+    }
+  }
+
+  .accordion-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+
+    &.is-open {
+      transform: rotate(45deg);
+    }
+  }
+
+  .accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.35s ease;
+
+    &.is-open {
+      grid-template-rows: 1fr;
+      padding-bottom: 20px;
+    }
+  }
+
+  .accordion-inner {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .accordion-content,
+    .accordion-icon {
+      transition: none;
+    }
+  }
+}

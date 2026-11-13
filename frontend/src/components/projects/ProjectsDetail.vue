@@ -3,6 +3,8 @@ import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
 
+import { projectDetail } from '@data/projectDetail';
+
 import defaultImage from '@/assets/image/default.svg';
 
 defineProps({
@@ -15,40 +17,11 @@ defineProps({
 const { locale } = useI18n();
 
 const content = computed(() => ({
-  back: {
-    uk: '← Усі проєкти',
-    en: '← All projects',
-    pl: '← Wszystkie projekty',
-    de: '← Alle Projekte'
-  }[locale.value],
-
-  overview: {
-    uk: 'Огляд проєкту',
-    en: 'Project overview',
-    pl: 'Opis projektu',
-    de: 'Projektübersicht'
-  }[locale.value],
-
-  year: {
-    uk: 'Рік:',
-    en: 'Year:',
-    pl: 'Rok:',
-    de: 'Jahr:'
-  }[locale.value],
-
-  role: {
-    uk: 'Роль:',
-    en: 'Role:',
-    pl: 'Rola:',
-    de: 'Rolle:'
-  }[locale.value],
-
-  technologies: {
-    uk: 'Технології:',
-    en: 'Technologies:',
-    pl: 'Technologie:',
-    de: 'Technologien:'
-  }[locale.value]
+  back: projectDetail.back[locale.value],
+  overview: projectDetail.overview[locale.value],
+  year: projectDetail.year[locale.value],
+  role: projectDetail.role[locale.value],
+  technologies: projectDetail.technologies[locale.value]
 }));
 </script>
 
@@ -61,6 +34,10 @@ const content = computed(() => ({
             class="h4"
             v-gsap
         >
+          <svg width="15" height="12" viewBox="4 6 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
           {{ content.back }}
         </RouterLink>
 

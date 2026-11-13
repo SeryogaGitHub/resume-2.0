@@ -3,7 +3,6 @@ import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import defaultImage from '@img/default.svg';
 import { experienceSection } from '@data/experienceSection';
-import {buttons} from "@/data/buttons.js";
 
 const { locale } = useI18n();
 
