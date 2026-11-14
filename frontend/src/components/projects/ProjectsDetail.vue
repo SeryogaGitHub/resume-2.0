@@ -6,6 +6,7 @@ import { RouterLink } from 'vue-router';
 import { projectDetail } from '@data/projectDetail';
 
 import defaultImage from '@/assets/image/default.svg';
+import {localePath} from "@/components/utils/localePath.js";
 
 defineProps({
   project: {
@@ -30,7 +31,7 @@ const content = computed(() => ({
     <div class="center">
       <template v-if="project">
         <RouterLink
-            :to="{ name: 'projects' }"
+            :to="localePath('/projects', locale)"
             class="h4"
             v-gsap
         >

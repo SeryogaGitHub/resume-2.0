@@ -1,6 +1,10 @@
 <script setup>
 import {RouterLink} from 'vue-router';
 import defaultImage from '@img/default.svg';
+import { useI18n } from 'vue-i18n';
+import {localePath} from "@/components/utils/localePath.js";
+
+const { locale } = useI18n({ useScope: 'global' });
 
 const setDefaultImage = (event) => {
   event.target.onerror = null;
@@ -18,10 +22,7 @@ defineProps({
 
 <template>
   <RouterLink
-      :to="{
-          name: 'project-detail',
-          params: { id: project.id }
-        }"
+      :to="localePath(`/projects/${project.id}`, locale)"
       class="item mt-60"
       v-gsap
   >

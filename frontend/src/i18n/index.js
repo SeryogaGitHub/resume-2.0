@@ -1,26 +1,10 @@
 import { createI18n } from 'vue-i18n';
 
-const supportedLocales = ['uk', 'en', 'pl', 'de', 'fr'];
-
-const getInitialLocale = () => {
-  const savedLocale = localStorage.getItem('locale');
-
-  if (supportedLocales.includes(savedLocale)) {
-    return savedLocale;
-  }
-
-  const browserLocale = navigator.language
-      .split('-')[0]
-      .toLowerCase();
-
-  return supportedLocales.includes(browserLocale)
-      ? browserLocale
-      : 'uk';
-};
+export const supportedLocales = ['uk', 'en', 'pl', 'de', 'fr'];
 
 const i18n = createI18n({
   legacy: false,
-  locale: getInitialLocale(),
+  locale: 'uk',
   fallbackLocale: 'uk',
   messages: {}
 });

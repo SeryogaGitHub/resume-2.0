@@ -5,6 +5,7 @@ import { useI18n } from 'vue-i18n';
 
 import { openProjects } from '@data/openProjects';
 import {buttons} from "@data/buttons.js";
+import {localePath} from "@/components/utils/localePath.js";
 
 const { locale } = useI18n();
 
@@ -38,7 +39,7 @@ const content = computed(() => ({
               <p v-gsap>{{ content.description }}</p>
 
               <RouterLink
-                  to="/contact"
+                  :to="localePath('/contact', locale)"
                   class="btn white"
                   v-gsap-tilt="{
                     perspective: 300,

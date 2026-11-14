@@ -1,20 +1,31 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
+import { useRoute, useRouter } from 'vue-router';
 
 const { locale } = useI18n({ useScope: 'global' });
+
+const route = useRoute();
+const router = useRouter();
 
 const languages = [
   { code: 'uk', name: 'UA' },
   { code: 'en', name: 'EN' },
   { code: 'pl', name: 'PL' },
   { code: 'de', name: 'DE' },
-  { code: 'fr', name: 'FR' },
+  { code: 'fr', name: 'FR' }
 ];
 
 const changeLanguage = (language) => {
-  locale.value = language;
+  const currentPath = route.path.replace(
+      /^\/(en|pl|de|fr)(?=\/|$)/,
+      ''
+  );
 
-  localStorage.setItem('locale', language);
+  const newPath = language === 'uk'
+      ? currentPath || '/'
+      : `/${language}${currentPath || ''}`;
+
+  router.push(newPath);
 };
 </script>
 

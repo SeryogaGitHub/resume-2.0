@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { whoIAm } from '@data/whoIAm';
 import {buttons} from "@/data/buttons.js";
+import {localePath} from "@/components/utils/localePath.js";
 
 const { locale } = useI18n();
 </script>
@@ -36,7 +37,7 @@ const { locale } = useI18n();
           <p>{{ whoIAm.workPreferences[locale] }}</p>
 
           <RouterLink
-              to="/about"
+              :to="localePath('/about', locale)"
               class="btn white"
               v-gsap-tilt="{
                 perspective: 300,

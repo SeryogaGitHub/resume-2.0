@@ -6,6 +6,7 @@ import { RouterLink } from 'vue-router';
 
 import BaseList from '@/components/BaseList.vue';
 import { buttons } from '@/data/buttons.js';
+import {localePath} from "@/components/utils/localePath.js";
 
 const props = defineProps({
   skills: {
@@ -66,7 +67,7 @@ const localizedSkills = computed(() =>
       </BaseList>
 
       <RouterLink
-          to="/skills"
+          :to="localePath('/skills', locale)"
           class="btn"
           v-gsap-tilt="{
           perspective: 300,

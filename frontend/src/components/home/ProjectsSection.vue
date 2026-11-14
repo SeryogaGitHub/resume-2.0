@@ -7,6 +7,7 @@ import ProjectsCard from './ProjectsCard.vue';
 import {projectsSection} from '@data/projectsSection';
 import {messages} from '@data/messages';
 import {buttons} from '@data/buttons';
+import {localePath} from "@/components/utils/localePath.js";
 
 const props = defineProps({
   projects: {
@@ -68,7 +69,7 @@ const content = computed(() => ({
 
             <div>
               <RouterLink
-                  to="/projects"
+                  :to="localePath('/projects', locale)"
                   class="btn white"
               >
                 <span>{{ content.allProjects }}</span>

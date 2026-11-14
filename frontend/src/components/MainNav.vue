@@ -1,34 +1,31 @@
 <script setup>
-import {computed} from 'vue';
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { header } from '@data/header';
+import { localePath } from '@/components/utils/localePath.js';
 
-const { locale } = useI18n();
+const { locale } = useI18n({ useScope: 'global' });
 
 const navigation = computed(() => [
   {
     title: header.navigation.home[locale.value],
-    to: '/'
+    to: localePath('/', locale.value)
   },
   {
     title: header.navigation.skills[locale.value],
-    to: '/skills'
+    to: localePath('/skills', locale.value)
   },
   {
     title: header.navigation.projects[locale.value],
-    to: '/projects'
+    to: localePath('/projects', locale.value)
   },
   {
     title: header.navigation.about[locale.value],
-    to: '/about'
+    to: localePath('/about', locale.value)
   },
-  // {
-  //   title: header.navigation.blog[locale.value],
-  //   to: '/blog'
-  // },
   {
     title: header.navigation.contacts[locale.value],
-    to: '/contact'
+    to: localePath('/contact', locale.value)
   }
 ]);
 </script>
@@ -44,7 +41,3 @@ const navigation = computed(() => [
     </RouterLink>
   </nav>
 </template>
-
-<style scoped>
-
-</style>
