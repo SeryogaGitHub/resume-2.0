@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- HOME -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- ABOUT -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- PROJECTS -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- SKILLS -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/skills</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- CONTACT -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- BLOG -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/blog</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

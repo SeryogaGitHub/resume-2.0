@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seryogagithub.github.io/resume-2.0/sitemap.xml

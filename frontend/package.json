@@ -23,7 +23,8 @@
     "gh-pages": "^6.3.0",
     "sass-embedded": "^1.103.1",
     "vite": "^8.1.5",
-    "vite-plugin-vue-devtools": "^8.1.5"
+    "vite-plugin-vue-devtools": "^8.1.5",
+    "vite-ssg": "^28.3.0"
   },
   "engines": {
     "node": "^22.18.0 || >=24.12.0"

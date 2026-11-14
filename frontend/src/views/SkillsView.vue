@@ -9,7 +9,9 @@ import OpenProjects from '@/components/OpenProjects.vue';
 
 import { skills } from '@/data/skills.js';
 import { tools } from '@/data/tools.js';
+import { useSeo } from '@/composables/useSeo';
 
+useSeo('skills');
 const { locale } = useI18n();
 
 const translate = (value) => {

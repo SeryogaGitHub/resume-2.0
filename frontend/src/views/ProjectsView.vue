@@ -5,6 +5,9 @@ import ProjectsCard from '@/components/home/ProjectsCard.vue';
 import OpenProjects from '@/components/OpenProjects.vue';
 import { useI18n } from 'vue-i18n';
 import { projects } from '@/data/projects';
+import { useSeo } from '@/composables/useSeo';
+
+useSeo('projects');
 
 const { locale } = useI18n();
 </script>

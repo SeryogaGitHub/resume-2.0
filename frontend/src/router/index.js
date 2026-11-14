@@ -53,14 +53,14 @@ const routes = [
     component: ContactView
   },
   {
-    path: '/:pathMatch(.*)*',
-    name: 'not-found',
-    component: NotFoundView
-  },
-  {
     path: '/admin/projects',
     name: 'projects-admin',
     component: ProjectsAdminView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundView
   }
 ];
 
@@ -70,6 +70,23 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     return { top: 0, left: 0 };
   }
+});
+
+router.afterEach((to) => {
+  const robots = to.meta.robots || 'index, follow';
+
+  let metaRobots = document.querySelector(
+      'meta[name="robots"]'
+  );
+
+  if (!metaRobots) {
+    metaRobots = document.createElement('meta');
+    metaRobots.setAttribute('name', 'robots');
+
+    document.head.appendChild(metaRobots);
+  }
+
+  metaRobots.setAttribute('content', robots);
 });
 
 export default router;

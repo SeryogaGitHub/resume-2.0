@@ -4,6 +4,9 @@ import Footer from '@/components/Footer.vue';
 import TopSection from "@/components/home/TopSection.vue";
 import DescriptionSection from "@/components/about/DescriptionSection.vue";
 import OpenProjects from "@/components/OpenProjects.vue";
+import { useSeo } from '@/composables/useSeo';
+
+useSeo('about');
 </script>
 
 <template>

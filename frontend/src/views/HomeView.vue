@@ -10,6 +10,9 @@ import FAQSection from "@/components/home/FAQSection.vue";
 import {ref} from "vue";
 import { projects } from '@/data/projects';
 import { skills, skillsSection } from '@/data/skills.js';
+import { useSeo } from '@/composables/useSeo';
+
+useSeo('home');
 
 const selectedProject = ref(null);
 </script>

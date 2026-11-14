@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n';
 
-const supportedLocales = ['uk', 'en', 'pl', 'de'];
+const supportedLocales = ['uk', 'en', 'pl', 'de', 'fr'];
 
 const getInitialLocale = () => {
   const savedLocale = localStorage.getItem('locale');
