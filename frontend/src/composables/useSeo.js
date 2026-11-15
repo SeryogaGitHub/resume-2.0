@@ -1,5 +1,5 @@
+
 import { computed } from 'vue';
-import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import { useHead } from '@unhead/vue';
 
@@ -15,8 +15,9 @@ const locales = {
   fr: 'fr_FR'
 };
 
+const supportedLocales = Object.keys(locales);
+
 export function useSeo(page = 'home') {
-  const { locale } = useI18n({ useScope: 'global' });
   const route = useRoute();
 
   const head = computed(() => {
@@ -24,7 +25,12 @@ export function useSeo(page = 'home') {
 
     if (!content) return {};
 
-    const currentLocale = locale.value;
+    // Визначаємо мову безпосередньо з URL
+    const routeLocale = route.params.locale;
+
+    const currentLocale = supportedLocales.includes(routeLocale)
+        ? routeLocale
+        : 'uk';
 
     const title = content.title?.[currentLocale];
     const description = content.description?.[currentLocale];
@@ -36,7 +42,7 @@ export function useSeo(page = 'home') {
         ''
     );
 
-    // Базова адреса сайту з урахуванням BASE_URL
+    // Базова адреса сайту
     const baseUrl = new URL(
         import.meta.env.BASE_URL,
         siteOrigin
@@ -53,7 +59,7 @@ export function useSeo(page = 'home') {
     ).href;
 
     // Альтернативні мовні адреси
-    const alternateLinks = Object.keys(locales).map(language => {
+    const alternateLinks = supportedLocales.map(language => {
       const path = language === 'uk'
           ? cleanPath.slice(1)
           : `${language}${cleanPath === '/' ? '' : cleanPath}`;

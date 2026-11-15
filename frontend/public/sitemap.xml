@@ -346,4 +346,777 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- PROJECT DETAILS -->
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/1</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/1" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/1" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/1" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/1</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/1" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/1" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/1" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/1</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/1" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/1" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/1" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/1</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/1" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/1" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/1" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/1</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/1" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/1" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/1" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/1" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/2</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/2" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/2" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/2" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/2</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/2" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/2" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/2" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/2</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/2" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/2" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/2" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/2</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/2" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/2" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/2" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/2</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/2" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/2" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/2" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/2" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/3</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/3" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/3" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/3" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/3</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/3" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/3" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/3" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/3</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/3" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/3" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/3" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/3</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/3" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/3" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/3" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/3</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/3" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/3" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/3" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/3" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/4</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/4" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/4" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/4" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/4</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/4" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/4" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/4" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/4</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/4" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/4" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/4" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/4</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/4" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/4" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/4" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/4</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/4" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/4" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/4" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/4" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/5</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/5" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/5" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/5" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/5</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/5" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/5" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/5" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/5</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/5" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/5" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/5" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/5</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/5" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/5" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/5" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/5</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/5" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/5" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/5" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/5" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/6</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/6" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/6" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/6" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/6</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/6" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/6" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/6" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/6</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/6" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/6" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/6" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/6</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/6" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/6" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/6" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/6</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/6" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/6" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/6" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/6" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/7</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/7" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/7" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/7" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/7" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/7</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/7" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/7" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/7" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/7" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/7</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/7" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/7" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/7" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/7" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/7</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/7" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/7" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/7" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/7" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/7</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/7" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/7" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/7" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/7" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/7" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/8</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/8" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/8" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/8" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/8" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/8</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/8" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/8" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/8" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/8" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/8</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/8" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/8" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/8" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/8" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/8</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/8" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/8" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/8" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/8" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/8</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/8" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/8" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/8" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/8" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/8" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/9</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/9" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/9" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/9" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/9" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/9</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/9" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/9" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/9" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/9" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/9</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/9" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/9" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/9" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/9" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/9</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/9" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/9" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/9" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/9" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/9</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/9" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/9" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/9" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/9" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/9" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/10</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/10" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/10" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/10" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/10" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/10</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/10" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/10" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/10" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/10" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/10</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/10" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/10" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/10" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/10" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/10</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/10" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/10" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/10" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/10" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/10</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/10" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/10" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/10" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/10" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/10" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/11</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/11" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/11" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/11" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/11" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/11</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/11" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/11" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/11" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/11" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/11</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/11" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/11" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/11" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/11" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/11</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/11" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/11" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/11" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/11" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/11</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/11" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/11" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/11" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/11" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/11" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/12</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/12" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/12" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/12" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/12" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/12</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/12" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/12" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/12" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/12" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/12</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/12" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/12" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/12" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/12" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/12</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/12" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/12" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/12" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/12" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/12</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/12" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/12" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/12" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/12" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/12" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/13</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/13" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/13" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/13" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/13" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/13</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/13" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/13" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/13" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/13" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/13</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/13" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/13" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/13" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/13" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/13</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/13" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/13" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/13" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/13" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/13</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/13" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/13" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/13" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/13" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/13" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/projects/14</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/14" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/14" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/14" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/14" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/en/projects/14</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/14" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/14" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/14" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/14" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/pl/projects/14</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/14" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/14" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/14" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/14" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/de/projects/14</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/14" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/14" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/14" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/14" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://seryogagithub.github.io/resume-2.0/fr/projects/14</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://seryogagithub.github.io/resume-2.0/en/projects/14" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://seryogagithub.github.io/resume-2.0/pl/projects/14" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://seryogagithub.github.io/resume-2.0/de/projects/14" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://seryogagithub.github.io/resume-2.0/fr/projects/14" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seryogagithub.github.io/resume-2.0/projects/14" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- END PROJECT DETAILS -->
+
 </urlset>
