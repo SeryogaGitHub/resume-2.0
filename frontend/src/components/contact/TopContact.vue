@@ -67,9 +67,9 @@ const localizedContact = computed(() => ({
 
         <div class="image">
           <img v-gsap
-              src="@img/contact-page/contact-image.jpg"
-              loading="lazy"
-              alt="Contact"
+            src="@img/contact-page/contact-image.jpg"
+            fetchpriority="high"
+            :alt="localizedContact.title"
           >
         </div>
       </div>
