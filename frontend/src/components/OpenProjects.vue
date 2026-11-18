@@ -28,7 +28,7 @@ const content = computed(() => ({
           <img
               src="@img/open-projects/open-projects-1.jpg"
               loading="lazy"
-              alt=""
+              :alt="content.title + '-image'"
               v-gsap
           >
         </div>
@@ -75,7 +75,7 @@ const content = computed(() => ({
               src="@img/open-projects/open-projects-2.jpg"
               loading="lazy"
               v-gsap
-              alt=""
+              :alt="content.title + 'open-projects-whith-me'"
           >
         </div>
 
@@ -84,7 +84,7 @@ const content = computed(() => ({
               src="@img/open-projects/open-projects-3.jpg"
               loading="lazy"
               v-gsap
-              alt=""
+              :alt="content.title + 'open-projects-best'"
           >
 
           <div class="description"></div>

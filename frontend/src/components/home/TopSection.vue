@@ -58,7 +58,7 @@ const { locale } = useI18n();
         </div>
 
         <div v-gsap="{ y: -60, duration: 1 }" class="image">
-          <img src="@img/photo.jpg" loading="lazy" alt="Фото">
+          <img src="@img/photo.jpg" fetchpriority="high" :alt="topSection.title[locale]">
         </div>
       </div>
     </div>

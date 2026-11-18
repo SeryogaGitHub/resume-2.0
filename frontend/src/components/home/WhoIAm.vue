@@ -27,7 +27,7 @@ const { locale } = useI18n();
           <img
               src="@img/index-page/who-i-am/who-i-am-left.jpg"
               loading="lazy"
-              alt=""
+              :alt="whoIAm.title[locale]"
           >
         </div>
 
@@ -59,7 +59,7 @@ const { locale } = useI18n();
           <img
               src="@img/index-page/who-i-am/who-i-am-right.jpg"
               loading="lazy"
-              alt=""
+              :alt="whoIAm.title[locale] + 'left'"
           >
         </div>
       </div>

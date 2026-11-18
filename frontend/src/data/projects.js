@@ -47,7 +47,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/culinary-school.mhp.com.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/culinary-school.mhp.com.ua.webp',
     url: '#'
   },
 
@@ -90,7 +90,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/foodservice.mhp.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/foodservice.mhp.ua.webp',
     url: '#'
   },
 
@@ -133,7 +133,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-robota-v-mhp.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-robota-v-mhp.webp',
     url: '#'
   },
 
@@ -176,7 +176,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-young-gen.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-young-gen.webp',
     url: '#'
   },
 
@@ -219,7 +219,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/mhpgromadi.org.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/mhpgromadi.org.ua.webp',
     url: '#'
   },
 
@@ -262,7 +262,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume.webp',
     url: '#'
   },
 
@@ -305,7 +305,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume-2.0.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume-2.0.webp',
     url: '#'
   },
 
@@ -348,7 +348,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/ryaba.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/ryaba.ua.webp',
     url: '#'
   },
 
@@ -391,7 +391,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/superfileo.com.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/superfileo.com.ua.webp',
     url: '#'
   },
 
@@ -434,7 +434,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/syntech.software.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/syntech.software.webp',
     url: '#'
   },
 
@@ -477,7 +477,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/toplead.com.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/toplead.com.ua.webp',
     url: '#'
   },
 
@@ -520,7 +520,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/treran.com.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/treran.com.webp',
     url: '#'
   },
 
@@ -563,7 +563,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zakononline.ua.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zakononline.ua.webp',
     url: '#'
   },
 
@@ -606,7 +606,7 @@ export const projects = [
     },
 
     technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zr-code.com.png',
+    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zr-code.com.webp',
     url: '#'
   }
 ];

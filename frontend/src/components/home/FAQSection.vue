@@ -43,7 +43,7 @@ const content = computed(() => ({
             <img
                 src="@img/index-page/faq-section/faq-section.jpg"
                 loading="lazy"
-                alt=""
+                :alt="content.title + '-image'"
                 v-gsap
             >
 

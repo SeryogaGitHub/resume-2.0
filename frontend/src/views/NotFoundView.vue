@@ -1,8 +1,6 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import topImage from '@/assets/image/not-found-page/top-image.jpg';
-import bottomImage from '@/assets/image/not-found-page/bottom-image.jpg';
 </script>
 <template>
   <div class="page not-found">
