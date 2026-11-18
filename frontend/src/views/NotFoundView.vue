@@ -35,7 +35,7 @@ const localizedNotFoundPage = computed(() => ({
       <section class="section">
         <div class="center">
           <div class="items">
-            <div class="top-image">
+            <div v-gsap class="top-image">
               <img src="@img/not-found-page/top-image.jpg" loading="lazy" alt="">
             </div>
 
@@ -51,11 +51,11 @@ const localizedNotFoundPage = computed(() => ({
                 404. {{ localizedNotFoundPage.title }}
               </h1>
 
-              <p>
+              <p v-gsap>
                 {{ localizedNotFoundPage.description }}
               </p>
 
-              <p>
+              <p v-gsap>
                 {{ localizedNotFoundPage.suggestion }}
               </p>
 
@@ -74,7 +74,7 @@ const localizedNotFoundPage = computed(() => ({
               </RouterLink>
             </div>
 
-            <div class="bottom-image">
+            <div v-gsap class="bottom-image">
               <img src="@img/not-found-page/bottom-image.jpg" loading="lazy" alt="">
             </div>
           </div>
