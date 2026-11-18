@@ -74,7 +74,14 @@ const sectionTitles = computed(() => {
           class="skills-section full-detail section"
       >
         <div class="center">
-          <h2>{{ sectionTitles.skills }}</h2>
+          <h2 :key="locale"
+              v-gsap-text="{
+              opacity: 0,
+              y: 20,
+              duration: 1,
+              stagger: 0.2,
+              ease: 'power3.out'
+            }">{{ sectionTitles.skills }}</h2>
 
           <BaseList :items="localizedSkills">
             <template #default="{ item }">
@@ -91,7 +98,14 @@ const sectionTitles = computed(() => {
             </template>
           </BaseList>
 
-          <h2 class="mt-60">
+          <h2 :key="locale"
+              v-gsap-text="{
+              opacity: 0,
+              y: 20,
+              duration: 1,
+              stagger: 0.2,
+              ease: 'power3.out'
+            }" class="mt-60">
             {{ sectionTitles.tools }}
           </h2>
 

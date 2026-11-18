@@ -18,7 +18,7 @@ const visibleItems = computed(() => {
 </script>
 
 <template>
-  <ul class="list">
+  <ul class="list" v-gsap="{ y: 120, duration: 1, delay: 0.3 }">
     <li
         v-for="item in visibleItems"
         :key="item.id"

@@ -1,6 +1,32 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import {useI18n} from "vue-i18n";
+import {computed} from "vue";
+import {notFoundPage} from "@/data/notFoundPage.js";
+import { buttons } from '@/data/buttons.js';
+import {localePath} from "@/components/utils/localePath.js";
+import {RouterLink} from "vue-router";
+
+const { locale } = useI18n();
+
+import { useSeo } from '@/composables/useSeo';
+
+useSeo('notFound');
+
+const translate = (value) => {
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  return value?.[locale.value] ?? '';
+};
+
+const localizedNotFoundPage = computed(() => ({
+  title: translate(notFoundPage.title),
+  description: translate(notFoundPage.description),
+  suggestion: translate(notFoundPage.suggestion),
+}));
 </script>
 <template>
   <div class="page not-found">
@@ -14,23 +40,37 @@ import Footer from "@/components/Footer.vue";
             </div>
 
             <div class="text section">
-              <h1 class="h3">
-                404. Сторінку не знайдено!
+              <h1 class="h3" :key="locale"
+                v-gsap-text="{
+                  opacity: 0,
+                  y: 20,
+                  duration: 2,
+                  stagger: 0.2,
+                  ease: 'power3.out'
+                }">
+                404. {{ localizedNotFoundPage.title }}
               </h1>
 
               <p>
-                Цієї сторінки більше не існує, але ваш час — цінний.
+                {{ localizedNotFoundPage.description }}
               </p>
 
               <p>
-                Дозвольте допомогти вам знайти те, що ви насправді шукали: можливо, створити проєкт, мої послуги або спосіб зв’язатися з зімною.
+                {{ localizedNotFoundPage.suggestion }}
               </p>
 
               <RouterLink
-                  to="/"
-                  class="btn"
+                :to="localePath('/', locale)"
+                class="btn"
+                v-gsap-tilt="{
+                  perspective: 300,
+                  rotation: 20,
+                  movement: 8,
+                  duration: 0.4,
+                  ease: 'power3.out'
+                }"
               >
-                На головну
+                {{ buttons.learnMore[locale] }}
               </RouterLink>
             </div>
 

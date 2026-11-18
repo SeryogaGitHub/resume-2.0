@@ -53,5 +53,13 @@ export const buttons = {
       'Rozpocznij współpracę',
       'Zusammenarbeit starten',
       'Commençons à collaborer'
+  ),
+
+  home: localized(
+      'На головну',
+      'Back to homepage',
+      'Strona główna',
+      'Zur Startseite',
+      'Accueil'
   )
 };
