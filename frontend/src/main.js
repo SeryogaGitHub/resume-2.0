@@ -33,7 +33,7 @@ export const createApp = ViteSSG(
       app.directive('gsap-tilt', gsapTilt);
       app.directive('gsap-text', gsapText);
 
-      router.beforeEach((to) => {
+      router.beforeEach(to => {
         const currentLocale = to.params.locale || 'uk';
 
         if (!supportedLocales.includes(currentLocale)) {

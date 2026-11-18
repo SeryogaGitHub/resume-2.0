@@ -32,7 +32,14 @@ const localizedContact = computed(() => ({
     <div class="center">
       <div class="items">
         <div class="text">
-          <h1 v-gsap>{{ localizedContact.title }}</h1>
+          <h1 :key="locale"
+              v-gsap-text="{
+              opacity: 0,
+              y: 20,
+              duration: 2,
+              stagger: 0.2,
+              ease: 'power3.out'
+            }">{{ localizedContact.title }}</h1>
 
           <h4 v-gsap class="title">
             {{ localizedContact.location }}

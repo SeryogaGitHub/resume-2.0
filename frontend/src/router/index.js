@@ -61,7 +61,7 @@ export const routes = [
     }
   },
   {
-    path: '/:pathMatch(.*)*',
+    path: `${localePrefix}/:pathMatch(.*)*`,
     name: 'not-found',
     component: NotFoundView,
     meta: {

@@ -1,4 +1,3 @@
-
 const localized = (uk, en, pl, de, fr) => ({
   uk,
   en,
@@ -9,11 +8,11 @@ const localized = (uk, en, pl, de, fr) => ({
 
 export const projectsSection = {
   title: localized(
-      'Проєкти',
-      'Projects',
-      'Projekty',
-      'Projekte',
-      'Projets'
+      'Портфоліо',
+      'Portfolio',
+      'Portfolio',
+      'Portfolio',
+      'Portfolio'
   ),
 
   description: localized(

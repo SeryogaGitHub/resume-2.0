@@ -95,5 +95,23 @@ export const seo = {
         'Kenntnisse und Erfahrungen des Webentwicklers Serhii Lypianets: HTML, CSS, JavaScript, Vue.js, React, Node.js, PHP, SCSS, Datenbanken, responsives Webdesign, UI-Entwicklung und Designwerkzeuge.',
         'Compétences et expérience du développeur web Serhii Lypianets : HTML, CSS, JavaScript, Vue.js, React, Node.js, PHP, SCSS, bases de données, intégration responsive, développement d’interfaces et outils de design.'
     )
-  }
+  },
+
+  notFound: {
+    title: localized(
+        '404 — Сторінку не знайдено | Сергій Липянець',
+        '404 — Page Not Found | Serhii Lypianets',
+        '404 — Nie znaleziono strony | Serhii Lypianets',
+        '404 — Seite nicht gefunden | Serhii Lypianets',
+        '404 — Page introuvable | Serhii Lypianets'
+    ),
+
+    description: localized(
+        'Сторінку не знайдено. Перегляньте портфоліо веброзробника Сергія Липянця, реалізовані проєкти та послуги або поверніться на головну.',
+        'Page not found. Explore web developer Serhii Lypianets’ portfolio, completed projects and services, or return to the homepage.',
+        'Nie znaleziono strony. Zobacz portfolio programisty Serhii Lypianetsa, zrealizowane projekty i usługi lub wróć na stronę główną.',
+        'Seite nicht gefunden. Entdecken Sie das Portfolio, die Projekte und Leistungen des Webentwicklers Serhii Lypianets oder kehren Sie zur Startseite zurück.',
+        'Page introuvable. Découvrez le portfolio, les projets et les services du développeur web Serhii Lypianets ou retournez à l’accueil.'
+    )
+  },
 };

@@ -17,7 +17,14 @@ const { locale } = useI18n();
             {{ topSection.title[locale] }}
           </p>
 
-          <h1 class="mt-24">
+          <h1 class="mt-24" :key="locale"
+              v-gsap-text="{
+              opacity: 0,
+              y: 20,
+              duration: 2,
+              stagger: 0.2,
+              ease: 'power3.out'
+            }">
             {{ topSection.name[locale] }}
           </h1>
 
