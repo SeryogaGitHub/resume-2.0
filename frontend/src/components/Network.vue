@@ -10,7 +10,7 @@
         v-gsap-text="{
           opacity: 0,
           y: 30,
-          duration: 0.6,
+          duration: 0.3,
           stagger: 0.08,
           delay: 0.2,
           ease: 'power3.out'
@@ -25,7 +25,7 @@
       v-gsap-text="{
         opacity: 0,
         y: 30,
-        duration: 0.6,
+        duration: 0.3,
         stagger: 0.08,
         delay: 0.2,
         ease: 'power3.out'
@@ -40,7 +40,7 @@
       v-gsap-text="{
         opacity: 0,
         y: 30,
-        duration: 0.6,
+        duration: 0.3,
         stagger: 0.08,
         delay: 0.2,
         ease: 'power3.out'

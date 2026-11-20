@@ -21,7 +21,21 @@ export const createApp = ViteSSG(
     App,
     {
       routes,
-      base: import.meta.env.BASE_URL
+      base: import.meta.env.BASE_URL,
+
+      // Скидання прокручування під час переходу між сторінками
+      scrollBehavior(to, from, savedPosition) {
+        // Відновлення позиції під час повернення назад
+        if (savedPosition) {
+          return savedPosition;
+        }
+
+        // Для нової сторінки — прокручування нагору
+        return {
+          top: 0,
+          left: 0
+        };
+      }
     },
     ({ app, router }) => {
       // Окремий екземпляр i18n для кожного застосунку
@@ -47,10 +61,7 @@ export const createApp = ViteSSG(
     }
 );
 
-
-export function includedRoutes(paths) {
-  const locales = ['uk', 'en', 'pl', 'de', 'fr'];
-
+export function includedRoutes() {
   const pages = [
     '/',
     '/projects',
@@ -61,13 +72,11 @@ export function includedRoutes(paths) {
   ];
 
   const localizedPaths = pages.flatMap(path =>
-      locales.map(locale => {
-        if (locale === 'uk') {
-          return path;
-        }
-
-        return `/${locale}${path === '/' ? '' : path}`;
-      })
+      locales.map(locale =>
+          locale === 'uk'
+              ? path
+              : `/${locale}${path === '/' ? '' : path}`
+      )
   );
 
   const projectPaths = projects.flatMap(project =>

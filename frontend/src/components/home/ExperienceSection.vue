@@ -50,9 +50,9 @@ const setDefaultImage = (event) => {
           v-gsap-text="{
         opacity: 0,
         y: 20,
-        duration: 2,
+        duration: 0.7,
         stagger: 0.2,
-        delay: 2,
+        delay: 1,
         ease: 'power3.out'
       }">
         {{ content.title }}
@@ -64,7 +64,7 @@ const setDefaultImage = (event) => {
             <p
                 v-for="(paragraph, index) in content.paragraphs"
                 :key="index"
-                v-gsap="{x: 260, duration: 1, delay: 0.3}"
+                v-gsap="{x: 260, duration: .3}"
             >
               {{ paragraph }}
             </p>

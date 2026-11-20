@@ -403,3 +403,13 @@ export const skillsSection = {
       'Technologies avec lesquelles je travaille'
   )
 };
+
+export const skillsView = {
+  title: localized(
+      'Технології',
+      'Technologies',
+      'Technologie',
+      'Technologien',
+      'Technologies'
+  )
+};

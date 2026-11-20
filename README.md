@@ -134,7 +134,7 @@ app.mount('#app');
 <div
   v-gsap="{
     y: 60,
-    duration: 1,
+    duration: 0.7,
     delay: 0.2,
     ease: 'power2.out'
   }"
@@ -439,7 +439,7 @@ watch(isOpen, async (value) => {
 ```vue
 <h2
   v-gsap-text="{
-    duration: 1,
+    duration: 0.7,
     y: 30,
     rotationX: 0,
     stagger: 0.03,
@@ -493,7 +493,7 @@ watch(isOpen, async (value) => {
 ```vue
 <h2
   v-gsap-text="{
-    duration: 1,
+    duration: 0.7,
     y: 50,
     stagger: 0.04,
     delay: 0.5

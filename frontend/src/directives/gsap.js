@@ -10,7 +10,7 @@ export const gsapAnimation = {
   mounted(el, binding) {
     const options = {
       y: 40,
-      duration: 0.8,
+      duration: 0.7,
       delay: 0,
       ease: 'power2.out',
       ...binding.value
@@ -52,7 +52,7 @@ export const gsapTilt = {
       perspective: 650,
       rotation: 10,
       movement: 20,
-      duration: 0.6,
+      duration: 0.7,
       ease: 'power3.out',
       ...binding.value
     };
@@ -149,7 +149,7 @@ export const gsapTilt = {
 export const gsapText = {
   mounted(el, binding) {
     const options = {
-      duration: 1,
+      duration: 0.7,
       y: 80,
       rotationX: 180,
       stagger: 0.05,

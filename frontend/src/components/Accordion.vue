@@ -45,9 +45,9 @@ watch(isOpen, async (value) => {
   animation = gsap.from(split.chars, {
     opacity: 0,
     y: 30,
-    rotationX: 90,
-    scale: 0.8,
-    duration: 0.6,
+    rotationX: 50,
+    scale: 0.4,
+    duration: 0.3,
     ease: 'back.out(1.7)',
     stagger: 0.02,
     onComplete: () => {

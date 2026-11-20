@@ -48,9 +48,8 @@ const localizedSkills = computed(() =>
         v-gsap-text="{
           opacity: 0,
           y: 20,
-          duration: 2,
+          duration: 0.7,
           stagger: 0.2,
-          delay: 0,
           ease: 'power3.out'
         }"
       >
@@ -73,7 +72,7 @@ const localizedSkills = computed(() =>
           perspective: 300,
           rotation: 20,
           movement: 8,
-          duration: 0.4,
+          duration: 0.3,
           ease: 'power3.out'
         }"
       >

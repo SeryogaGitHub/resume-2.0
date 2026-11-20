@@ -1,4 +1,3 @@
-
 <script setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -28,9 +27,9 @@ const content = computed(() => ({
         v-gsap-text="{
           opacity: 0,
           y: 20,
-          duration: 2,
+          duration: 0.3,
           stagger: 0.2,
-          delay: 2,
+          delay: 1,
           ease: 'power3.out'
         }"
       >

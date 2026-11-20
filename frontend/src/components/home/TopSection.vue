@@ -12,7 +12,7 @@ const { locale } = useI18n();
   <section class="top-section section pb-0">
     <div class="center m-auto">
       <div class="flex align-center">
-        <div v-gsap="{ y: 60, duration: 1, delay: 0.3 }" class="text max-w-700">
+        <div v-gsap="{ y: 60, duration: .7 }" class="text max-w-700">
           <p class="h3 text-red">
             {{ topSection.title[locale] }}
           </p>
@@ -21,7 +21,7 @@ const { locale } = useI18n();
               v-gsap-text="{
               opacity: 0,
               y: 20,
-              duration: 2,
+              duration: 0.3,
               stagger: 0.2,
               ease: 'power3.out'
             }">
@@ -40,7 +40,7 @@ const { locale } = useI18n();
                   perspective: 300,
                   rotation: 20,
                   movement: 8,
-                  duration: 0.4,
+                  duration: 0.3,
                   ease: 'power3.out'
                 }"
             >

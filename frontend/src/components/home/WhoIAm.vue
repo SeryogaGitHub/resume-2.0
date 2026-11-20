@@ -15,9 +15,9 @@ const { locale } = useI18n();
           v-gsap-text="{
         opacity: 0,
         y: 20,
-        duration: 2,
+        duration: 0.7,
         stagger: 0.2,
-        delay: 2,
+        delay: 1,
         ease: 'power3.out'
       }"
       >{{ whoIAm.title[locale] }}</h2>
@@ -31,7 +31,7 @@ const { locale } = useI18n();
           >
         </div>
 
-        <div v-gsap="{ y: -120, duration: 1, delay: 0.3 }" class="text">
+        <div v-gsap="{ y: -120, duration: 0.7, delay: 0.3 }" class="text">
           <p>{{ whoIAm.description[locale] }}</p>
 
           <p>{{ whoIAm.workPreferences[locale] }}</p>
@@ -43,7 +43,7 @@ const { locale } = useI18n();
                 perspective: 300,
                 rotation: 20,
                 movement: 8,
-                duration: 0.4,
+                duration: 0.3,
                 ease: 'power3.out'
               }"
           >

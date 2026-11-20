@@ -45,7 +45,7 @@ const content = computed(() => ({
                     perspective: 300,
                     rotation: 20,
                     movement: 8,
-                    duration: 0.4,
+                    duration: 0.3,
                     ease: 'power3.out'
                 }"
               >

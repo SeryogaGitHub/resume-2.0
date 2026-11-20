@@ -153,3 +153,13 @@ export const tools = [
     )
   }
 ];
+
+export const toolsView = {
+  title: localized(
+      'Інструменти',
+      'Tools',
+      'Narzędzia',
+      'Werkzeuge',
+      'Outils'
+  )
+};

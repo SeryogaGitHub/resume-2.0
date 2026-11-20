@@ -7,8 +7,8 @@ import Footer from '@/components/Footer.vue';
 import BaseList from '@/components/BaseList.vue';
 import OpenProjects from '@/components/OpenProjects.vue';
 
-import { skills } from '@/data/skills.js';
-import { tools } from '@/data/tools.js';
+import {skills, skillsView} from '@/data/skills.js';
+import {tools, toolsView} from '@/data/tools.js';
 import { useSeo } from '@/composables/useSeo';
 
 useSeo('skills');
@@ -22,46 +22,25 @@ const translate = (value) => {
   return value?.[locale.value] ?? '';
 };
 
-const localizedSkills = computed(() =>
-    skills.map(item => ({
-      ...item,
-      name: translate(item.name),
-      experience: translate(item.experience),
-      description: translate(item.description)
-    }))
-);
+const localizedSkills = computed(() => ({
+  title: translate(skillsView.title),
+  skills: skills.map(item => ({
+    ...item,
+    name: translate(item.name),
+    experience: translate(item.experience),
+    description: translate(item.description)
+  }))
+}));
 
-const localizedTools = computed(() =>
-    tools.map(item => ({
-      ...item,
-      name: translate(item.name),
-      experience: translate(item.experience),
-      description: translate(item.description)
-    }))
-);
-
-const sectionTitles = computed(() => {
-  const translations = {
-    uk: {
-      skills: 'Технології',
-      tools: 'Інструменти'
-    },
-    en: {
-      skills: 'Technologies',
-      tools: 'Tools'
-    },
-    pl: {
-      skills: 'Technologie',
-      tools: 'Narzędzia'
-    },
-    de: {
-      skills: 'Technologien',
-      tools: 'Werkzeuge'
-    }
-  };
-
-  return translations[locale.value] ?? translations.uk;
-});
+const localizedTools = computed(() => ({
+  title: translate(toolsView.title),
+  tools: tools.map(item => ({
+    ...item,
+    name: translate(item.name),
+    experience: translate(item.experience),
+    description: translate(item.description)
+  }))
+}));
 </script>
 
 <template>
@@ -78,12 +57,12 @@ const sectionTitles = computed(() => {
               v-gsap-text="{
               opacity: 0,
               y: 20,
-              duration: 1,
+              duration: 0.3,
               stagger: 0.2,
               ease: 'power3.out'
-            }">{{ sectionTitles.skills }}</h2>
+            }">{{ localizedSkills.title }}</h2>
 
-          <BaseList :items="localizedSkills">
+          <BaseList :items="localizedSkills.skills">
             <template #default="{ item }">
               <div class="skill-detail">
                 <div class="skill">
@@ -102,14 +81,14 @@ const sectionTitles = computed(() => {
               v-gsap-text="{
               opacity: 0,
               y: 20,
-              duration: 1,
+              duration: 0.7,
               stagger: 0.2,
               ease: 'power3.out'
             }" class="mt-60">
-            {{ sectionTitles.tools }}
+            {{ localizedTools.title }}
           </h2>
 
-          <BaseList :items="localizedTools">
+          <BaseList :items="localizedTools.tools">
             <template #default="{ item }">
               <div class="skill-detail">
                 <div class="skill">

@@ -29,7 +29,7 @@ const content = computed(() => ({
               v-gsap-text="{
               opacity: 0,
               y: 20,
-              duration: 1,
+              duration: 0.3,
               stagger: 0.2,
               ease: 'power3.out'
             }">{{ content.title }}</h1>

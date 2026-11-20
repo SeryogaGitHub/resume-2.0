@@ -42,7 +42,14 @@ const content = computed(() => ({
           {{ content.back }}
         </RouterLink>
 
-        <h1 class="mt-24">{{ project.title }}</h1>
+        <h1 class="mt-24" :key="locale"
+            v-gsap-text="{
+              opacity: 0,
+              y: 20,
+              duration: 0.3,
+              stagger: 0.2,
+              ease: 'power3.out'
+            }">{{ project.title }}</h1>
 
         <header
             v-if="project.image"
