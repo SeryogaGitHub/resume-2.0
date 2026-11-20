@@ -2,7 +2,9 @@
 import {ref, watch, onUnmounted} from 'vue';
 import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 import MainNav from "@/components/MainNav.vue";
-
+import {localePath} from "@/components/utils/localePath.js";
+import {useI18n} from "vue-i18n";
+const {locale} = useI18n();
 
 const btnMenu = ref(false);
 
@@ -14,14 +16,15 @@ onUnmounted(() => {
   document.body.classList.remove('open-menu');
 });
 
-
 </script>
 
 <template>
   <header class="main-header">
     <div class="center">
 
-      <RouterLink to="/" class="logo h3">SL</RouterLink>
+      <RouterLink
+          :to="localePath('/', locale)"
+          class="logo h3">SL</RouterLink>
 
       <MainNav />
 
