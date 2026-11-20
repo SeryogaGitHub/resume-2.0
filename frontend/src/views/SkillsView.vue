@@ -53,14 +53,14 @@ const localizedTools = computed(() => ({
           class="skills-section full-detail section"
       >
         <div class="center">
-          <h2 :key="locale"
+          <h1 :key="locale"
               v-gsap-text="{
               opacity: 0,
               y: 20,
               duration: 0.3,
               stagger: 0.2,
               ease: 'power3.out'
-            }">{{ localizedSkills.title }}</h2>
+            }">{{ localizedSkills.title }}</h1>
 
           <BaseList :items="localizedSkills.skills">
             <template #default="{ item }">

@@ -4,6 +4,8 @@ import Network from "@/components/Network.vue";
 import { useI18n } from 'vue-i18n';
 import { topSection } from '@data/topSection';
 import {buttons} from "@/data/buttons.js";
+import {localePath} from "@/components/utils/localePath.js";
+import {RouterLink} from "vue-router";
 
 const { locale } = useI18n();
 </script>
@@ -33,19 +35,19 @@ const { locale } = useI18n();
           </p>
 
           <div class="btns mt-60">
-            <a
-                href="#projects"
+            <RouterLink
+                :to="localePath('/projects', locale)"
                 class="btn"
                 v-gsap-tilt="{
-                  perspective: 300,
-                  rotation: 20,
-                  movement: 8,
-                  duration: 0.3,
-                  ease: 'power3.out'
+                    perspective: 300,
+                    rotation: 20,
+                    movement: 8,
+                    duration: 0.3,
+                    ease: 'power3.out'
                 }"
             >
               {{ buttons.viewWork[locale] }}
-            </a>
+            </RouterLink>
 
             <a
                 :href="topSection.linkCV[locale]"
