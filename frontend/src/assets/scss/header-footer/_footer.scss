@@ -83,6 +83,11 @@
     @include m(768px){
       border-top: 1px solid rgba($white, 0.1);
     }
+
+    @include m(560px){
+      padding: 40px 0;
+      justify-content: flex-start;
+    }
   }
 
   .main-nav{

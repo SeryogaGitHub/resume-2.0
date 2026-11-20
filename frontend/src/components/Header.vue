@@ -2,6 +2,7 @@
 import {ref, watch, onUnmounted} from 'vue';
 import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 import MainNav from "@/components/MainNav.vue";
+import logo from '@/assets/image/logo.svg';
 import {localePath} from "@/components/utils/localePath.js";
 import {useI18n} from "vue-i18n";
 const {locale} = useI18n();
@@ -24,7 +25,9 @@ onUnmounted(() => {
 
       <RouterLink
           :to="localePath('/', locale)"
-          class="logo h3">SL</RouterLink>
+          class="logo h3">
+        <img :src="logo" alt="logo">
+      </RouterLink>
 
       <MainNav />
 
