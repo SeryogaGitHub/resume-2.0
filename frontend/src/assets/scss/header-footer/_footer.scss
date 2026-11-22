@@ -12,6 +12,10 @@
 
   a{
     color: rgba($white, .5);
+
+    &:hover{
+      color: $white;
+    }
   }
 
   a[href^="mailto:"]{
