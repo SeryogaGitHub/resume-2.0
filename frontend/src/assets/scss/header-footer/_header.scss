@@ -7,20 +7,20 @@
   z-index: 10;
   border-bottom: 1px solid $border-color;
   background: $white;
-  padding: 8px 0;
+  padding: 4px 0;
 
   .center {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 42px;
+    min-height: 32px;
   }
 
   .logo {
     font-size: 24px;
     color: $brown;
     margin-bottom: 0;
-    max-width: 42px;
+    max-width: 32px;
     border-radius: 50%;
   }
 
