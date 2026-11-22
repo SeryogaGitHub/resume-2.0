@@ -113,10 +113,11 @@
     a{
       padding: 0;
       text-align: left!important;
+      transform: scale(1);
 
       &:hover{
-        color: $red;
         background: initial;
+        color: $white;
       }
     }
   }
