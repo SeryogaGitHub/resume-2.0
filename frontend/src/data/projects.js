@@ -608,5 +608,48 @@ export const projects = [
     technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
     image: 'zr-code.com.webp',
     url: 'https://zr-code.com/'
+  },
+  {
+    id: 15,
+    title: 'procurementconference.mhp.ua',
+    year: 2026,
+
+    category: localized(
+        'Вебсайт',
+        'Website',
+        'Strona internetowa',
+        'Website',
+        'Site web'
+    ),
+
+    description: localized(
+        'Промосайт міжнародної конференції MHP Procurement Conference 2026 «Україна у глобальних закупівлях». Представлення програми заходу, спікерів, актуальних тем закупівель, логістики та міжнародного бізнесу.',
+        'Promotional website for MHP Procurement Conference 2026, «Ukraine in Global Procurement». Featuring the event programme, speakers, procurement trends, logistics and international business topics.',
+        'Strona promocyjna konferencji MHP Procurement Conference 2026 «Ukraina w globalnych zakupach». Prezentacja programu wydarzenia, prelegentów oraz aktualnych zagadnień związanych z zakupami, logistyką i międzynarodowym biznesem.',
+        'Werbewebsite der MHP Procurement Conference 2026 «Ukraine im globalen Einkauf». Präsentation des Veranstaltungsprogramms, der Referenten sowie aktueller Themen rund um Beschaffung, Logistik und internationales Geschäft.',
+        'Site promotionnel de la conférence MHP Procurement Conference 2026 «L’Ukraine dans les achats mondiaux». Présentation du programme, des intervenants et des enjeux liés aux achats, à la logistique et au commerce international.'
+    ),
+
+    seo: {
+      title: localized(
+          'MHP Procurement Conference 2026 — конференція із закупівель',
+          'MHP Procurement Conference 2026 — Global Procurement Conference',
+          'MHP Procurement Conference 2026 — konferencja zakupowa',
+          'MHP Procurement Conference 2026 — Konferenz für Einkauf',
+          'MHP Procurement Conference 2026 — conférence sur les achats'
+      ),
+
+      description: localized(
+          'Сайт міжнародної конференції MHP Procurement Conference 2026. Програма заходу, спікери, глобальні закупівлі, логістика та міжнародний нетворкінг.',
+          'Official website of MHP Procurement Conference 2026. Event programme, speakers, global procurement, logistics and international networking.',
+          'Oficjalna strona konferencji MHP Procurement Conference 2026. Program wydarzenia, prelegenci, globalne zakupy, logistyka i networking.',
+          'Website der MHP Procurement Conference 2026. Veranstaltungsprogramm, Referenten, globaler Einkauf, Logistik und internationales Networking.',
+          'Site officiel de la MHP Procurement Conference 2026. Programme, intervenants, achats mondiaux, logistique et réseautage international.'
+      )
+    },
+
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'procurementconference.mhp.ua.webp',
+    url: 'https://procurementconference.mhp.ua/'
   }
 ];
