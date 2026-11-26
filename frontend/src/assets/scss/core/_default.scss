@@ -26,6 +26,7 @@
   border: none;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -116,11 +117,11 @@ table {
   width: 100%;
   table-layout: fixed;
 
-td,
-th {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
+  td,
+  th {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
 
 fieldset,
@@ -213,7 +214,7 @@ textarea {
   height: 160px;
 }
 
-input, textarea{
+input, textarea {
   color: $brown;
   background: transparent;
   border: none;
@@ -237,18 +238,18 @@ img {
   max-width: 100%;
 }
 
-p{
+p {
   line-height: 1.4;
 
-  @include m(768px){
+  @include m(768px) {
     line-height: 1.5;
   }
 
   & + p,
-  & + h4{
+  & + h4 {
     margin-top: 30px;
 
-    @include m(768px){
+    @include m(768px) {
       margin-top: 12px;
     }
   }

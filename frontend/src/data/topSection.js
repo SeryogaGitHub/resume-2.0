@@ -1,4 +1,3 @@
-
 const localized = (uk, en, pl, de, fr) => ({
   uk,
   en,

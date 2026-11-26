@@ -11,7 +11,7 @@ export const projects = [
   {
     id: 1,
     title: 'culinary-school.mhp.com.ua',
-    year: 2026,
+    year: 2025,
 
     category: localized(
         'Вебсайт',
@@ -46,15 +46,15 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/culinary-school.mhp.com.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'culinary-school.mhp.com.ua.webp',
+    url: 'https://culinary-school.mhp.com.ua/'
   },
 
   {
     id: 2,
     title: 'foodservice.mhp.ua',
-    year: 2026,
+    year: 2025,
 
     category: localized(
         'Вебсайт',
@@ -81,22 +81,22 @@ export const projects = [
           'Foodservice MHP — site web institutionnel'
       ),
       description: localized(
-          'Розробка корпоративного сайту Foodservice MHP у сфері харчового обслуговування з адаптивним інтерфейсом.',
-          'Development of the Foodservice MHP corporate website in the food service industry with a responsive interface.',
-          'Realizacja strony korporacyjnej Foodservice MHP z branży gastronomicznej z responsywnym interfejsem.',
-          'Entwicklung der Foodservice-MHP-Unternehmenswebsite mit responsiver Benutzeroberfläche.',
-          'Développement du site institutionnel Foodservice MHP dans le secteur de la restauration avec une interface adaptative.'
+          'Розробка корпоративного сайту Foodservice MHP у сфері харчового обслуговування з адаптивним інтерфейсом. Допрацювання сторінок.',
+          'Development of the Foodservice MHP corporate website in the food service industry with a responsive interface. Page improvements.',
+          'Realizacja strony korporacyjnej Foodservice MHP z branży gastronomicznej z responsywnym interfejsem. Udoskonalanie podstron.',
+          'Entwicklung der Foodservice-MHP-Unternehmenswebsite mit responsiver Benutzeroberfläche. Überarbeitung der Seiten.',
+          'Développement du site institutionnel Foodservice MHP dans le secteur de la restauration avec une interface adaptative. Amélioration des pages.'
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/foodservice.mhp.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'foodservice.mhp.ua.webp',
+    url: 'https://foodservice.mhp.ua/'
   },
 
   {
     id: 3,
-    title: 'life.mhp4u.com.ua-robota-v-mhp',
+    title: 'life.mhp4u.com.ua robota-v-mhp',
     year: 2026,
 
     category: localized(
@@ -132,14 +132,14 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-robota-v-mhp.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'life.mhp4u.com.ua-robota-v-mhp.webp',
+    url: 'https://life.mhp4u.com.ua/robota-v-mhp/'
   },
 
   {
     id: 4,
-    title: 'life.mhp4u.com.ua-young-gen',
+    title: 'life.mhp4u.com.ua young-gen',
     year: 2026,
 
     category: localized(
@@ -175,9 +175,9 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/life.mhp4u.com.ua-young-gen.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'life.mhp4u.com.ua-young-gen.webp',
+    url: 'https://life.mhp4u.com.ua/young-gen/'
   },
 
   {
@@ -218,15 +218,15 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/mhpgromadi.org.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'mhpgromadi.org.ua.webp',
+    url: 'https://mhpgromadi.org.ua/'
   },
 
   {
     id: 6,
     title: 'Resume',
-    year: 2026,
+    year: 2020,
 
     category: localized(
         'Вебсайт',
@@ -261,9 +261,9 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume.webp',
-    url: '#'
+    technologies: ['SCSS', 'ReactJs', 'Animation', 'NPM modules'],
+    image: 'resume.webp',
+    url: 'https://seryogagithub.github.io/#/'
   },
 
   {
@@ -280,11 +280,11 @@ export const projects = [
     ),
 
     description: localized(
-        'Персональний вебзастосунок-портфоліо з багатомовним інтерфейсом, інформацією про навички, досвід та реалізовані проєкти.',
-        'A personal portfolio web application featuring a multilingual interface, professional skills, experience and completed projects.',
-        'Osobista aplikacja internetowa typu portfolio z wielojęzycznym interfejsem, informacjami o umiejętnościach, doświadczeniu i zrealizowanych projektach.',
-        'Eine persönliche Portfolio-Webanwendung mit mehrsprachiger Benutzeroberfläche sowie Informationen zu Fähigkeiten, Berufserfahrung und abgeschlossenen Projekten.',
-        'Application web de portfolio personnel avec une interface multilingue et des informations sur les compétences, l’expérience professionnelle et les projets réalisés.'
+        'Персональний вебзастосунок-портфоліо з багатомовним інтерфейсом, інформацією про навички, досвід і реалізовані проєкти. Для SEO-оптимізації використано модуль Single Page SSG, що також сприяє покращенню показників PageSpeed Insights. Портфоліо слугує як резюме, так і візуальним прикладом моїх робіт.',
+        'A personal portfolio web application with a multilingual interface featuring information about skills, experience and completed projects. The Single Page SSG module is used for SEO optimization and to improve PageSpeed Insights scores. The portfolio serves both as a résumé and as a visual showcase of my work.',
+        'Osobista aplikacja internetowa typu portfolio z wielojęzycznym interfejsem, zawierająca informacje o umiejętnościach, doświadczeniu i zrealizowanych projektach. Do optymalizacji SEO wykorzystano moduł Single Page SSG, który pomaga również poprawić wyniki PageSpeed Insights. Portfolio pełni zarówno funkcję CV, jak i wizualnej prezentacji moich prac.',
+        'Eine persönliche Portfolio-Webanwendung mit mehrsprachiger Benutzeroberfläche und Informationen zu Fähigkeiten, Berufserfahrung und umgesetzten Projekten. Zur SEO-Optimierung wird das Modul Single Page SSG eingesetzt, das auch zur Verbesserung der PageSpeed-Insights-Werte beiträgt. Das Portfolio dient sowohl als Lebenslauf als auch als visuelle Präsentation meiner Arbeit.',
+        'Une application web de portfolio personnelle avec une interface multilingue présentant mes compétences, mon expérience et mes projets réalisés. Le module Single Page SSG est utilisé pour l’optimisation SEO et contribue également à améliorer les scores PageSpeed Insights. Le portfolio sert à la fois de CV et de vitrine visuelle de mes réalisations.'
     ),
 
     seo: {
@@ -304,15 +304,15 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/resume-2.0.webp',
-    url: '#'
+    technologies: ['SCSS', 'VueJs', 'Animation', 'NPM modules'],
+    image: 'resume-2.0.webp',
+    url: 'https://seryogagithub.github.io/resume-2.0/'
   },
 
   {
     id: 8,
     title: 'ryaba.ua',
-    year: 2026,
+    year: 2024,
 
     category: localized(
         'Вебсайт',
@@ -323,11 +323,11 @@ export const projects = [
     ),
 
     description: localized(
-        'Корпоративний вебсайт бренду «Ряба» з сучасною структурою та адаптивним інтерфейсом.',
-        'A corporate website for the Ryaba brand featuring a modern structure and responsive interface.',
-        'Strona korporacyjna marki Ryaba z nowoczesną strukturą i responsywnym interfejsem.',
-        'Eine Unternehmenswebsite der Marke Ryaba mit moderner Struktur und responsiver Benutzeroberfläche.',
-        'Site web institutionnel de la marque Ryaba, avec une structure moderne et une interface adaptative.'
+        'Корпоративний вебсайт бренду «Ряба» з сучасною структурою та адаптивним інтерфейсом. Сторінка якості.',
+        'A corporate website for the Ryaba brand featuring a modern structure and responsive interface. Quality page.',
+        'Strona korporacyjna marki Ryaba z nowoczesną strukturą i responsywnym interfejsem. Strona jakości.',
+        'Eine Unternehmenswebsite der Marke Ryaba mit moderner Struktur und responsiver Benutzeroberfläche. Qualitätsseite.',
+        'Site web institutionnel de la marque Ryaba, avec une structure moderne et une interface adaptative. Page qualité.'
     ),
 
     seo: {
@@ -339,17 +339,17 @@ export const projects = [
           'Ryaba — site institutionnel de la marque'
       ),
       description: localized(
-          'Розробка корпоративного сайту бренду «Ряба» із сучасною структурою та адаптивним інтерфейсом.',
-          'Development of the Ryaba brand corporate website with a modern structure and responsive interface.',
-          'Realizacja strony korporacyjnej marki Ryaba z nowoczesną strukturą i responsywnym interfejsem.',
-          'Entwicklung der Unternehmenswebsite der Marke Ryaba mit moderner Struktur und responsiver Benutzeroberfläche.',
-          'Développement du site institutionnel de la marque Ryaba avec une structure moderne et une interface adaptative.'
-      )
+          'Корпоративний вебсайт бренду «Ряба» з сучасною структурою та адаптивним інтерфейсом. Сторінка якості.',
+          'A corporate website for the Ryaba brand featuring a modern structure and responsive interface. Quality page.',
+          'Strona korporacyjna marki Ryaba z nowoczesną strukturą i responsywnym interfejsem. Strona jakości.',
+          'Eine Unternehmenswebsite der Marke Ryaba mit moderner Struktur und responsiver Benutzeroberfläche. Qualitätsseite.',
+          'Site web institutionnel de la marque Ryaba, avec une structure moderne et une interface adaptative. Page qualité.'
+      ),
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/ryaba.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'ryaba.ua.webp',
+    url: 'https://ryaba.ua/yakist/'
   },
 
   {
@@ -390,9 +390,9 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/superfileo.com.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'FullPage', 'Animation', 'NPM modules'],
+    image: 'superfileo.com.ua.webp',
+    url: 'https://superfileo.com.ua/'
   },
 
   {
@@ -433,9 +433,9 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/syntech.software.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'syntech.software.webp',
+    url: 'https://syntech.software/'
   },
 
   {
@@ -476,9 +476,9 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/toplead.com.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'toplead.com.ua.webp',
+    url: 'https://toplead.com.ua/'
   },
 
   {
@@ -495,11 +495,11 @@ export const projects = [
     ),
 
     description: localized(
-        'Вебсайт із сучасним дизайном, структурованою подачею інформації та адаптивним інтерфейсом.',
-        'A website featuring modern design, structured content presentation and a responsive interface.',
-        'Strona internetowa z nowoczesnym designem, uporządkowaną prezentacją treści i responsywnym interfejsem.',
-        'Eine Website mit modernem Design, strukturierter Inhaltsdarstellung und responsiver Benutzeroberfläche.',
-        'Site web au design moderne, avec une présentation structurée des informations et une interface adaptative.'
+        'Вебсайт із сучасним дизайном, структурованою подачею інформації та адаптивним інтерфейсом. Допрацювання сторінок.',
+        'A website featuring modern design, structured content presentation and a responsive interface. Page improvements.',
+        'Strona internetowa z nowoczesnym designem, uporządkowaną prezentacją treści i responsywnym interfejsem. Udoskonalanie podstron.',
+        'Eine Website mit modernem Design, strukturierter Inhaltsdarstellung und responsiver Benutzeroberfläche. Überarbeitung der Seiten.',
+        'Site web au design moderne, avec une présentation structurée des informations et une interface adaptative. Amélioration des pages.'
     ),
 
     seo: {
@@ -511,17 +511,17 @@ export const projects = [
           'Treran — développement d’un site web adaptatif'
       ),
       description: localized(
-          'Розробка вебсайту Treran із сучасним дизайном, структурованою подачею інформації та адаптивним інтерфейсом.',
-          'Development of the Treran website with modern design, structured content presentation and a responsive interface.',
-          'Realizacja strony Treran z nowoczesnym designem, uporządkowaną prezentacją treści i responsywnym interfejsem.',
-          'Entwicklung der Treran-Website mit modernem Design, strukturierter Inhaltsdarstellung und responsiver Benutzeroberfläche.',
-          'Développement du site Treran avec un design moderne, une présentation structurée des informations et une interface adaptative.'
-      )
+          'Вебсайт із сучасним дизайном, структурованою подачею інформації та адаптивним інтерфейсом. Допрацювання сторінок.',
+          'A website featuring modern design, structured content presentation and a responsive interface. Page improvements.',
+          'Strona internetowa z nowoczesnym designem, uporządkowaną prezentacją treści i responsywnym interfejsem. Udoskonalanie podstron.',
+          'Eine Website mit modernem Design, strukturierter Inhaltsdarstellung und responsiver Benutzeroberfläche. Überarbeitung der Seiten.',
+          'Site web au design moderne, avec une présentation structurée des informations et une interface adaptative. Amélioration des pages.'
+      ),
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/treran.com.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'treran.com.webp',
+    url: 'https://treran.com/'
   },
 
   {
@@ -538,11 +538,11 @@ export const projects = [
     ),
 
     description: localized(
-        'Юридичний вебсайт із доступом до правової інформації та сучасним інтерфейсом.',
-        'A legal website providing access to legal information through a modern interface.',
-        'Serwis prawniczy zapewniający dostęp do informacji prawnych za pośrednictwem nowoczesnego interfejsu.',
-        'Eine juristische Website mit Zugang zu Rechtsinformationen über eine moderne Benutzeroberfläche.',
-        'Site web juridique donnant accès à des informations légales grâce à une interface moderne.'
+        'Юридичний вебсайт із доступом до правової інформації та сучасним інтерфейсом. Увесь UI та частина функціоналу реалізовані на Vue.js.',
+        'A legal website providing access to legal information through a modern interface. The entire UI and part of the functionality are implemented in Vue.js.',
+        'Serwis prawniczy zapewniający dostęp do informacji prawnych za pośrednictwem nowoczesnego interfejsu. Cały interfejs użytkownika i część funkcjonalności zostały zrealizowane w Vue.js.',
+        'Eine juristische Website mit Zugang zu Rechtsinformationen über eine moderne Benutzeroberfläche. Die gesamte Benutzeroberfläche und ein Teil der Funktionalität wurden mit Vue.js umgesetzt.',
+        'Site web juridique donnant accès à des informations légales grâce à une interface moderne. Toute l’interface utilisateur et une partie des fonctionnalités sont développées avec Vue.js.'
     ),
 
     seo: {
@@ -554,17 +554,17 @@ export const projects = [
           'ZakonOnline — site web juridique'
       ),
       description: localized(
-          'Розробка юридичного вебсайту ZakonOnline для доступу до правової інформації через сучасний інтерфейс.',
-          'Development of the ZakonOnline legal website providing access to legal information through a modern interface.',
-          'Realizacja serwisu prawniczego ZakonOnline zapewniającego dostęp do informacji prawnych za pośrednictwem nowoczesnego interfejsu.',
-          'Entwicklung der juristischen Website ZakonOnline mit Zugang zu Rechtsinformationen über eine moderne Benutzeroberfläche.',
-          'Développement du site juridique ZakonOnline donnant accès aux informations légales grâce à une interface moderne.'
+          'Юридичний вебсайт із доступом до правової інформації та сучасним інтерфейсом. Увесь UI та частина функціоналу реалізовані на Vue.js.',
+          'A legal website providing access to legal information through a modern interface. The entire UI and part of the functionality are implemented in Vue.js.',
+          'Serwis prawniczy zapewniający dostęp do informacji prawnych za pośrednictwem nowoczesnego interfejsu. Cały interfejs użytkownika i część funkcjonalności zostały zrealizowane w Vue.js.',
+          'Eine juristische Website mit Zugang zu Rechtsinformationen über eine moderne Benutzeroberfläche. Die gesamte Benutzeroberfläche und ein Teil der Funktionalität wurden mit Vue.js umgesetzt.',
+          'Site web juridique donnant accès à des informations légales grâce à une interface moderne. Toute l’interface utilisateur et une partie des fonctionnalités sont développées avec Vue.js.'
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zakononline.ua.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'VueJs', 'NPM modules'],
+    image: 'zakononline.ua.webp',
+    url: 'https://zakononline.ua/'
   },
 
   {
@@ -605,8 +605,8 @@ export const projects = [
       )
     },
 
-    technologies: ['SCSS'],
-    image: 'https://raw.githubusercontent.com/SeryogaGitHub/resume-2.0/refs/heads/main/frontend/src/assets/image/projects-page/zr-code.com.webp',
-    url: '#'
+    technologies: ['SCSS', 'JavaScript', 'HTML', 'Animation', 'NPM modules'],
+    image: 'zr-code.com.webp',
+    url: 'https://zr-code.com/'
   }
 ];

@@ -61,6 +61,11 @@
   color: $red;
 }
 
+.break-word{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .network{
   display: flex;
   width: 100%;

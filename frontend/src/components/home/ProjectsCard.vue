@@ -18,6 +18,19 @@ defineProps({
     required: true
   }
 });
+
+const projectImages = import.meta.glob(
+    '@/assets/image/projects-page/*.{jpg,jpeg,png,webp,avif}',
+    {
+      eager: true,
+      import: 'default'
+    }
+);
+
+const projectImage = (image) => {
+  return projectImages[`/src/assets/image/projects-page/${image}`] || defaultImage;
+};
+
 </script>
 
 <template>
@@ -27,7 +40,7 @@ defineProps({
       v-gsap
   >
     <img
-        :src="project.image"
+        :src="projectImage(project.image)"
         :alt="project.title"
         loading="lazy"
         v-gsap-tilt="{

@@ -15,6 +15,18 @@ defineProps({
   }
 });
 
+const projectImages = import.meta.glob(
+    '@/assets/image/projects-page/*.{jpg,jpeg,png,webp,avif}',
+    {
+      eager: true,
+      import: 'default'
+    }
+);
+
+const projectImage = (image) => {
+  return projectImages[`/src/assets/image/projects-page/${image}`] || defaultImage;
+};
+
 const { locale } = useI18n();
 
 const content = computed(() => ({
@@ -55,7 +67,7 @@ const content = computed(() => ({
             v-if="project.image"
             class="top-image"
             v-gsap
-            :style="{ backgroundImage: `url(${project.image})` }"
+            :style="{ backgroundImage: `url(${projectImage(project.image)})` }"
         >
         </header>
 
@@ -69,20 +81,22 @@ const content = computed(() => ({
         >
 
         <article class="description-detail mt-60">
-          <div v-gsap class="description">
-            <h3>{{ content.overview }}</h3>
-            <p>{{ project.description[locale] }}</p>
+          <div v-gsap>
+            <div class="description">
+              <h3>{{ content.overview }}</h3>
+              <p>{{ project.description[locale] }}</p>
+            </div>
+
+            <div class="mt-24" v-gsap>
+              <h4>Link:&nbsp;</h4>
+              <a class="h4 text-red break-word" target="_blank" :href="project.url">{{ project.title }}</a>
+            </div>
           </div>
 
           <div v-gsap class="detail">
             <div>
               <h3>{{ content.year }}</h3>
               <p>{{ project.year }}</p>
-            </div>
-
-            <div v-gsap>
-              <h3>{{ content.role }}</h3>
-              <p>UX/UI Design, Web Strategy</p>
             </div>
 
             <div>
